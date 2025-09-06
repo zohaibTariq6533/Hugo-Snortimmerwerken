@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: zohaibTariq6533/Hugo-website-vercel
+  repo: zohaibTariq6533/Hugo-Snortimmerwerken
   branch: main  
   auth_type: pkce
   app_id: Ov23liCCPh5APDx73cOR # adjust if your repo uses "master"
