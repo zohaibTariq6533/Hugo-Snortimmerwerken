@@ -9,22 +9,12 @@ media_folder: "static/uploads"   # actual folder in repo
 public_folder: "/uploads"        # how Hugo serves them
 load_config_file: true
 collections:
-  # Blog posts
-  - name: "blog"
-    label: "Blog"
-    folder: "content/blog"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { name: "title", label: "Title", widget: "string" }
-      - { name: "date", label: "Date", widget: "datetime" }
-      - { name: "body", label: "Body", widget: "markdown" }
 
   # Homepage content (index.md)
   - name: "homepage"
     label: "Homepage"
     files:
-      - label: "Homepage Content"
+      - label: "Hero Section"
         name: "index"
         file: "content/_index.md"   # Hugo homepage is usually `_index.md`, adjust if yours is just index.md
         fields:
@@ -35,3 +25,4 @@ collections:
           - { name: "hero_section2", label: "Hero Section 2", widget: "string" }
           - { name: "sub_heading", label: "Sub Heading", widget: "text" }
           - { name: "pricing", label: "Pricing", widget: "string" }
+           - { name: "hero_image", label: "Hero Image", widget: "image", choose_url: false, media_folder: "static/uploads/Hero", public_folder: "/uploads/Hero" }
