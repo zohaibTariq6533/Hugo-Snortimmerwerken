@@ -6,5 +6,6 @@ hero_section: Gewoon goed
 hero_section2: timmerwerk
 sub_heading: n
 pricing: j
+hero_image: /uploads/taylor-flowe-30omXayKjQo-unsplash.jpg
 ---
 
