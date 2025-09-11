@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
 <head>
   {{ partial "head.html" . }}
 </head>
+
 <body>
   <header>
     {{ partial "header.html" . }}
@@ -17,5 +16,33 @@
   <footer>
     {{ partial "footer.html" . }}
   </footer>
+
+  <script>
+    (function () {
+      const select = document.getElementById("country");
+      const menuFirst = document.querySelector(".menuFirst");
+      const menuSecond = document.querySelector(".menuSecond");
+
+      if (!select || !menuFirst || !menuSecond) return;
+
+      function updateMenus() {
+        // Hide all first
+        menuFirst.classList.add("hidden");
+        menuSecond.classList.add("hidden");
+
+        // Then show only the selected one
+        if (select.value === "kozijnen-Vervange") {
+          menuFirst.classList.remove("hidden");
+        } else if (select.value === "gevelbekleding") {
+          menuSecond.classList.remove("hidden");
+        }
+      }
+
+      select.addEventListener("change", updateMenus);
+      // Initialize on load
+      updateMenus();
+    })();
+  </script>
 </body>
+
 </html>

@@ -677,6 +677,17 @@
 
   <section class="bg-gray-100 ">
     <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+      <style>
+        /* Scope to this page only */
+        .custom-select {
+          padding-right: 2.5rem;
+        }
+
+        .custom-select option:hover {
+          background-color: #fed7aa;
+          color: #111827;
+        }
+      </style>
       <div class="px-4 mx-auto max-w-screen-sm text-center lg:px-6 mb-8 lg:mb-16">
         <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 ">Bel Linda of vul het formulier in</h2>
         <p class="font-light text-gray-600  sm:text-xl">WLinda geeft je direct een prijsindicatie op basis van je vraag.
@@ -684,36 +695,178 @@
       </div>
       <div class="grid grid-cols-1 lg:gap-8 lg:grid-cols-3">
         <div class="col-span-2 mb-8 lg:mb-0 bg-white p-4 rounded-xl">
-          <form action="#" class="grid grid-cols-1 gap-8 mx-auto max-w-screen-md sm:grid-cols-2">
-            <div>
-              <label for="first-name" class="block mb-2 text-sm font-medium text-gray-900 ">First Name</label>
-              <input type="text" id="first-name"
-                class="block p-3 w-full text-sm text-gray-900 bg-gray-200 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500  "
-                placeholder="Bonnie" required>
+          <form action="https://api.web3forms.com/submit" method="POST" class="flex flex-col gap-4 mx-auto max-w-screen-md">
+             <input type="hidden" name="access_key" value="598a24b8-e901-4789-a950-d06bb15d30ed">
+              <input type="hidden" name="redirect" value="http://hugo-snortimmerwerken.vercel.app/thank-you/">
+
+            <div class="md:flex space-x-5">
+              <div class="w-full md:w-1/2">
+                <label for="first-name" class="block mb-2 text-sm font-medium text-gray-900 ">Naam</label>
+                <input type="text" id="first-name" name="naam"
+                  class="block p-3 w-full text-sm text-gray-900 bg-gray-100 rounded-lg border border-gray-300 shadow-sm focus:ring-orange-500 focus:border-orange-500  "
+                  placeholder="Bonnie" required>
+              </div>
+              <div class="w-full md:w-1/2">
+                <label for="phone" class="block mb-2 text-sm font-medium text-gray-900 ">Telefoonnummer</label>
+                <input type="text" id="phone" name="telefoonnummer"
+                  class="block p-3 w-full text-sm text-gray-900 bg-gray-100 rounded-lg border border-gray-300 shadow-sm focus:ring-orange-500 focus:border-orange-500  "
+                  placeholder="Bonnie" required>
+              </div>
             </div>
-            <div>
-              <label for="last-name" class="block mb-2 text-sm font-medium text-gray-900 ">Last Name</label>
-              <input type="text" id="first-name"
-                class="block p-3 w-full text-sm text-gray-900 bg-gray-200 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500  "
-                placeholder="Bonnie" required>
+            <div class="w-full">
+              <div class="mb-4">
+                <label for="Adres" class=" block mb-2 text-sm font-medium text-gray-900 ">Adres van het project</label>
+                <input type="text" id="first-name" name="adres"
+                  class="block p-3 w-full text-sm text-gray-900 bg-gray-100 rounded-lg border border-gray-300 shadow-sm focus:ring-orange-500 focus:border-orange-500  "
+                  placeholder="Straat + huisnummer, plaats" required>
+              </div>
+              <div>
+                <label for="country" class="block mb-2 text-sm font-medium text-gray-900 ">Wat wil je laten
+                  doen?
+                  *</label>
+                <select id="country" name="klus_type"
+                  class="custom-select block p-3 pr-10 w-full text-sm text-gray-500 bg-gray-100 rounded-lg border border-gray-300 shadow-md hover:shadow-lg focus:ring-orange-500 focus:border-orange-500  "
+                  >
+                  <option value="" disabled selected>Select your choice</option>
+                  <option value="kozijnen-Vervange">Kozijnen Vervangen</option>
+                  <option value="gevelbekleding">Gevelbekleding</option>
+                  <option value="be">Dakkapel Renoveren/Plaatsen</option>
+                  <option value="de">Schuifpui Plaatsen</option>
+                  <option value="de">Spoedgeval</option>
+                  <option value="de">Lets Anders</option>
+                </select>
+
+                <div class="menuFirst mt-4 hidden">
+                  <h3 class="text-md font-semibold mb-3 text-gray-700">Specifieke vragen voor kozijnen:</h2>
+                    <div class="md:flex space-x-5">
+                      <div class="w-full md:w-1/2">
+                        <label for="ramen_deuren" class="block mb-2 text-sm font-medium text-gray-900 ">Hoeveel
+                          ramen/deuren?</label>
+                        <input type="text" id="ramen_deuren" name="ramen_deuren"
+                          class="block p-3 w-full text-sm text-gray-900 bg-gray-100 rounded-lg border border-gray-300 shadow-sm focus:ring-orange-500 focus:border-orange-500  "
+                          placeholder="bijv. 4 ramen, 1 deur" >
+                      </div>
+                      <div class="w-full md:w-1/2">
+                        <label for="huidig_materiaal" class="block mb-2 text-sm font-medium text-gray-900 ">Huidige
+                          materiaal</label>
+                        <select name="huidig_materiaal"
+                          class='custom-select block p-3 pr-10 w-full text-sm text-gray-500 bg-gray-100 rounded-lg border border-gray-300 shadow-md hover:shadow-lg focus:ring-orange-500 focus:border-orange-500  '>
+                          <option value='' disabled selected>Select your choice</option>
+                          <option value='Aluminuim'>Aluminuim</option>
+                          <option value='Hout'>Hout</option>
+                          <option value='Kunststof'>Kunststof</option>
+                        </select>
+                      </div>
+
+                    </div>
+                    <h3 class="text-md mt-3 font-semibold mb-1 text-gray-700">Op welke verdieping(en)?</h2>
+                      <div class=' flex space-x-3'>
+
+                        <div class="flex items-center">
+                          <input id="default-radio-1" type="radio" value="begane_grond" name="verdieping"
+                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 ">
+                          <label for="default-radio-1"
+                            class="ms-2 text-sm font-medium text-gray-700 ">Begane grond</label>
+                        </div>
+                        <div class="flex items-center">
+                          <input id="default-radio-2" type="radio" value="eerste_verdieping" name="verdieping"
+                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 ">
+                          <label for="default-radio-2"
+                            class="ms-2 text-sm font-medium text-gray-700 ">1e verdieping</label>
+                        </div>
+                        <div class="flex items-center">
+                          <input id="default-radio-3" type="radio" value="beide" name="verdieping"
+                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300">
+                          <label for="default-radio-3"
+                            class="ms-2 text-sm font-medium text-gray-700 ">Beide</label>
+                        </div>
+                      </div>
+
+                      <div class="w-full mt-3">
+                        <label for="last-name" class="block mb-2 text-sm font-medium text-gray-900 ">Gewenste
+                          timing</label>
+                        <select name="gewenste_timing"
+                          class='custom-select block p-3 pr-10 w-full text-sm text-gray-500 bg-gray-100 rounded-lg border border-gray-300 shadow-md hover:shadow-lg focus:ring-orange-500 focus:border-orange-500  '>
+                          <option value='' disabled selected>Select your choice</option>
+                          <option value='Aluminuim'>Zo snel mogelijk</option>
+                          <option value='Binnen1'>Binnen 1-2 maanden</option>
+                          <option value='Binnen2'>Binnen 3-6 maanden</option>
+                          <option value='Later'>Later dit jaar</option>
+                        </select>
+                      </div>
+                </div>
+
+                <div class="menuSecond mt-4 hidden">
+                  <h3 class="text-md font-semibold mb-3 text-gray-700">Specifieke vragen voor kozijnen:</h2>
+
+                    <h3 class="text-md mt-3 font-semibold mb-1 text-gray-700">Welke zijde van het huis?</h2>
+                      <div class=' grid grid-cols-1 sm:grid-cols-2 gap-3'>
+
+                        <div class="flex items-center gap-2">
+                          <input id="default-radio2-1" type="radio" value="voorkant" name="gevel_zijde"
+                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 ">
+                          <label for="default-radio2-1"
+                            class="ms-2 text-sm font-medium text-gray-700">Voorkant</label>
+                        </div>
+                        <div class="flex items-center gap-2">
+                          <input id="default-radio2-2" type="radio" value="achterkant" name="gevel_zijde"
+                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 ">
+                          <label for="default-radio2-2"
+                            class="ms-2 text-sm font-medium text-gray-700 ">Achterkant</label>
+                        </div>
+                        <div class="flex items-center gap-2">
+                          <input id="default-radio2-3" type="radio" value="zijkant" name="gevel_zijde"
+                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300">
+                          <label for="default-radio2-3"
+                            class="ms-2 text-sm font-medium text-gray-700 ">
+                            Zijkant</label>
+                        </div>
+                        <div class="flex items-center gap-2">
+                          <input id="default-radio2-4" type="radio" value="rondom" name="gevel_zijde"
+                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300">
+                          <label for="default-radio2-4"
+                            class="ms-2 text-sm font-medium text-gray-700 ">Rondom</label>
+                        </div>
+
+                      </div>
+
+                    <div class="md:flex space-x-5 mt-4">
+                      
+                      <div class="w-full md:w-1/2">
+                        <label for="last-name" class="block mb-2 text-sm font-medium text-gray-900 ">Huidige gevel</label>
+                        <select name="huidige_gevel"
+                          class='custom-select block p-3 pr-10 w-full text-sm text-gray-500 bg-gray-100 rounded-lg border border-gray-300 shadow-md hover:shadow-lg focus:ring-orange-500 focus:border-orange-500  '>
+                          <option value='' disabled selected>Select your choice</option>
+                          <option value='Steen'>Steen</option>
+                          <option value='Hout'>Hout</option>
+                          <option value='Kunststof'>Kunststof</option>
+                          <option value='Abders'>Abders</option>
+                        </select>
+                      </div>
+                      <div class="w-full md:w-1/2 ">
+                        <label for="first-name" class="block mb-2 text-sm font-medium text-gray-900 ">Geschatte oppervlakte</label>
+                        <input type="text" id="first-name" name="geschatte_oppervlakte"
+                          class="block p-3 w-full text-sm text-gray-900 bg-gray-100 rounded-lg border border-gray-300 shadow-sm focus:ring-orange-500 focus:border-orange-500  "
+                          placeholder="bijv. 50 m² of 'weet ik niet'
+                          " >
+                      </div>
+                    </div>
+                    
+
+                      
+                </div>
+
+
+              </div>
             </div>
-            <div>
-              <label for="email" class="block mb-2 text-sm font-medium text-gray-900 ">Your email</label>
-              <input type="text" id="first-name"
-                class="block p-3 w-full text-sm text-gray-900 bg-gray-200 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500  "
-                placeholder="Bonnie" required>
-            </div>
-            <div>
-              <label for="phone-number" class="block mb-2 text-sm font-medium text-gray-900 ">Phone Number</label>
-              <input type="text" id="first-name"
-                class="block p-3 w-full text-sm text-gray-900 bg-gray-200 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500  "
-                placeholder="Bonnie" required>
-            </div>
+            <!-- Popup Container -->
+
+
             <div class="sm:col-span-2">
               <label for="message" class="block mb-2 text-sm font-medium text-gray-900 ">Your message</label>
-              <textarea id="message" rows="6"
-                class="block p-2.5 w-full text-sm  bg-gray-200 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 "
-                placeholder="Leave a comment..."></textarea>
+              <textarea id="message" rows="6" name="message"
+                class="block p-2.5 w-full text-sm  bg-gray-100 rounded-lg shadow-sm border border-gray-300 focus:ring-orange-500 focus:border-orange-500 "
+                placeholder="Leave a comment..." required></textarea>
 
             </div>
             <button type="submit"
@@ -729,7 +882,9 @@
               <div class="flex justify-center items-center w-10 h-10 bg-orange-100 rounded-lg lg:w-16 lg:h-16">
                 <svg class="w-5 h-5 text-orange-500 lg:w-8 lg:h-8" fill="currentColor" viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg">
-                  <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                  <path
+                    d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
+                  </path>
                 </svg>
               </div>
 
@@ -748,13 +903,16 @@
 
 
           </div>
+
           <div class="bg-white rounded-xl">
             <div class="flex items-center space-x-3  p-3 rounded-lg">
               <!-- Icon -->
               <div class="flex justify-center items-center w-10 h-10 bg-orange-100 rounded-lg lg:w-16 lg:h-16">
                 <svg class="w-5 h-5 text-orange-500 lg:w-8 lg:h-8" fill="currentColor" viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+                  <path fill-rule="evenodd"
+                    d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                    clip-rule="evenodd"></path>
                 </svg>
               </div>
 
@@ -769,14 +927,16 @@
             </div>
 
           </div>
-         
+
           <div class="bg-white rounded-xl">
             <div class="flex items-center space-x-3  p-3 rounded-lg">
               <!-- Icon -->
               <div class="flex justify-center items-center w-10 h-10 bg-orange-100 rounded-lg lg:w-16 lg:h-16">
                 <svg class="w-5 h-5 text-orange-500 lg:w-8 lg:h-8" fill="currentColor" viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path>
+                  <path fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                    clip-rule="evenodd"></path>
                 </svg>
               </div>
 
@@ -786,11 +946,11 @@
                 <p class="text-sm">Deze week: 2 plekken vri</p>
                 <p class="text-sm">Volgende week: volgeboekt</p>
                 <p class="text-sm">Winter prep: nu plannen!</p>
-                
-                
-                
-                
-                
+
+
+
+
+
 
               </div>
             </div>
@@ -798,7 +958,7 @@
 
 
           </div>
-          
+
 
           <div class="bg-white rounded-xl">
             <div class="flex items-center space-x-3  p-3 rounded-lg">
@@ -806,7 +966,9 @@
               <div class="flex justify-center items-center w-10 h-10 bg-orange-100 rounded-lg lg:w-16 lg:h-16">
                 <svg class="w-5 h-5 text-orange-500 lg:w-8 lg:h-8" fill="currentColor" viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z" clip-rule="evenodd"></path>
+                  <path fill-rule="evenodd"
+                    d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z"
+                    clip-rule="evenodd"></path>
                 </svg>
               </div>
 
