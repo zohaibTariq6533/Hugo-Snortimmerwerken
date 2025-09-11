@@ -23,6 +23,7 @@
       const menuFirst = document.querySelector(".menuFirst");
       const menuSecond = document.querySelector(".menuSecond");
       const menuThird = document.querySelector(".menuThird");
+      const menuFourth = document.querySelector(".menuFourth");
 
 
       if (!select || !menuFirst || !menuSecond) return;
@@ -32,6 +33,7 @@
         menuFirst.classList.add("hidden");
         menuSecond.classList.add("hidden");
         menuThird.classList.add("hidden");
+        menuFourth.classList.add("hidden");
 
 
         // Then show only the selected one
@@ -42,6 +44,9 @@
         }
         else if (select.value === "dakkapel") {
           menuThird.classList.remove("hidden");
+        }
+        else if (select.value === "Schuifpui") {
+          menuFourth.classList.remove("hidden");
         };
       }
 
