@@ -695,9 +695,10 @@
       </div>
       <div class="grid grid-cols-1 lg:gap-8 lg:grid-cols-3">
         <div class="col-span-2 mb-8 lg:mb-0 bg-white p-4 rounded-xl">
-          <form action="https://api.web3forms.com/submit" method="POST" class="flex flex-col gap-4 mx-auto max-w-screen-md">
-             <input type="hidden" name="access_key" value="598a24b8-e901-4789-a950-d06bb15d30ed">
-              <input type="hidden" name="redirect" value="http://hugo-snortimmerwerken.vercel.app/thank-you/">
+          <form action="https://api.web3forms.com/submit" method="POST"
+            class="flex flex-col gap-4 mx-auto max-w-screen-md">
+            <input type="hidden" name="access_key" value="598a24b8-e901-4789-a950-d06bb15d30ed">
+            <input type="hidden" name="redirect" value="http://hugo-snortimmerwerken.vercel.app/thank-you/">
 
             <div class="md:flex space-x-5">
               <div class="w-full md:w-1/2">
@@ -725,12 +726,11 @@
                   doen?
                   *</label>
                 <select id="country" name="klus_type"
-                  class="custom-select block p-3 pr-10 w-full text-sm text-gray-500 bg-gray-100 rounded-lg border border-gray-300 shadow-md hover:shadow-lg focus:ring-orange-500 focus:border-orange-500  "
-                  >
+                  class="custom-select block p-3 pr-10 w-full text-sm text-gray-500 bg-gray-100 rounded-lg border border-gray-300 shadow-md hover:shadow-lg focus:ring-orange-500 focus:border-orange-500  ">
                   <option value="" disabled selected>Select your choice</option>
                   <option value="kozijnen-Vervange">Kozijnen Vervangen</option>
                   <option value="gevelbekleding">Gevelbekleding</option>
-                  <option value="be">Dakkapel Renoveren/Plaatsen</option>
+                  <option value="dakkapel">Dakkapel Renoveren/Plaatsen</option>
                   <option value="de">Schuifpui Plaatsen</option>
                   <option value="de">Spoedgeval</option>
                   <option value="de">Lets Anders</option>
@@ -738,13 +738,13 @@
 
                 <div class="menuFirst mt-4 hidden">
                   <h3 class="text-md font-semibold mb-3 text-gray-700">Specifieke vragen voor kozijnen:</h2>
-                    <div class="md:flex space-x-5">
+                    <div class="md:flex space-y-4 md:space-x-5">
                       <div class="w-full md:w-1/2">
                         <label for="ramen_deuren" class="block mb-2 text-sm font-medium text-gray-900 ">Hoeveel
                           ramen/deuren?</label>
                         <input type="text" id="ramen_deuren" name="ramen_deuren"
                           class="block p-3 w-full text-sm text-gray-900 bg-gray-100 rounded-lg border border-gray-300 shadow-sm focus:ring-orange-500 focus:border-orange-500  "
-                          placeholder="bijv. 4 ramen, 1 deur" >
+                          placeholder="bijv. 4 ramen, 1 deur">
                       </div>
                       <div class="w-full md:w-1/2">
                         <label for="huidig_materiaal" class="block mb-2 text-sm font-medium text-gray-900 ">Huidige
@@ -760,25 +760,24 @@
 
                     </div>
                     <h3 class="text-md mt-3 font-semibold mb-1 text-gray-700">Op welke verdieping(en)?</h2>
-                      <div class=' flex space-x-3'>
+                      <div class=' md:flex space-y-3 md:space-x-3'>
 
                         <div class="flex items-center">
                           <input id="default-radio-1" type="radio" value="begane_grond" name="verdieping"
                             class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 ">
-                          <label for="default-radio-1"
-                            class="ms-2 text-sm font-medium text-gray-700 ">Begane grond</label>
+                          <label for="default-radio-1" class="ms-2 text-sm font-medium text-gray-700 ">Begane
+                            grond</label>
                         </div>
                         <div class="flex items-center">
                           <input id="default-radio-2" type="radio" value="eerste_verdieping" name="verdieping"
                             class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 ">
-                          <label for="default-radio-2"
-                            class="ms-2 text-sm font-medium text-gray-700 ">1e verdieping</label>
+                          <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-700 ">1e
+                            verdieping</label>
                         </div>
-                        <div class="flex items-center">
+                        <div class=" items-center">
                           <input id="default-radio-3" type="radio" value="beide" name="verdieping"
                             class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300">
-                          <label for="default-radio-3"
-                            class="ms-2 text-sm font-medium text-gray-700 ">Beide</label>
+                          <label for="default-radio-3" class="ms-2 text-sm font-medium text-gray-700 ">Beide</label>
                         </div>
                       </div>
 
@@ -805,8 +804,7 @@
                         <div class="flex items-center gap-2">
                           <input id="default-radio2-1" type="radio" value="voorkant" name="gevel_zijde"
                             class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 ">
-                          <label for="default-radio2-1"
-                            class="ms-2 text-sm font-medium text-gray-700">Voorkant</label>
+                          <label for="default-radio2-1" class="ms-2 text-sm font-medium text-gray-700">Voorkant</label>
                         </div>
                         <div class="flex items-center gap-2">
                           <input id="default-radio2-2" type="radio" value="achterkant" name="gevel_zijde"
@@ -817,43 +815,97 @@
                         <div class="flex items-center gap-2">
                           <input id="default-radio2-3" type="radio" value="zijkant" name="gevel_zijde"
                             class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300">
-                          <label for="default-radio2-3"
-                            class="ms-2 text-sm font-medium text-gray-700 ">
+                          <label for="default-radio2-3" class="ms-2 text-sm font-medium text-gray-700 ">
                             Zijkant</label>
                         </div>
                         <div class="flex items-center gap-2">
                           <input id="default-radio2-4" type="radio" value="rondom" name="gevel_zijde"
                             class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300">
-                          <label for="default-radio2-4"
-                            class="ms-2 text-sm font-medium text-gray-700 ">Rondom</label>
+                          <label for="default-radio2-4" class="ms-2 text-sm font-medium text-gray-700 ">Rondom</label>
                         </div>
 
                       </div>
 
-                    <div class="md:flex space-x-5 mt-4">
-                      
-                      <div class="w-full md:w-1/2">
-                        <label for="last-name" class="block mb-2 text-sm font-medium text-gray-900 ">Huidige gevel</label>
-                        <select name="huidige_gevel"
-                          class='custom-select block p-3 pr-10 w-full text-sm text-gray-500 bg-gray-100 rounded-lg border border-gray-300 shadow-md hover:shadow-lg focus:ring-orange-500 focus:border-orange-500  '>
-                          <option value='' disabled selected>Select your choice</option>
-                          <option value='Steen'>Steen</option>
-                          <option value='Hout'>Hout</option>
-                          <option value='Kunststof'>Kunststof</option>
-                          <option value='Abders'>Abders</option>
-                        </select>
-                      </div>
-                      <div class="w-full md:w-1/2 ">
-                        <label for="first-name" class="block mb-2 text-sm font-medium text-gray-900 ">Geschatte oppervlakte</label>
-                        <input type="text" id="first-name" name="geschatte_oppervlakte"
-                          class="block p-3 w-full text-sm text-gray-900 bg-gray-100 rounded-lg border border-gray-300 shadow-sm focus:ring-orange-500 focus:border-orange-500  "
-                          placeholder="bijv. 50 m² of 'weet ik niet'
-                          " >
-                      </div>
-                    </div>
-                    
+                      <div class="md:flex space-y-4 md:space-x-5 mt-4">
 
-                      
+                        <div class="w-full md:w-1/2">
+                          <label for="last-name" class="block mb-2 text-sm font-medium text-gray-900 ">Huidige
+                            gevel</label>
+                          <select name="huidige_gevel"
+                            class='custom-select block p-3 pr-10 w-full text-sm text-gray-500 bg-gray-100 rounded-lg border border-gray-300 shadow-md hover:shadow-lg focus:ring-orange-500 focus:border-orange-500  '>
+                            <option value='' disabled selected>Select your choice</option>
+                            <option value='Steen'>Steen</option>
+                            <option value='Hout'>Hout</option>
+                            <option value='Kunststof'>Kunststof</option>
+                            <option value='Abders'>Abders</option>
+                          </select>
+                        </div>
+                        <div class="w-full md:w-1/2 ">
+                          <label for="first-name" class="block mb-2 text-sm font-medium text-gray-900 ">Geschatte
+                            oppervlakte</label>
+                          <input type="text" id="first-name" name="geschatte_oppervlakte"
+                            class="block p-3 w-full text-sm text-gray-900 bg-gray-100 rounded-lg border border-gray-300 shadow-sm focus:ring-orange-500 focus:border-orange-500  "
+                            placeholder="bijv. 50 m² of 'weet ik niet'
+                          ">
+                        </div>
+                      </div>
+
+
+
+                </div>
+
+                <div class="menuThird mt-4 hidden space-x-3">
+                  <h3 class="text-md font-semibold mb-3 text-gray-700">Specifieke vragen voor kozijnen:</h2>
+
+                    
+                      <div class='space-y-2'>
+                        <h3 class="text-md mt-3 font-semibold mb-1 text-gray-700">Wat wilt u precies?</h2>
+                        <div class="flex items-center">
+                          <input id="default-radio3-1" type="radio" value="Bestaande dakkapel renoveren" name="Wat wilt u precies?"
+                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 ">
+                          <label for="default-radio3-1" class="ms-2 text-sm font-medium text-gray-700 ">Bestaande dakkapel renoveren</label>
+                        </div>
+                        <div class="flex items-center">
+                          <input id="default-radio3-2" type="radio" value="Nieuwe dakkapel plaatsen" name="Wat wilt u precies?"
+                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 ">
+                          <label for="default-radio3-2" class="ms-2 text-sm font-medium text-gray-700 ">Nieuwe dakkapel plaatsen</label>
+                        </div>
+                        <div class="flex items-center">
+                          <input id="default-radio3-3" type="radio" value="Weet ik nog niet zeker" name="Wat wilt u precies?"
+                            class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300">
+                          <label for="default-radio3-3" class="ms-2 text-sm font-medium text-gray-700 ">Weet ik nog niet zeker</label>
+                        </div>
+                      </div>
+
+                      <div class="md:flex space-y-4 md:space-x-5 mt-4">
+                        
+                        <div class="w-full md:w-1/2">
+                          <label for="kant" class="block mb-2 text-sm font-medium text-gray-900 ">Aan welke kant van het huis?</label>
+                          <select name="kant"
+                            class='custom-select block p-3 pr-10 w-full text-sm text-gray-500 bg-gray-100 rounded-lg border border-gray-300 shadow-md hover:shadow-lg focus:ring-orange-500 focus:border-orange-500  '>
+                            <option value='' disabled selected>Select your choice</option>
+                            <option value='Voorkant'>Voorkant</option>
+                            <option value='Achterkant'>Achterkant</option>
+                            <option value='Linkerzijde'>Linkerzijde</option>
+                            <option value='Rechterzijde'>Rechterzijde</option>
+                          </select>
+                        </div>
+                        <div class="w-full md:w-1/2">
+                          <label for="Huidige staat" class="block mb-2 text-sm font-medium text-gray-900 ">Huidige staat (bij renovatie)</label>
+                           <select name="Huidige staat" 
+                            class='custom-select block p-3 pr-10 w-full text-sm text-gray-500 bg-gray-100 rounded-lg border border-gray-300 shadow-md hover:shadow-lg focus:ring-orange-500 focus:border-orange-500  '>
+                            <option value='' disabled selected>Hoe is de staat?</option>
+                            <option value='Nog Redelijk'>Nog Redelijk</option>
+                            <option value='wat ounderhoud nodig'>wat ounderhoud nodig</option>
+                            <option value='Moet echt vervangen'>Moet echt vervangen</option>
+                            <option value='N.V.T (nieuwe kapel)'>N.V.T (nieuwe kapel)</option>
+                          </select>
+                        </div>
+
+                      </div>
+
+
+                
                 </div>
 
 

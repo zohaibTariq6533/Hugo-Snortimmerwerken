@@ -22,6 +22,8 @@
       const select = document.getElementById("country");
       const menuFirst = document.querySelector(".menuFirst");
       const menuSecond = document.querySelector(".menuSecond");
+      const menuThird = document.querySelector(".menuThird");
+
 
       if (!select || !menuFirst || !menuSecond) return;
 
@@ -29,6 +31,8 @@
         // Hide all first
         menuFirst.classList.add("hidden");
         menuSecond.classList.add("hidden");
+        menuThird.classList.add("hidden");
+
 
         // Then show only the selected one
         if (select.value === "kozijnen-Vervange") {
@@ -36,6 +40,9 @@
         } else if (select.value === "gevelbekleding") {
           menuSecond.classList.remove("hidden");
         }
+        else if (select.value === "dakkapel") {
+          menuThird.classList.remove("hidden");
+        };
       }
 
       select.addEventListener("change", updateMenus);
