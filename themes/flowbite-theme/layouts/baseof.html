@@ -54,6 +54,23 @@
       // Initialize on load
       updateMenus();
     })();
+
+    // Mobile menu toggle functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const mobileMenuButton = document.querySelector('[data-collapse-toggle="navbar-sticky"]');
+      const mobileMenu = document.getElementById('navbar-sticky');
+      
+      if (mobileMenuButton && mobileMenu) {
+        mobileMenuButton.addEventListener('click', function() {
+          // Toggle the hidden class
+          mobileMenu.classList.toggle('hidden');
+          
+          // Update aria-expanded attribute
+          const isExpanded = !mobileMenu.classList.contains('hidden');
+          mobileMenuButton.setAttribute('aria-expanded', isExpanded);
+        });
+      }
+    });
   </script>
 </body>
 

@@ -1,9 +1,9 @@
 {{ define "main" }}
 <div class="">
-  <section class=" py-5 h-[100vh] flex">
+  <section class=" py-5 h-[100vh] 2xl:h-[80vh] text-gray-400  flex">
     <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-4 xl:gap-0 lg:py-16 lg:grid-cols-12  flex items-center">
       <div class="mr-auto place-self-center lg:col-span-7  px-5">
-        <h1 class="max-w-2xl mb-4 text-4xl md:text-5xl xl:text-6xl font-extrabold leading-none text-slate-700">
+        <h1 class="max-w-2xl mb-4  text-4xl md:text-5xl xl:text-6xl font-extrabold leading-none text-slate-700">
           {{.Params.hero_section}}
           <span class="text-[#ed5821]">{{.Params.hero_section2}}</span>
         </h1>
@@ -68,7 +68,7 @@
             <p class="text-gray-400 px-2">(42 Review)</p>
           </div>
           <blockquote>
-            <p class="text-sm text-gray-700 ">"Flowbite is just awesome. It contains tons of
+            <p class="text-xs md:text-sm text-gray-700 ">"Flowbite is just awesome. It contains tons of
               predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your
               next SaaS application."</p>
           </blockquote>
@@ -96,7 +96,7 @@
     <div class="container mx-auto px-8">
       <!-- Header Section -->
       <div class="text-center mb-12 ">
-        <h2 class="text-4xl font-bold text-black mb-4">Jurjen's specialiteiten</h2>
+        <h2 class="text-4xl font-bold text-black my-8">Jurjen's specialiteiten</h2>
         <p class="text-lg text-gray-700 max-w-2xl mx-auto">Deze klussen doen wij het vaakst sinds 2019. Jurjen komt
           eerst
           langs voor een vrijblijvende prijsindicatie, daarna krijgt u een duidelijke offerte.
@@ -105,84 +105,89 @@
 
       <!-- Cards Section -->
       <div class="flex justify-center mt-5 w-full  py-8 px-6">
-        <div class="grid w-full gap-5  grid-cols-1 lg:grid-cols-2">
-          <div
-            class="w-full max-w-md mx-auto bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden group">
-            <a href="#" class="">
-              <img class="rounded-t-lg w-full h-56 object-cover transition-transform duration-300 group-hover:scale-105"
-                alt="" src="card-img-2.jpg" />
-            </a>
-            <div class="p-5">
-              <div class="flex items-center gap-3 mb-3">
-                <span
-                  class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-orange-100 text-orange-600">
-                  <i class="fa-solid fa-house"></i>
-                </span>
-                <h5 class="text-xl font-semibold text-slate-800">Kozijnen vervangen</h5>
-              </div>
-              <p class="text-gray-600 text-base leading-relaxed mb-4">
-                Van oude houten kozijnen naar moderne kunststof. Beter geïsoleerd, geen onderhoud meer nodig.
-              </p>
-              <ul class="space-y-2 mb-6">
-                <li class="flex items-center text-gray-700"><span
-                    class="h-2 w-2 rounded-full bg-orange-500 mr-3"></span>Houten kozijnen eruit</li>
-                <li class="flex items-center text-gray-700"><span
-                    class="h-2 w-2 rounded-full bg-orange-500 mr-3"></span>Kunststof kozijnen erin</li>
-                <li class="flex items-center text-gray-700"><span
-                    class="h-2 w-2 rounded-full bg-orange-500 mr-3"></span>Direct warmer huis</li>
-                <li class="flex items-center text-gray-700"><span
-                    class="h-2 w-2 rounded-full bg-orange-500 mr-3"></span>Geen verfwerk meer</li>
-              </ul>
-              <a href="#"
-                class="w-full inline-flex items-center justify-center px-6 py-3 text-base font-medium rounded-xl border border-gray-300 text-slate-700 hover:bg-orange-700 hover:text-white group-hover:bg-orange-600 group-hover:text-white transition">
-                Meer weten
-                <svg class="w-4 h-4 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                  viewBox="0 0 14 10">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M1 5h12m0 0L9 1m4 4L9 9" />
-                </svg>
+        <div class="flex flex-col lg:flex-row w-full gap-8 justify-center items-center">
+          <div class="space-y-8">
+            <div
+              class="w-full max-w-md mx-auto bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden group">
+              <a href="#" class="">
+                <img
+                  class="rounded-t-lg w-full h-56 object-cover transition-transform duration-300 group-hover:scale-105"
+                  alt="" src="card-img-2.jpg" />
               </a>
+              <div class="p-5">
+                <div class="flex items-center gap-3 mb-3">
+                  <span
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-orange-100 text-orange-600">
+                    <i class="fa-solid fa-house"></i>
+                  </span>
+                  <h5 class="text-xl font-semibold text-slate-800">Kozijnen vervangen</h5>
+                </div>
+                <p class="text-gray-600 text-base leading-relaxed mb-4">
+                  Van oude houten kozijnen naar moderne kunststof. Beter geïsoleerd, geen onderhoud meer nodig.
+                </p>
+                <ul class="space-y-2 mb-6">
+                  <li class="flex items-center text-gray-700"><span
+                      class="h-2 w-2 rounded-full bg-orange-500 mr-3"></span>Houten kozijnen eruit</li>
+                  <li class="flex items-center text-gray-700"><span
+                      class="h-2 w-2 rounded-full bg-orange-500 mr-3"></span>Kunststof kozijnen erin</li>
+                  <li class="flex items-center text-gray-700"><span
+                      class="h-2 w-2 rounded-full bg-orange-500 mr-3"></span>Direct warmer huis</li>
+                  <li class="flex items-center text-gray-700"><span
+                      class="h-2 w-2 rounded-full bg-orange-500 mr-3"></span>Geen verfwerk meer</li>
+                </ul>
+                <a href="#"
+                  class="w-full inline-flex items-center justify-center px-6 py-3 text-base font-medium rounded-xl border border-gray-300 text-slate-700 hover:bg-orange-700 hover:text-white group-hover:bg-orange-600 group-hover:text-white transition">
+                  Meer weten
+                  <svg class="w-4 h-4 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M1 5h12m0 0L9 1m4 4L9 9" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div
+              class="w-full max-w-md mx-auto bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden group">
+              <a href="#" class="">
+                <img
+                  class="rounded-t-lg w-full h-56 object-cover transition-transform duration-300 group-hover:scale-105"
+                  alt="" src="card-img-3.webp" />
+              </a>
+              <div class="p-5">
+                <div class="flex items-center gap-3 mb-3">
+                  <span
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-orange-100 text-orange-600">
+                    <i class="fa-solid fa-house"></i>
+                  </span>
+                  <h5 class="text-xl font-semibold text-slate-800">Kozijnen vervangen</h5>
+                </div>
+                <p class="text-gray-600 text-base leading-relaxed mb-4">
+                  Van oude houten kozijnen naar moderne kunststof. Beter geïsoleerd, geen onderhoud meer nodig.
+                </p>
+                <ul class="space-y-2 mb-6">
+                  <li class="flex items-center text-gray-700"><span
+                      class="h-2 w-2 rounded-full bg-orange-500 mr-3"></span>Houten kozijnen eruit</li>
+                  <li class="flex items-center text-gray-700"><span
+                      class="h-2 w-2 rounded-full bg-orange-500 mr-3"></span>Kunststof kozijnen erin</li>
+                  <li class="flex items-center text-gray-700"><span
+                      class="h-2 w-2 rounded-full bg-orange-500 mr-3"></span>Direct warmer huis</li>
+                  <li class="flex items-center text-gray-700"><span
+                      class="h-2 w-2 rounded-full bg-orange-500 mr-3"></span>Geen verfwerk meer</li>
+                </ul>
+                <a href="#"
+                  class="w-full inline-flex items-center justify-center px-6 py-3 text-base font-medium rounded-xl border border-gray-300 text-slate-700 hover:bg-orange-700 hover:text-white group-hover:bg-orange-600 group-hover:text-white transition">
+                  Meer weten
+                  <svg class="w-4 h-4 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M1 5h12m0 0L9 1m4 4L9 9" />
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
-          <div
-            class="w-full max-w-md mx-auto bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden group">
-            <a href="#" class="">
-              <img class="rounded-t-lg w-full h-56 object-cover transition-transform duration-300 group-hover:scale-105"
-                alt="" src="card-img-3.webp" />
-            </a>
-            <div class="p-5">
-              <div class="flex items-center gap-3 mb-3">
-                <span
-                  class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-orange-100 text-orange-600">
-                  <i class="fa-solid fa-house"></i>
-                </span>
-                <h5 class="text-xl font-semibold text-slate-800">Kozijnen vervangen</h5>
-              </div>
-              <p class="text-gray-600 text-base leading-relaxed mb-4">
-                Van oude houten kozijnen naar moderne kunststof. Beter geïsoleerd, geen onderhoud meer nodig.
-              </p>
-              <ul class="space-y-2 mb-6">
-                <li class="flex items-center text-gray-700"><span
-                    class="h-2 w-2 rounded-full bg-orange-500 mr-3"></span>Houten kozijnen eruit</li>
-                <li class="flex items-center text-gray-700"><span
-                    class="h-2 w-2 rounded-full bg-orange-500 mr-3"></span>Kunststof kozijnen erin</li>
-                <li class="flex items-center text-gray-700"><span
-                    class="h-2 w-2 rounded-full bg-orange-500 mr-3"></span>Direct warmer huis</li>
-                <li class="flex items-center text-gray-700"><span
-                    class="h-2 w-2 rounded-full bg-orange-500 mr-3"></span>Geen verfwerk meer</li>
-              </ul>
-              <a href="#"
-                class="w-full inline-flex items-center justify-center px-6 py-3 text-base font-medium rounded-xl border border-gray-300 text-slate-700 hover:bg-orange-700 hover:text-white group-hover:bg-orange-600 group-hover:text-white transition">
-                Meer weten
-                <svg class="w-4 h-4 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                  viewBox="0 0 14 10">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M1 5h12m0 0L9 1m4 4L9 9" />
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div
+          <div class="space-y-8">
+            <div
             class="w-full max-w-md mx-auto bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden group">
             <a href="#" class="">
               <img class="rounded-t-lg w-full h-56 object-cover transition-transform duration-300 group-hover:scale-105"
@@ -257,6 +262,7 @@
                 </svg>
               </a>
             </div>
+          </div>
           </div>
         </div>
       </div>
@@ -765,7 +771,8 @@
                         <div class="flex items-center">
                           <input id="default-radio-1" type="radio" value="Begane grond" name="verdieping"
                             class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 ">
-                          <label for="default-radio-1" class="ms-2 text-sm font-medium text-gray-700 ">Begane grond</label>
+                          <label for="default-radio-1" class="ms-2 text-sm font-medium text-gray-700 ">Begane
+                            grond</label>
                         </div>
                         <div class="flex items-center">
                           <input id="default-radio-2" type="radio" value="1e verdieping" name="verdieping"
@@ -925,7 +932,8 @@
                       </div>
 
                       <div class="w-full md:w-1/2">
-                        <label for="hoogte" class="block mb-2 text-sm font-medium text-gray-900 "> Gewenste hoogte</label>
+                        <label for="hoogte" class="block mb-2 text-sm font-medium text-gray-900 "> Gewenste
+                          hoogte</label>
                         <input type="text" id="hoogte" name="hoogte"
                           class="block p-3 w-full text-sm text-gray-900 bg-gray-100 rounded-lg border border-gray-300 shadow-sm focus:ring-orange-500 focus:border-orange-500  "
                           placeholder="bijv. 2.2 meter of 'standaard'
@@ -934,38 +942,42 @@
 
                     </div>
 
-                    
-                      
-                      <div class=' space-y-2 '>
-                        <h3 class="text-md  font-semibold mb-1 text-gray-700">Waar komt de schuifpui?</h2>
+
+
+                    <div class=' space-y-2 '>
+                      <h3 class="text-md  font-semibold mb-1 text-gray-700">Waar komt de schuifpui?</h2>
                         <div class="flex items-center">
                           <input id="default-radio4-1" type="radio" value="Woonkamer naar tuin" name="schuifpui"
                             class="w-4 h-4 text-blue-600 bg-gray-100 border-orange-300 ">
-                          <label for="default-radio4-1" class="ms-2 text-sm font-medium text-gray-700 ">Woonkamer naar tuin</label>
+                          <label for="default-radio4-1" class="ms-2 text-sm font-medium text-gray-700 ">Woonkamer naar
+                            tuin</label>
                         </div>
                         <div class="flex items-center">
                           <input id="default-radio4-2" type="radio" value="Keuken naar terras" name="schuifpui"
                             class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 ">
-                          <label for="default-radio4-2" class="ms-2 text-sm font-medium text-gray-700 ">Keuken naar terras</label>
+                          <label for="default-radio4-2" class="ms-2 text-sm font-medium text-gray-700 ">Keuken naar
+                            terras</label>
                         </div>
                         <div class=" items-center">
                           <input id="default-radio4-3" type="radio" value="Andere locatie" name="schuifpui"
                             class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300">
-                          <label for="default-radio4-3" class="ms-2 text-sm font-medium text-gray-700 ">Andere locatie</label>
+                          <label for="default-radio4-3" class="ms-2 text-sm font-medium text-gray-700 ">Andere
+                            locatie</label>
                         </div>
-                      </div>
+                    </div>
 
-                      <div class="w-full mt-3">
-                        <label for="wat_zit_er_nu" class="block mb-2 text-sm font-medium text-gray-900 ">Wat zit er nu?</label>
-                        <select name="wat zit er nu"
-                          class='custom-select block p-3 pr-10 w-full text-sm text-gray-500 bg-gray-100 rounded-lg border border-gray-300 shadow-md hover:shadow-lg focus:ring-orange-500 focus:border-orange-500  '>
-                          <option value='' disabled selected>Select your choice</option>
-                          <option value='Openslaande deuren'>Openslaande deuren</option>
-                          <option value='Raam'>Raam</option>
-                          <option value='Muur (moet doorgebroken worden)'>Muur (moet doorgebroken worden)</option>
-                          <option value='Nieuwbouw'>Nieuwbouw</option>
-                        </select>
-                      </div>
+                    <div class="w-full mt-3">
+                      <label for="wat_zit_er_nu" class="block mb-2 text-sm font-medium text-gray-900 ">Wat zit er
+                        nu?</label>
+                      <select name="wat zit er nu"
+                        class='custom-select block p-3 pr-10 w-full text-sm text-gray-500 bg-gray-100 rounded-lg border border-gray-300 shadow-md hover:shadow-lg focus:ring-orange-500 focus:border-orange-500  '>
+                        <option value='' disabled selected>Select your choice</option>
+                        <option value='Openslaande deuren'>Openslaande deuren</option>
+                        <option value='Raam'>Raam</option>
+                        <option value='Muur (moet doorgebroken worden)'>Muur (moet doorgebroken worden)</option>
+                        <option value='Nieuwbouw'>Nieuwbouw</option>
+                      </select>
+                    </div>
                 </div>
 
               </div>
