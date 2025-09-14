@@ -1,0 +1,402 @@
+{{ define "main" }}
+<section class="min-h-screen flex items-center justify-center text-gray-400">
+    <div class="w-full px-4 py-8 mx-auto max-w-screen-xl">
+        <!-- Mobile Layout: Stack vertically -->
+        <div class="flex flex-col lg:hidden items-center justify-center">
+            <!-- 1. Back to Home Button (above image) -->
+            <div class="mb-4">
+                <a href="/"
+                    class="inline-flex items-center text-gray-600 hover:text-[#ed5821] transition-colors duration-200 px-3 py-2 rounded-lg">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+                    </svg>
+                    Terug naar home
+                </a>
+            </div>
+
+            <!-- 2. Image Banner -->
+            <div class="mb-8 w-full max-w-md">
+                <div class="w-full h-64 md:h-80 bg-gray-100 rounded-lg overflow-hidden">
+                    <img src="/card-img-1.jpg" alt="construction man" class="w-full h-full object-cover">
+                </div>
+            </div>
+
+            <!-- 3. Text and Buttons -->
+            <div class="text-center px-2 max-w-2xl">
+                <h1 class="mb-4 text-3xl md:text-4xl font-extrabold leading-none text-slate-700">
+                    Gevelbekleding
+
+                </h1>
+                <p class="mb-6 font-regular text-gray-400 text-sm md:text-base">Uw gevel weer helemaal op orde. Jurjen
+                    plaatst kunststof bekleding die jarenlang mooi blijft. Geen gedoe meer met schilderen.
+
+
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-3 justify-center">
+                    <a href="#" class="inline-flex items-center justify-center text-white bg-[#ed5821] hover:bg-orange-700
+               font-medium rounded-lg text-sm px-4 py-3 transition">
+                        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
+                            </path>
+                        </svg>
+                        Bel direct: 06 12 34 56 78
+                    </a>
+
+                    <a href="#" class="inline-flex items-center justify-center px-6 py-3 
+              text-sm font-medium rounded-lg border border-[#ed5821] text-[#ed5821] 
+              transition-all duration-300 ease-in-out
+              hover:bg-[#ed5821] hover:text-white focus:ring-2 focus:outline-none focus:ring-[#ed5821]">
+                        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                        </svg>
+                        Offerte aanvragen
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Desktop Layout: Side by side -->
+        <div class="hidden lg:grid lg:grid-cols-12 lg:gap-8 lg:items-center">
+            <div class="lg:col-span-7 px-5">
+                <!-- Back to Home Button -->
+                <div class="mb-6">
+                    <a href="/"
+                        class="inline-flex items-center text-gray-600 hover:text-[#ed5821] transition-colors duration-200">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+                        </svg>
+                        Terug naar home
+                    </a>
+                </div>
+
+                <h1 class="max-w-2xl mb-4 text-4xl xl:text-4xl font-extrabold leading-none text-slate-700">
+                    Gevelbekleding
+                </h1>
+                <p class="max-w-xl mb-6 font-regular text-gray-400 text-md lg:text-xl">Uw gevel weer helemaal op orde.
+                    Jurjen plaatst kunststof bekleding die jarenlang mooi blijft. Geen gedoe meer met schilderen.
+
+
+                </p>
+
+                <div class="space-x-3">
+                    <a href="#" class="inline-flex items-center text-white bg-[#ed5821] hover:bg-orange-700
+               font-medium rounded-lg text-sm px-4 py-3 transition">
+                        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
+                            </path>
+                        </svg>
+                        Bel direct: 06 12 34 56 78
+                    </a>
+
+                    <a href="#" class="mt-4 md:mt-0 relative inline-flex items-center justify-center px-6 py-3 
+              text-sm font-medium rounded-lg border border-[#ed5821] text-[#ed5821] 
+              transition-all duration-300 ease-in-out
+              hover:bg-[#ed5821] hover:text-white focus:ring-2 focus:outline-none focus:ring-[#ed5821]">
+                        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                        </svg>
+                        Offerte aanvragen
+                    </a>
+                </div>
+            </div>
+
+            <div class="lg:col-span-5 bg-gray-100 h-100 rounded-lg overflow-hidden">
+                <img src="/card-img-1.jpg" alt="construction man" class="w-full h-full object-cover">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-gray-50">
+    <div class="py-8 px-4 mx-auto flex flex-col justify-center items-center max-w-screen-xl sm:py-16 lg:px-6">
+        <div class="w-full mb-8 lg:mb-16">
+            <h2 class="text-3xl tracking-tight font-extrabold text-gray-700 text-center">Hoe werkt het? </h2>
+        </div>
+        <!-- Responsive Grid Layout -->
+        <div
+            class="flex flex-col sm:flex-row sm:flex-wrap justify-center items-center gap-6 w-full max-w-7xl mx-auto px-4">
+            <!-- Card 1 -->
+            <div
+                class="bg-white rounded-2xl shadow-lg px-6 py-8 text-center hover:shadow-2xl transition-shadow duration-300 w-xs ">
+
+                <!-- Icon (circle background like your screenshot) -->
+                <div class="flex justify-center mb-6">
+                    <div class="w-16 h-17 bg-[#FDEEE8] rounded-xl flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-9 h-9 text-[#ed5821]" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Title -->
+                <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-2">
+                    Kunststof gevelbekleding
+                </h3>
+
+                <!-- Subtitle -->
+                <p class="text-gray-400 text-sm mb-2">
+                    Onderhoudsvrij, in vele kleuren verkrijgbaar
+                </p>
+
+                <!-- Price -->
+                <p class="text-[#ed5821] text-2xl font-bold mt-6 ">
+                    €45-65/m²
+                </p>
+
+                <!-- Button -->
+                <button
+                    class="bg-gray-100 hover:bg-orange-100 text-gray-800 font-medium mt-5 py-3 w-full rounded-xl transition-colors duration-300">
+                    Meer informatie
+                </button>
+            </div>
+
+            <!-- Card 2 -->
+            <div
+                class="bg-white rounded-2xl shadow-lg px-6 py-8 text-center hover:shadow-2xl transition-shadow duration-300 w-xs ">
+
+                <!-- Icon (circle background like your screenshot) -->
+                <div class="flex justify-center mb-6">
+                    <div class="w-16 h-17 bg-[#FDEEE8] rounded-xl flex items-center justify-center">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-9 h-9 text-[#ed5821]" viewBox="0 0 100 100">
+                            <g id="gisColor0" transform="translate(-27.789 -4888.35) scale(4.7619)">
+                                <g id="gisColor1" display="inline" transform="translate(-318 -262)">
+                                    <g id="gisColor2">
+                                        <path id="gisColor3" fill="#ed5821" fill-opacity="1" stroke="none"
+                                            stroke-width="1.105"
+                                            d="M333.191 1290.764c-5.526 0-9.355 4.421-9.355 6.632c0 2.21 1.105 3.868 3.315 3.868s3.316.553 3.316 2.21c0 2.211 1.658 3.869 3.869 3.869c7.184 0 10.5-3.869 10.5-7.737c0-6.632-5.013-8.842-11.645-8.842zm-1.475 2.21a1.382 1.382 0 1 1 0 2.764a1.382 1.382 0 0 1 0-2.764zm4.421 0a1.382 1.382 0 1 1 0 2.764a1.382 1.382 0 0 1 0-2.764zm4.001 2.211a1.382 1.382 0 1 1 0 2.763a1.382 1.382 0 0 1 0-2.763zm-12.29.265a1.382 1.382 0 1 1 0 2.764a1.382 1.382 0 0 1 0-2.764zm7.328 6.367c.915 0 1.658.742 1.658 1.657c0 .916-1.163 1.658-2.078 1.658a1.658 1.658 0 0 1-1.658-1.658c0-.915 1.162-1.657 2.078-1.657z"
+                                            color="currentColor" display="inline" visibility="visible" />
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Title -->
+                <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-2">
+                    Hout-look gevelbekleding
+                </h3>
+
+                <!-- Subtitle -->
+                <p class="text-gray-400 text-sm mb-2">
+                    Natuurlijke uitstraling zonder onderhoud
+                </p>
+
+                <!-- Price -->
+                <p class="text-[#ed5821] text-2xl font-bold mt-6 ">
+                    €55-75/m²
+                </p>
+
+                <!-- Button -->
+                <button
+                    class="bg-gray-100 hover:bg-orange-100 text-gray-800 font-medium mt-5 py-3 w-full rounded-xl transition-colors duration-300">
+                    Meer informatie
+                </button>
+            </div>
+
+            <!-- Card 3 -->
+            <div
+                class="bg-white rounded-2xl shadow-lg px-6 py-8 text-center hover:shadow-2xl transition-shadow duration-300 w-xs ">
+
+                <!-- Icon (circle background like your screenshot) -->
+                <div class="flex justify-center mb-6">
+                    <div class="w-16 h-17 bg-[#FDEEE8] rounded-xl flex items-center justify-center">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-9 h-9 text-[#ed5821]" viewBox="0 0 432 432">
+                            <path fill="#ed5821"
+                                d="M213.5 3q88.5 0 151 62.5T427 216t-62.5 150.5t-151 62.5t-151-62.5T0 216T62.5 65.5T213.5 3zm0 384q70.5 0 120.5-50t50-121t-50-121t-120.5-50T93 95T43 216t50 121t120.5 50zM224 109v112l96 57l-16 27l-112-68V109h32z" />
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Title -->
+                <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-2">
+                    Gevelpanelen
+                </h3>
+
+                <!-- Subtitle -->
+                <p class="text-gray-400 text-sm mb-2">
+                    Snelle montage, moderne uitstraling
+                </p>
+
+                <!-- Price -->
+                <p class="text-[#ed5821] text-2xl font-bold mt-6 ">
+                    €40-60/m²
+                </p>
+
+                <!-- Button -->
+                <button
+                    class="bg-gray-100 hover:bg-orange-100 text-gray-800 font-medium mt-5 py-3 w-full rounded-xl transition-colors duration-300">
+                    Meer informatie
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-white ">
+    <div class="py-8 px-4 mx-auto flex flex-col justify-center items-center max-w-screen-xl sm:py-16 lg:px-6">
+        <div class="w-full mb-8 lg:mb-16">
+            <h2 class="text-3xl tracking-tight font-extrabold text-gray-700 text-center">Wat heeft het voor zin?</h2>
+        </div>
+        <div class="space-y-8  w-[80%] md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
+
+            <div class="flex  items-center">
+                <div class="flex items-center  w-5 h-5 rounded-full bg-primary-100 lg:h-12 lg:w-12 ">
+                    <svg class="w-6 h-6 bg-orange-100 text-orange-500  rounded-full lg:w-6 lg:h-6 " fill="currentColor"
+                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </div>
+                <p class="text-gray-600 p-0 m-0">Geen onderhoud meer - jarenlang mooi</p>
+            </div>
+            <div class="flex  gap-3 items-center">
+                <div class="flex items-center  w-5 h-5 rounded-full bg-primary-100 lg:h-12 lg:w-12 ">
+                    <svg class="w-6 h-6 bg-orange-100 text-orange-500  rounded-full lg:w-6 lg:h-6 " fill="currentColor"
+                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </div>
+                <p class="text-gray-600 ">Weer en wind bestendig materiaal</p>
+            </div>
+
+            <div class="flex  gap-3 items-center">
+                <div class="flex items-center   w-5 h-5 rounded-full bg-primary-100 lg:h-12 lg:w-12 ">
+                    <svg class="w-6 h-6 bg-orange-100 text-orange-500  rounded-full lg:w-6 lg:h-6 " fill="currentColor"
+                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </div>
+                <p class="text-gray-600 ">Grote keuze in kleuren en structuren</p>
+            </div>
+            <div class="flex  gap-3 items-center">
+                <div class="flex items-center  w-5 h-5 rounded-full bg-primary-100 lg:h-12 lg:w-12 ">
+                    <svg class="w-6 h-6 bg-orange-100 text-orange-500  rounded-full lg:w-6 lg:h-6 " fill="currentColor"
+                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </div>
+                <p class="text-gray-600 ">Betere isolatie van uw woning</p>
+            </div>
+            <div class="flex  gap-3 items-center">
+                <div class="flex items-center w-5 h-5 rounded-full bg-primary-100 lg:h-12 lg:w-12 ">
+                    <svg class="w-6 h-6 bg-orange-100 text-orange-500  rounded-full lg:w-6 lg:h-6 " fill="currentColor"
+                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </div>
+                <p class="text-gray-600 ">Hogere woningwaarde door moderne uitstraling</p>
+            </div>
+            <div class="flex  gap-3  items-center">
+                <div class="flex items-center  w-5 h-5 rounded-full bg-primary-100 lg:h-12 lg:w-12 ">
+                    <svg class="w-6 h-6 bg-orange-100 text-orange-500  rounded-full lg:w-6 lg:h-6 " fill="currentColor"
+                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </div>
+                <p class="text-gray-600 ">15 jaar garantie op materiaal</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-white py-16">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl lg:px-6">
+        <div class="w-full mb-8 lg:mb-16">
+            <h2 class="text-3xl tracking-tight font-extrabold text-gray-700 text-center">Zie het verschil</h2>
+        </div>
+
+        <!-- Before/After Comparison -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <!-- Before Card -->
+            <div class="text-center">
+                <h3 class="text-xl font-semibold text-gray-600 mb-4">Voor</h3>
+                <div class="bg-gray-100 rounded-2xl overflow-hidden h-64">
+                    <img src="/card-img-1.jpg" alt="Nieuwe gevelbekleding na renovatie"
+                        class="w-full h-full object-cover"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="w-full h-full bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center"
+                        style="display: none;">
+                        <p class="text-gray-600 text-lg">Nieuwe gevelbekleding</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- After Card -->
+            <div class="text-center">
+                <h3 class="text-xl font-semibold text-[#ed5821] mb-4">Na</h3>
+                <div class="bg-gray-100 rounded-2xl overflow-hidden h-64">
+                    <img src="/card-img-1.jpg" alt="Nieuwe gevelbekleding na renovatie"
+                        class="w-full h-full object-cover"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="w-full h-full bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center"
+                        style="display: none;">
+                        <p class="text-gray-600 text-lg">Nieuwe gevelbekleding</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="w-full flex flex-col justify-center items-center lg:col-span-7  px-5 py-16 bg-[#f9f1ef]">
+    <h3 class="max-w-2xl text-center mb-4  text-4xl md:text-5xl xl:text-4xl font-extrabold leading-none text-slate-700">
+        Nieuwe gevelbekleding laten doen?
+    </h3>
+    <p class="max-w-xl mb-6 font-regular text-center text-gray-400 lg:mb-8 text-md md:text-lg lg:text-xl ">Jurjen komt
+        eerst kijken wat er moet gebeuren. Samen bekijken we welke kleur en stijl bij uw huis past.
+    </p>
+
+
+    <div class="flex flex-col md:block">
+        <a href="#" class="inline-flex items-center text-white bg-[#ed5821] hover:bg-orange-700
+         font-medium rounded-lg text-sm px-4 py-3 transition">
+            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
+                </path>
+            </svg>
+            Bel nu: 06 12 34 56 78
+        </a>
+
+        <a href="#" class="mt-4 md:mt-0 relative inline-flex items-center justify-center px-6 py-3 
+              text-sm font-medium rounded-lg border border-[#ed5821] text-[#ed5821] 
+              transition-all duration-300 ease-in-out
+              hover:bg-[#ed5821] hover:text-white focus:ring-2 focus:outline-none focus:ring-[#ed5821]">
+            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+            </svg>
+            Offerte aanvragen
+        </a>
+    </div>
+</div>
+{{ end }}
