@@ -11,7 +11,7 @@ Renders a menu for the given menu ID.
 {{- $menuID := .menuID }}
 
 {{- with index site.Menus $menuID }}
- 
+
 <nav class="bg-white/50 fixed backdrop-blur-md w-full z-20 top-0 start-0 border-b border-gray-200/50 text-black">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
     <!-- Logo -->
@@ -63,29 +63,42 @@ Renders a menu for the given menu ID.
 {{- end }}
 
 {{- define "_partials/inline/menu/walk.html" }}
-  {{- $page := .page }}
-  {{- range .menuEntries }}
-    {{- $attrs := dict "href" .URL }}
-    {{- if $page.IsMenuCurrent .Menu . }}
-      {{- $attrs = merge $attrs (dict "class" "active" "aria-current" "page") }}
-    {{- else if $page.HasMenuCurrent .Menu .}}
-      {{- $attrs = merge $attrs (dict "class" "ancestor" "aria-current" "true") }}
-    {{- end }}
-    {{- $name := .Name }}
-    {{- with .Identifier }}
-      {{- with T . }}
-        {{- $name = . }}
-      {{- end }}
-    {{- end }}
-    <li>
-  <a class="font-normal block py-2 px-3 text-gray-500 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#ed5821] md:p-0 transition"
-    {{- range $k, $v :=$attrs }} {{- with $v }} {{- printf " %s=%q" $k $v | safeHTMLAttr }} {{- end }} {{- end -}}>{{
-    $name }}</a>
-  {{- with .Children }}
-  <ul>
-    {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
+{{- $page := .page }}
+{{- $entries := .menuEntries }}
+{{- if not (reflect.IsSlice $entries) }}
+{{- $entries = slice $entries }}
+{{- end }}
+
+{{- range $entries }}
+{{- $attrs := dict "href" .URL }}
+{{- if $page.IsMenuCurrent .Menu . }}
+{{- $attrs = merge $attrs (dict "class" "active" "aria-current" "page") }}
+{{- else if $page.HasMenuCurrent .Menu . }}
+{{- $attrs = merge $attrs (dict "class" "ancestor" "aria-current" "true") }}
+{{- end }}
+
+<li class="relative">
+  {{- if .Children }}
+  <button type="button" class="flex items-center gap-2 w-full py-2 px-3 text-gray-500 hover:text-[#ed5821] transition"
+    onclick="this.nextElementSibling.classList.toggle('hidden')">
+    <span class="flex-1 text-left">{{ .Name }}</span>
+
+    <!-- Chevron down -->
+    <svg class="w-4 h-4 shrink-0" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M6 8l4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  </button>
+
+  <ul class="absolute left-0 mt-2 hidden bg-white border border-gray-200 rounded-md shadow-lg z-50 whitespace-nowrap">
+    {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .Children) }}
   </ul>
+
+  {{- else }}
+  <a class="block py-2 px-4 text-gray-500 hover:text-[#ed5821] transition" {{- range $k, $v :=$attrs }} {{
+    printf "%s=%q" $k $v | safeHTMLAttr }} {{- end }}>
+    {{ .Name }}
+  </a>
   {{- end }}
 </li>
-  {{- end }}
+{{- end }}
 {{- end }}

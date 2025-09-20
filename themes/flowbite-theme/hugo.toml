@@ -9,36 +9,45 @@ title = 'My New Hugo Site'
     weight = 10
 
   [[menus.main]]
-    name = 'Services 1'
-    pageRef = '/service/first'
+    name = 'Diensten'
+    identifier = 'services'
     weight = 20
 
   [[menus.main]]
-    name = 'Services 2'
+    name = 'Kozijnen vervangen'
+    pageRef = '/service/first'
+    parent = 'services'
+    weight = 21
+
+  [[menus.main]]
+    name = 'Gevelbekleding'
     pageRef = '/service/gevelbekleding'
-    weight = 30
+    parent = 'services'
+    weight = 22
 
   [[menus.main]]
-    name = 'Services 3'
+    name = 'Dakkapel '
     pageRef = '/service/dakkapel'
-    weight = 40
+    parent = 'services'
+    weight = 23
 
   [[menus.main]]
-    name = 'Services 4'
+    name = 'Schuifpuien'
     pageRef = '/service/schuifpuien'
-    weight = 50
+    parent = 'services'
+    weight = 24
+
 
   [[menus.main]]
     name = 'Posts'
     pageRef = '/posts'
-    weight = 60
+    weight = 30
 
   [[menus.main]]
     name = 'Tags'
     pageRef = '/tags'
-    weight = 70
+    weight = 40
 
-  
 
 [module]
   [module.hugoVersion]
