@@ -40,12 +40,12 @@ title = 'My New Hugo Site'
 
   [[menus.main]]
     name = 'Posts'
-    pageRef = '/posts'
+    pageRef = '/projects'
     weight = 30
 
   [[menus.main]]
-    name = 'Tags'
-    pageRef = '/tags'
+    name = 'Projects'
+    pageRef = '/project'
     weight = 40
 
 
