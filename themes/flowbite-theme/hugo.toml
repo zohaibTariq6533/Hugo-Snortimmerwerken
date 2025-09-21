@@ -39,8 +39,8 @@ title = 'My New Hugo Site'
 
 
   [[menus.main]]
-    name = 'Posts'
-    pageRef = '/projects'
+    name = 'Over Ons'
+    pageRef = '/about-us'
     weight = 30
 
   [[menus.main]]
