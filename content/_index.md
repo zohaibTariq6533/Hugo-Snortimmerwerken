@@ -17,6 +17,6 @@ info_heading1: Info heading 1
 info_text1: info text
 info_heading2: Info heading 2
 info_text2: Info text
-hero_image: /uploads/Blokhut A7_Portretten_Green_Screen-2.jpg
+hero_image: /uploads/Blokhut A7_Portretten_Green_Screen-2.png
 ---
 
