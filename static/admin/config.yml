@@ -35,5 +35,5 @@ collections:
           - { name: "info_heading1", label: "Info heading 1", widget: "string" }
           - { name: "info_text1", label: "Info Text 1", widget: "string" }
           - { name: "info_heading2", label: "Info heading 2", widget: "string" }
-          - { name: "info_tex21", label: "Info Text 2", widget: "string" }
+          - { name: "info_text2", label: "Info Text 2", widget: "string" }
           - { name: "hero_image", label: "Hero Image", widget: "image", choose_url: false, media_folder: "/static/uploads/hero", public_folder: "/uploads/hero" }
