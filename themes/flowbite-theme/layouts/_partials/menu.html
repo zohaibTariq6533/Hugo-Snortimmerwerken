@@ -13,11 +13,11 @@ Renders a menu for the given menu ID.
 {{- with index site.Menus $menuID }}
 
 <nav class="bg-white/50 fixed backdrop-blur-md w-full z-20 top-0 start-0 border-b border-gray-200/50 text-black">
-  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 px-8">
+  <div class="max-w-screen-xl flex items-center justify-between mx-auto p-4 px-8">
     <!-- Logo -->
-    <a href="#" class="flex items-center justify-center space-x-3 rtl:space-x-reverse">
+    <a href="/" class="flex items-center justify-center space-x-3 rtl:space-x-reverse">
       <img src="/my-logo2.png" class="h-8 lg:h-12" alt="Flowbite Logo">
-      
+
 
     </a>
 
@@ -33,22 +33,24 @@ Renders a menu for the given menu ID.
     </button>
 
     <!-- Nav menu + button -->
-    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+    <div class="flex-grow items-center  hidden md:flex md:order-1 justify-between px-6" id="navbar-sticky">
+
+      <!-- Menus on the left -->
       <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg
-               md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:items-center">
-
+             md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:items-center">
         {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
-
-        <!-- Get Started button inside the UL -->
-        <li>
-          <a href="#" class="text-white bg-[#D7223C] hover:bg-white hover:text-[#D7223C]
-          font-medium rounded-sm text-sm px-4 py-3 transition">
-           Contact Now
-          </a>
-
-        </li>
       </ul>
+
+      <!-- Contact button on the right -->
+      <div>
+        <a href="#" class="border border-[#ed5821] text-[#ed5821] 
+       transition-all duration-300 ease-in-out rounded-sm
+       hover:bg-[#D7223C] hover:text-white focus:ring-2 focus:outline-none focus:ring-[#ed5821] px-3 py-2">
+          Contact Now
+        </a>
+      </div>
     </div>
+
   </div>
 </nav>
 
@@ -72,7 +74,7 @@ Renders a menu for the given menu ID.
 
 <li class="relative">
   {{- if .Children }}
-  <button type="button" class="flex items-center gap-2 w-full py-2 px-3 text-gray-500 hover:text-[#D7223C] transition"
+  <button type="button" class="flex items-center gap-2 w-full py-2  text-gray-500 hover:text-[#D7223C] transition"
     onclick="this.nextElementSibling.classList.toggle('hidden')">
     <span class="flex-1 text-left">{{ .Name }}</span>
 
@@ -82,13 +84,13 @@ Renders a menu for the given menu ID.
     </svg>
   </button>
 
-  <ul class="absolute left-0 mt-2 hidden bg-white border border-gray-200 rounded-md shadow-lg z-50 whitespace-nowrap">
+  <ul class="absolute left-0 mt-2 p-2 px-4 hidden bg-white border border-gray-200 rounded-md shadow-lg z-50 whitespace-nowrap">
     {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .Children) }}
   </ul>
 
   {{- else }}
-  <a class="block py-2 text-gray-500 hover:text-[#D7223C] transition" {{- range $k, $v :=$attrs }} {{
-    printf "%s=%q" $k $v | safeHTMLAttr }} {{- end }}>
+  <a class="block py-2 text-gray-500 hover:text-[#D7223C] transition" {{- range $k, $v :=$attrs }} {{ printf "%s=%q" $k
+    $v | safeHTMLAttr }} {{- end }}>
     {{ .Name }}
   </a>
   {{- end }}

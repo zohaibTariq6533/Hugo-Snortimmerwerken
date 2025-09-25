@@ -47,4 +47,5 @@ collections:
             name: "project_section_group"
             widget: "object"
             fields:
-              - { name: "project_section_title", label: "Project Section Title", widget: "string" }
+              - { name: "project_section_title", label: "Project Heading", widget: "string" }
+              - { name: "project_subheading", label: "Project Subheading", widget: "string" }
