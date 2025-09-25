@@ -5,22 +5,18 @@
       <div class="mr-auto place-self-center lg:col-span-7  px-5">
         <h1 class="max-w-2xl mb-4  text-4xl md:text-5xl xl:text-6xl font-extrabold leading-none text-slate-700">
           {{.Params.hero_section}}
-          <span class="text-[#ed5821]">{{.Params.hero_section2}}</span>
+          <span class="text-[#D7223C]">{{.Params.hero_section2}}</span>
         </h1>
-        <p class="max-w-xl mb-6 font-light text-gray-400 lg:mb-8 text-md md:text-lg lg:text-xl ">Al jaren doe ik
-          timmerklussen in Noord-Nederland. Van een kozijn vervangen tot een dakkapel erbij - werk dat lang meegaat,
-          voor
-          een eerlijke prijsa.
-        </p>
+        <p class="max-w-xl mb-6 font-light text-gray-400 lg:mb-8 text-md md:text-lg lg:text-xl ">{{.Params.sub_heading}}</p>
         <p
-          class=" md:block px-3 py-3 bg-[#F4EDEB] rounded-lg text-gray-500 text-xs text-justify md:text-sm font-medium mb-6">
-          <span class="text-slate-800">Indicatieprijzen:</span> {{.Params.pricing}}
+          class=" md:block px-3 py-3 bg-red-100 rounded-lg text-gray-500 text-xs text-justify md:text-sm font-medium mb-6">
+          <span class="text-slate-800">{{.Params.label1}}</span> {{.Params.label2}}
         </p>
 
         <div class="space-x-3">
-          <a href="#" class="inline-flex items-center text-white bg-[#ed5821] hover:bg-orange-700
-           font-medium rounded-lg text-sm md:text-sm px-6 py-3 transition duration-300">
-            Prijs opvragen
+          <a href="tel:+{{.Params.hero_button1_number}}" class="call-btn inline-flex items-center text-white bg-[#D7223C] hover:bg-white hover:text-[#D7223C] 
+           font-medium rounded-lg text-sm md:text-sm px-6 py-3  transition duration-300">
+            {{.Params.hero_button1}}  
             <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 
            01-1.414-1.414L14.586 11H3a1 1 0 
@@ -29,16 +25,16 @@
             </svg>
           </a>
 
-          <a href="#" class="mt-4 md:mt-0 relative inline-flex items-center justify-center px-6 py-3 
+          <a href="/project" class="mt-4 md:mt-0 relative inline-flex items-center justify-center px-6 py-3 
            text-sm font-medium rounded-lg border border-[#ed5821] text-[#ed5821] 
            transition-all duration-300 ease-in-out
-           hover:bg-[#ed5821] hover:text-white focus:ring-2 focus:outline-none focus:ring-[#ed5821] ">
-            Ons werk bekijken
+           hover:bg-[#D7223C] hover:text-white focus:ring-2 focus:outline-none focus:ring-[#ed5821] ">
+            {{.Params.hero_button2}}  
 
           </a>
         </div>
 
-        <figure class="max-w-screen-md bg-gray-100 rounded-lg p-4 mt-4">
+        <figure class="max-w-screen-md bg-red-100 rounded-lg p-4 mt-4">
           <div class="flex items-center mb-2 text-green-600">
             <svg class="w-5 h-5 me-1 text-orange-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
               viewBox="0 0 22 20">
@@ -65,17 +61,15 @@
               <path
                 d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
             </svg>
-            <p class="text-gray-400 px-2">(42 Review)</p>
+            <p class="text-gray-400 px-2">({{.Params.no_of_reviews}} Review)</p>
           </div>
           <blockquote>
-            <p class="text-xs md:text-sm text-gray-700 ">"Flowbite is just awesome. It contains tons of
-              predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your
-              next SaaS application"</p>
+            <p class="text-xs md:text-sm text-gray-700 ">"{{.Params.review}}"</p>
           </blockquote>
           <figcaption class="flex items-center mt-3 space-x-3 rtl:space-x-reverse">
 
             <div class="flex items-center divide-x-2 rtl:divide-x-reverse divide-gray-300 dark:divide-gray-700">
-              <cite class="text-sm text-gray-600 not-italic">Bonnie Green</cite>
+              <cite class="text-sm text-gray-600 not-italic">{{.Params.reviewed_by}}</cite>
             </div>
           </figcaption>
         </figure>
@@ -83,14 +77,14 @@
           <div class="grid grid-cols-2 gap-6">
             <!-- Left Column -->
             <div class="text-center ">
-              <h3 class="text-lg md:text-2xl font-bold text-gray-800 mb-1">Sinds 2019</h3>
-              <p class="text-sm text-gray-600">150+ klussen</p>
+              <h3 class="text-lg md:text-2xl font-bold text-gray-800 mb-1">{{.Params.info_heading1}}</h3>
+              <p class="text-sm text-gray-600">{{.Params.info_text1}}</p>
             </div>
             
             <!-- Right Column -->
             <div class="text-center ">
-              <h3 class="text-lg md:text-2xl font-bold text-gray-800 mb-1">Noord-Nederland</h3>
-              <p class="text-sm text-gray-600">Volledig verzekerd</p>
+              <h3 class="text-lg md:text-2xl font-bold text-gray-800 mb-1">{{.Params.info_heading2}}</h3>
+              <p class="text-sm text-gray-600">{{.Params.info_text2}}</p>
             </div>
           </div>
         </div>

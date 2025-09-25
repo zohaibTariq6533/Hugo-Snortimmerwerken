@@ -21,8 +21,17 @@ collections:
           - { name: "title", label: "Title", widget: "string" }
           - { name: "date", label: "Date", widget: "datetime" }
           - { name: "draft", label: "Draft", widget: "boolean", default: false }
-          - { name: "hero_section", label: "Hero Section", widget: "string" }
-          - { name: "hero_section2", label: "Hero Section 2", widget: "string" }
+          - { name: "hero_section", label: "Hero Section heading", widget: "string" }
+          - { name: "hero_section2", label: "Hero Section colored", widget: "string" }
           - { name: "sub_heading", label: "Sub Heading", widget: "text" }
-          - { name: "pricing", label: "Pricing", widget: "string" }
+          - { name: "label1", label: "label Heading", widget: "string" }
+          - { name: "label2", label: "label Text", widget: "string" }
+          - { name: "hero_button1", label: "Button 1", widget: "string" }
+          - { name: "hero_button1_number", label: "Number for button", widget: "number" }
+          - { name: "hero_button2", label: "Button 2", widget: "string" }
+          - { name: "no_of_reviews", label: "Total Reviews", widget: "number" }
+          - { name: "review", label: "Review", widget: "text" }
+          - { name: "reviewed_by", label: "Reviewd By", widget: "string" }
+          - { name: "info_heading1", label: "Info heading 1", widget: "string" }
+          - { name: "info_text1", label: "Info Text 1", widget: "string" }
           - { name: "hero_image", label: "Hero Image", widget: "image", choose_url: false, media_folder: "/static/uploads/hero", public_folder: "/uploads/hero" }
