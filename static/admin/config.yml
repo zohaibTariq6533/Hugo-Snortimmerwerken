@@ -37,4 +37,8 @@ collections:
           - { name: "info_heading2", label: "Info heading 2", widget: "string" }
           - { name: "info_text2", label: "Info Text 2", widget: "string" }
           - { name: "hero_image", label: "Hero Image", widget: "image", choose_url: false, media_folder: "/static/uploads/hero", public_folder: "/uploads/hero" }
-        
+      - label: "Project Section"
+        name: "project_section"
+        file: "content/_index.md"   # Hugo homepage is usually `_index.md`, adjust if yours is just index.md
+        fields:
+          - { name: "project_section_title", label: "Project Section Title", widget: "string" }
