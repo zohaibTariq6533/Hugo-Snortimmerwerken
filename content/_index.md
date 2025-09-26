@@ -21,6 +21,6 @@ hero_section_group:
   hero_image: /uploads/Blokhut A7_Portretten_Green_Screen-2.png
 project_section_group:
   project_section_title: Projects title
-  project_subheading: Subheading here
+  project_subheading: Subheading text here
 ---
 
