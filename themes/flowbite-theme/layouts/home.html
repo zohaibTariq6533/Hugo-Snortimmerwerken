@@ -1,5 +1,5 @@
 {{ define "main" }}
-<div >
+<div>
   <section class=" py-5 h-[100vh] 2xl:h-[80vh] text-gray-400  flex">
     <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-4 xl:gap-0 lg:py-16 lg:grid-cols-12  flex items-center">
       <div class="mr-auto place-self-center lg:col-span-7  px-5">
@@ -7,16 +7,18 @@
           {{.Params.hero_section_group.hero_section}}
           <span class="text-[#D7223C]">{{.Params.hero_section_group.hero_section2}}</span>
         </h1>
-        <p class="max-w-xl mb-6 font-light text-gray-400 lg:mb-8 text-md md:text-lg lg:text-xl ">{{.Params.hero_section_group.sub_heading}}</p>
+        <p class="max-w-xl mb-6 font-light text-gray-400 lg:mb-8 text-md md:text-lg lg:text-xl ">
+          {{.Params.hero_section_group.sub_heading}}</p>
         <p
           class=" md:block px-3 py-3 bg-gray-100 rounded-lg text-gray-500 text-xs text-justify md:text-sm font-medium mb-6">
-          <span class="text-slate-800">{{.Params.hero_section_group.label1}}</span> {{.Params.hero_section_group.label2}}
+          <span class="text-slate-800">{{.Params.hero_section_group.label1}}</span>
+          {{.Params.hero_section_group.label2}}
         </p>
 
         <div class="space-x-3">
           <a href="tel:+{{.Params.hero_button1_number}}" class="call-btn inline-flex items-center text-white bg-[#D7223C] hover:bg-white hover:text-[#D7223C] 
            font-medium rounded-lg text-sm md:text-sm px-6 py-3  transition duration-300">
-            {{.Params.hero_section_group.hero_button1}}  
+            {{.Params.hero_section_group.hero_button1}}
             <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 
            01-1.414-1.414L14.586 11H3a1 1 0 
@@ -29,35 +31,35 @@
            text-sm font-medium rounded-lg border border-[#ed5821] text-[#ed5821] 
            transition-all duration-300 ease-in-out
            hover:bg-[#D7223C] hover:text-white focus:ring-2 focus:outline-none focus:ring-[#ed5821] ">
-            {{.Params.hero_section_group.hero_button2}}  
+            {{.Params.hero_section_group.hero_button2}}
 
           </a>
         </div>
 
         <figure class="max-w-screen-md bg-gray-100 rounded-lg p-4 mt-4">
           <div class="flex items-center mb-2 text-green-600">
-            <svg class="w-5 h-5 me-1 text-green-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-              viewBox="0 0 22 20">
+            <svg class="w-5 h-5 me-1 text-green-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor" viewBox="0 0 22 20">
               <path
                 d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
             </svg>
-            <svg class="w-5 h-5 me-1 text-green-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-              viewBox="0 0 22 20">
+            <svg class="w-5 h-5 me-1 text-green-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor" viewBox="0 0 22 20">
               <path
                 d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
             </svg>
-            <svg class="w-5 h-5 me-1 text-green-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-              viewBox="0 0 22 20">
+            <svg class="w-5 h-5 me-1 text-green-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor" viewBox="0 0 22 20">
               <path
                 d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
             </svg>
-            <svg class="w-5 h-5 me-1 text-green-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-              viewBox="0 0 22 20">
+            <svg class="w-5 h-5 me-1 text-green-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor" viewBox="0 0 22 20">
               <path
                 d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
             </svg>
-            <svg class="w-5 h-5 text-green-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-              viewBox="0 0 22 20">
+            <svg class="w-5 h-5 text-green-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor" viewBox="0 0 22 20">
               <path
                 d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
             </svg>
@@ -77,13 +79,15 @@
           <div class="grid grid-cols-2 gap-6">
             <!-- Left Column -->
             <div class="text-center ">
-              <h3 class="text-lg md:text-2xl font-bold text-gray-800 mb-1">{{.Params.hero_section_group.info_heading1}}</h3>
+              <h3 class="text-lg md:text-2xl font-bold text-gray-800 mb-1">{{.Params.hero_section_group.info_heading1}}
+              </h3>
               <p class="text-sm text-gray-600">{{.Params.hero_section_group.info_text1}}</p>
             </div>
-            
+
             <!-- Right Column -->
             <div class="text-center ">
-              <h3 class="text-lg md:text-2xl font-bold text-gray-800 mb-1">{{.Params.hero_section_group.info_heading2}}</h3>
+              <h3 class="text-lg md:text-2xl font-bold text-gray-800 mb-1">{{.Params.hero_section_group.info_heading2}}
+              </h3>
               <p class="text-sm text-gray-600">{{.Params.hero_section_group.info_text2}}</p>
             </div>
           </div>
@@ -105,7 +109,8 @@
       <!-- Header Section -->
       <div class="text-center lg:mb-12 ">
         <h2 class="text-4xl font-bold text-black my-8">{{.Params.project_section_group.project_section_title}}</h2>
-        <p class="text-sm md:text-lg text-gray-700 max-w-2xl mx-auto">{{.Params.project_section_group.project_subheading}}</p>
+        <p class="text-sm md:text-lg text-gray-700 max-w-2xl mx-auto">
+          {{.Params.project_section_group.project_subheading}}</p>
       </div>
 
       <!-- Cards Section -->
@@ -194,81 +199,83 @@
 
           <div class="space-y-8">
             <div
-            class="w-full max-w-md mx-auto bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden group">
-            <a href="#" class="">
-              <img class="rounded-t-lg w-full h-56 object-cover transition-transform duration-300 group-hover:scale-105"
-                alt="" src="card-img-1.jpg" />
-            </a>
-            <div class="p-5">
-              <div class="flex items-center gap-3 mb-3">
-                <span
-                  class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-orange-100 text-orange-600">
-                  <i class="fa-solid fa-house"></i>
-                </span>
-                <h5 class="text-xl font-semibold text-slate-800">Kozijnen vervangen</h5>
-              </div>
-              <p class="text-gray-600 text-base leading-relaxed mb-4">
-                Van oude houten kozijnen naar moderne kunststof. Beter geïsoleerd, geen onderhoud meer nodig.
-              </p>
-              <ul class="space-y-2 mb-6">
-                <li class="flex items-center text-gray-700"><span
-                    class="h-2 w-2 rounded-full bg-orange-500 mr-3"></span>Houten kozijnen eruit</li>
-                <li class="flex items-center text-gray-700"><span
-                    class="h-2 w-2 rounded-full bg-orange-500 mr-3"></span>Kunststof kozijnen erin</li>
-                <li class="flex items-center text-gray-700"><span
-                    class="h-2 w-2 rounded-full bg-orange-500 mr-3"></span>Direct warmer huis</li>
-                <li class="flex items-center text-gray-700"><span
-                    class="h-2 w-2 rounded-full bg-orange-500 mr-3"></span>Geen verfwerk meer</li>
-              </ul>
-              <a href="#"
-                class="w-full inline-flex items-center justify-center px-6 py-3 text-base font-medium rounded-xl border border-gray-300 text-slate-700 hover:bg-orange-700 hover:text-white group-hover:bg-orange-600 group-hover:text-white transition">
-                Meer weten
-                <svg class="w-4 h-4 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                  viewBox="0 0 14 10">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M1 5h12m0 0L9 1m4 4L9 9" />
-                </svg>
+              class="w-full max-w-md mx-auto bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden group">
+              <a href="#" class="">
+                <img
+                  class="rounded-t-lg w-full h-56 object-cover transition-transform duration-300 group-hover:scale-105"
+                  alt="" src="card-img-1.jpg" />
               </a>
-            </div>
-          </div>
-          <div
-            class="w-full max-w-md mx-auto bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden group">
-            <a href="#" class="">
-              <img class="rounded-t-lg w-full h-56 object-cover transition-transform duration-300 group-hover:scale-105"
-                alt="" src="card-img-2.jpg" />
-            </a>
-            <div class="p-5">
-              <div class="flex items-center gap-3 mb-3">
-                <span
-                  class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-orange-100 text-orange-600">
-                  <i class="fa-solid fa-house"></i>
-                </span>
-                <h5 class="text-xl font-semibold text-slate-800">Kozijnen vervangen</h5>
+              <div class="p-5">
+                <div class="flex items-center gap-3 mb-3">
+                  <span
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-orange-100 text-orange-600">
+                    <i class="fa-solid fa-house"></i>
+                  </span>
+                  <h5 class="text-xl font-semibold text-slate-800">Kozijnen vervangen</h5>
+                </div>
+                <p class="text-gray-600 text-base leading-relaxed mb-4">
+                  Van oude houten kozijnen naar moderne kunststof. Beter geïsoleerd, geen onderhoud meer nodig.
+                </p>
+                <ul class="space-y-2 mb-6">
+                  <li class="flex items-center text-gray-700"><span
+                      class="h-2 w-2 rounded-full bg-orange-500 mr-3"></span>Houten kozijnen eruit</li>
+                  <li class="flex items-center text-gray-700"><span
+                      class="h-2 w-2 rounded-full bg-orange-500 mr-3"></span>Kunststof kozijnen erin</li>
+                  <li class="flex items-center text-gray-700"><span
+                      class="h-2 w-2 rounded-full bg-orange-500 mr-3"></span>Direct warmer huis</li>
+                  <li class="flex items-center text-gray-700"><span
+                      class="h-2 w-2 rounded-full bg-orange-500 mr-3"></span>Geen verfwerk meer</li>
+                </ul>
+                <a href="#"
+                  class="w-full inline-flex items-center justify-center px-6 py-3 text-base font-medium rounded-xl border border-gray-300 text-slate-700 hover:bg-orange-700 hover:text-white group-hover:bg-orange-600 group-hover:text-white transition">
+                  Meer weten
+                  <svg class="w-4 h-4 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M1 5h12m0 0L9 1m4 4L9 9" />
+                  </svg>
+                </a>
               </div>
-              <p class="text-gray-600 text-base leading-relaxed mb-4">
-                Van oude houten kozijnen naar moderne kunststof. Beter geïsoleerd, geen onderhoud meer nodig.
-              </p>
-              <ul class="space-y-2 mb-6">
-                <li class="flex items-center text-gray-700"><span
-                    class="h-2 w-2 rounded-full bg-orange-500 mr-3"></span>Houten kozijnen eruit</li>
-                <li class="flex items-center text-gray-700"><span
-                    class="h-2 w-2 rounded-full bg-orange-500 mr-3"></span>Kunststof kozijnen erin</li>
-                <li class="flex items-center text-gray-700"><span
-                    class="h-2 w-2 rounded-full bg-orange-500 mr-3"></span>Direct warmer huis</li>
-                <li class="flex items-center text-gray-700"><span
-                    class="h-2 w-2 rounded-full bg-orange-500 mr-3"></span>Geen verfwerk meer</li>
-              </ul>
-              <a href="#"
-                class="w-full inline-flex items-center justify-center px-6 py-3 text-base font-medium rounded-xl border border-gray-300 text-slate-700 hover:bg-orange-700 hover:text-white group-hover:bg-orange-600 group-hover:text-white transition">
-                Meer weten
-                <svg class="w-4 h-4 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                  viewBox="0 0 14 10">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M1 5h12m0 0L9 1m4 4L9 9" />
-                </svg>
-              </a>
             </div>
-          </div>
+            <div
+              class="w-full max-w-md mx-auto bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden group">
+              <a href="#" class="">
+                <img
+                  class="rounded-t-lg w-full h-56 object-cover transition-transform duration-300 group-hover:scale-105"
+                  alt="" src="card-img-2.jpg" />
+              </a>
+              <div class="p-5">
+                <div class="flex items-center gap-3 mb-3">
+                  <span
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-orange-100 text-orange-600">
+                    <i class="fa-solid fa-house"></i>
+                  </span>
+                  <h5 class="text-xl font-semibold text-slate-800">Kozijnen vervangen</h5>
+                </div>
+                <p class="text-gray-600 text-base leading-relaxed mb-4">
+                  Van oude houten kozijnen naar moderne kunststof. Beter geïsoleerd, geen onderhoud meer nodig.
+                </p>
+                <ul class="space-y-2 mb-6">
+                  <li class="flex items-center text-gray-700"><span
+                      class="h-2 w-2 rounded-full bg-orange-500 mr-3"></span>Houten kozijnen eruit</li>
+                  <li class="flex items-center text-gray-700"><span
+                      class="h-2 w-2 rounded-full bg-orange-500 mr-3"></span>Kunststof kozijnen erin</li>
+                  <li class="flex items-center text-gray-700"><span
+                      class="h-2 w-2 rounded-full bg-orange-500 mr-3"></span>Direct warmer huis</li>
+                  <li class="flex items-center text-gray-700"><span
+                      class="h-2 w-2 rounded-full bg-orange-500 mr-3"></span>Geen verfwerk meer</li>
+                </ul>
+                <a href="#"
+                  class="w-full inline-flex items-center justify-center px-6 py-3 text-base font-medium rounded-xl border border-gray-300 text-slate-700 hover:bg-orange-700 hover:text-white group-hover:bg-orange-600 group-hover:text-white transition">
+                  Meer weten
+                  <svg class="w-4 h-4 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M1 5h12m0 0L9 1m4 4L9 9" />
+                  </svg>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -688,60 +695,66 @@
 
       <div class="flex flex-col md:flex-row items-center justify-center gap-6 relative mt-8">
 
-        <div class="bg-white rounded-2xl shadow-lg px-6 py-8 text-center hover:shadow-xl transition-shadow duration-300 h-80 w-80 flex flex-col justify-center gap-4">
+        <div
+          class="bg-white rounded-2xl shadow-lg px-6 py-8 text-center hover:shadow-xl transition-shadow duration-300 h-80 w-80 flex flex-col justify-center gap-4">
           <!-- Orange Circle with Number -->
           <div class="flex justify-center">
             <div class="w-[50px] h-[50px] bg-[#ed5821] rounded-full flex items-center justify-center">
               <span class="text-white text-2xl font-bold">1</span>
             </div>
           </div>
-          
+
           <!-- Title -->
           <h3 class="text-lg sm:text-xl font-bold text-gray-800 ">
             Vrijblijvende afspraak
           </h3>
-          
+
           <!-- Description -->
           <p class="text-gray-600 text-sm leading-relaxed h-16 overflow-hidden">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi quidem amet mollitia necessitatibus explicabo.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi quidem amet mollitia necessitatibus
+            explicabo.
           </p>
         </div>
 
-        <div class="bg-white rounded-2xl shadow-lg px-6 py-8 text-center hover:shadow-xl transition-shadow duration-300 h-80 w-80 flex flex-col justify-center gap-4">
+        <div
+          class="bg-white rounded-2xl shadow-lg px-6 py-8 text-center hover:shadow-xl transition-shadow duration-300 h-80 w-80 flex flex-col justify-center gap-4">
           <!-- Orange Circle with Number -->
           <div class="flex justify-center">
             <div class="w-[50px] h-[50px] bg-[#ed5821] rounded-full flex items-center justify-center">
               <span class="text-white text-2xl font-bold">1</span>
             </div>
           </div>
-          
+
           <!-- Title -->
           <h3 class="text-lg sm:text-xl font-bold text-gray-800 ">
             Vrijblijvende afspraak
           </h3>
-          
+
           <!-- Description -->
           <p class="text-gray-600 text-sm leading-relaxed h-16 overflow-hidden">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi quidem amet mollitia necessitatibus explicabo.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi quidem amet mollitia necessitatibus
+            explicabo.
           </p>
         </div>
 
-        <div class="bg-white rounded-2xl shadow-lg px-6 py-8 text-center hover:shadow-xl transition-shadow duration-300 h-80 w-80 flex flex-col justify-center gap-4">
+        <div
+          class="bg-white rounded-2xl shadow-lg px-6 py-8 text-center hover:shadow-xl transition-shadow duration-300 h-80 w-80 flex flex-col justify-center gap-4">
           <!-- Orange Circle with Number -->
           <div class="flex justify-center">
             <div class="w-[50px] h-[50px] bg-[#ed5821] rounded-full flex items-center justify-center">
               <span class="text-white text-2xl font-bold">1</span>
             </div>
           </div>
-          
+
           <!-- Title -->
           <h3 class="text-lg sm:text-xl font-bold text-gray-800 ">
             Vrijblijvende afspraak
           </h3>
-          
+
           <!-- Description -->
           <p class="text-gray-600 text-sm leading-relaxed h-16 overflow-hidden">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi quidem amet mollitia necessitatibus explicabo.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi quidem amet mollitia necessitatibus
+            explicabo.
           </p>
         </div>
       </div>
@@ -772,7 +785,7 @@
           <form action="https://api.web3forms.com/submit" method="POST"
             class="flex flex-col gap-4 mx-auto max-w-screen-md">
             <input type="hidden" name="access_key" value="598a24b8-e901-4789-a950-d06bb15d30ed">
-            <input type="hidden" name="redirect" value="http://hugo-snortimmerwerken.vercel.app/thank-you/">
+            <input type="hidden" name="redirect" value="https://wouter-portfolio.vercel.app/meeting/">
 
             <div class="md:flex space-x-5">
               <div class="w-full md:w-1/2">
