@@ -1,6 +1,6 @@
 {{ define "main" }}
 <div class="h-[100vh] justify-center items-center">
-<div style="width:100%;height:100%;overflow:scroll" id="my-cal-inline-30min"></div>
+  <div style="width:100%;height:100%;overflow:scroll" id="my-cal-inline-30min"></div>
 </div>
 <script type="text/javascript">
   (function (C, A, L) {
@@ -30,18 +30,19 @@
     };
   })(window, "https://app.cal.com/embed/embed.js", "init");
 
-  Cal("init", "30min", {origin:"https://app.cal.com"});
+  Cal("init", "30min", { origin: "https://app.cal.com" });
 
   Cal.ns["30min"]("inline", {
-    elementOrSelector:"#my-cal-inline-30min",
-    config: {"layout":"month_view"},
-    calLink: "zohaib-tariq-dbbxvr/30min", // 👈 your booking link
+    elementOrSelector: "#my-cal-inline-30min",
+    config: { "layout": "month_view" },
+    // calLink: "zohaib-tariq-dbbxvr/30min", // 👈 your booking link
+    calLink: "wouter-dieters/30min",
   });
 
   Cal.ns["30min"]("ui", {
-    "cssVarsPerTheme":{"light":{"cal-brand":"#ed5821"}},
-    "hideEventTypeDetails":false,
-    "layout":"month_view"
+    "cssVarsPerTheme": { "light": { "cal-brand": "#ed5821" } },
+    "hideEventTypeDetails": false,
+    "layout": "month_view"
   });
 </script>
 <!-- Cal inline embed code ends -->
