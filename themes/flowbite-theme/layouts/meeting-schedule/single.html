@@ -1,0 +1,272 @@
+{{ define "main" }}
+<section class="mb-8">
+    <div class=" h-[20vh] flex items-end justify-center">
+        <div class="flex items-center justify-center bg-white shadow-lg rounded-full p-4 w-full max-w-4xl mx-auto">
+            <!-- Step 1 -->
+            <div class="flex items-center">
+                <div
+                    class="flex items-center justify-center w-8 h-8 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 text-white font-bold shadow">
+                    1
+                </div>
+                <span class="ml-2 text-blue-600 font-medium">Basic Info</span>
+            </div>
+
+            <!-- Line -->
+            <div class="flex-1 h-1 mx-4 bg-blue-100 rounded"></div>
+
+            <!-- Step 2 -->
+            <div class="flex items-center">
+                <div
+                    class="flex items-center justify-center w-8 h-8 rounded-full bg-gray-300 text-white font-bold shadow">
+                    2
+                </div>
+                <span class="ml-2 text-gray-400 font-medium">Reserve Meeting</span>
+            </div>
+
+            <!-- Line -->
+            <div class="flex-1 h-1 mx-4 bg-gray-200 rounded"></div>
+
+            <!-- Step 3 -->
+            <div class="flex items-center">
+                <div
+                    class="flex items-center justify-center w-8 h-8 rounded-full bg-gray-300 text-white font-bold shadow">
+                    3
+                </div>
+                <span class="ml-2 text-gray-400 font-medium">Confirmation</span>
+            </div>
+        </div>
+
+    </div>
+    <div class="mt-12 ">
+        <h1 class="text-center text-2xl text-[#D7223C] font-medium">Schedule a meeting </h1>
+        <p class="text-center text-4xl font-bold mt-2">Your path to building a thriving business begins here.</p>
+        <p class=" max-w-xl mx-auto  text-center text-lg mt-6 text-gray-700 font-medium">You’ve built your business week
+            by week, year by year.
+            It’s time for a marketing and sales strategy that works as hard as you do.</p>
+    </div>
+    <section class="max-w-6xl mx-auto mt-10 grid grid-cols-1 md:grid-cols-2 gap-10">
+        <!-- Left side -->
+        <div>
+            <!-- Video thumbnail -->
+            <div class="rounded-lg overflow-hidden shadow mb-6 relative">
+                <img src="/card-img-1.jpg" alt="Video thumbnail" class="w-full h-auto">
+
+                <!-- Overlay text -->
+                <p class="absolute bottom-0 left-0 w-full bg-black bg-opacity-60 text-white py-4 px-4 font-medium">
+                    What to expect on your call
+                </p>
+
+            </div>
+
+
+            <!-- Key points -->
+            <h2 class="text-xl font-semibold mb-4">Here’s what to expect after you schedule your call:</h2>
+
+            <div class="space-y-6">
+                <!-- Step 1 -->
+                <div class="flex items-start space-x-3">
+                    <div
+                        class="flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-blue-600 text-white font-semibold flex-shrink-0">
+                        1
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        An email and video from your IMPACT advisor within 2 hours introducing themselves and setting
+                        the stage for your call together.
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="flex items-start space-x-3">
+                    <div
+                        class="flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-blue-600 text-white font-semibold flex-shrink-0">
+                        2
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        A meaningful discussion around your most pressing marketing and sales challenges, how they’re
+                        affecting your business, and guidance on what to do next.
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="flex items-start space-x-3">
+                    <div
+                        class="flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-blue-600 text-white font-semibold flex-shrink-0">
+                        3
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        A clear understanding of whether or not IMPACT is the right fit to help you.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Right side (Form) -->
+        <div class="max-w-2xl mx-auto">
+            <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-8">
+                <form class="space-y-6" action="/meeting">
+                    <!-- Name Fields -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">First name*</label>
+                            <input type="text"
+                                class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Last name*</label>
+                            <input type="text"
+                                class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+                    </div>
+
+                    <!-- Company Fields -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Company email address*</label>
+                            <input type="email"
+                                class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Company website URL*</label>
+                            <input type="url"
+                                class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+                    </div>
+
+                    <!-- Phone and Industry -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Mobile phone number*</label>
+                            <input type="tel"
+                                class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Industry*</label>
+                            <select
+                                class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent appearance-none bg-no-repeat bg-right pr-10"
+                                style="background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 4 5\'><path fill=\'%23666\' d=\'M2 0L0 2h4zm0 5L0 3h4z\'/></svg>'); background-size: 12px;">
+                                <option value="" disabled selected>Select industry*</option>
+                                <option value="technology">Technology / Software</option>
+                                <option value="computer_it">Computer / IT Services</option>
+                                <option value="saas">SaaS</option>
+                                <option value="healthcare">Healthcare / Medical</option>
+                                <option value="pharma">Pharmaceuticals / Biotech</option>
+                                <option value="finance">Finance / Banking</option>
+                                <option value="insurance">Insurance</option>
+                                <option value="fintech">Fintech</option>
+                                <option value="education">Education / EdTech</option>
+                                <option value="e-commerce">E-commerce / Retail</option>
+                                <option value="consumer_goods">Consumer Goods / FMCG</option>
+                                <option value="food_beverage">Food & Beverage</option>
+                                <option value="hospitality">Hospitality / Restaurants</option>
+                                <option value="travel_tourism">Travel & Tourism</option>
+                                <option value="real_estate">Real Estate / Property</option>
+                                <option value="construction">Construction</option>
+                                <option value="manufacturing">Manufacturing</option>
+                                <option value="automotive">Automotive</option>
+                                <option value="transportation">Transportation / Logistics</option>
+                                <option value="energy">Energy / Utilities</option>
+                                <option value="telecom">Telecommunications</option>
+                                <option value="media_entertainment">Media & Entertainment</option>
+                                <option value="marketing_advertising">Marketing & Advertising</option>
+                                <option value="professional_services">Professional Services</option>
+                                <option value="consulting">Consulting</option>
+                                <option value="legal">Legal</option>
+                                <option value="government_public_sector">Government / Public Sector</option>
+                                <option value="nonprofit">Non-profit / NGO</option>
+                                <option value="sports_recreation">Sports & Recreation</option>
+                                <option value="fashion_beauty">Fashion / Beauty & Personal Care</option>
+                                <option value="hr_recruitment">HR / Recruitment</option>
+                                <option value="research">Research & Development</option>
+                                <option value="aerospace_defense">Aerospace & Defense</option>
+                                <option value="security_cyber">Security / Cybersecurity</option>
+                                <option value="agriculture">Agriculture</option>
+                                <option value="other">Other / Prefer not to say</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Role and Company Size -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Which of these best describes
+                                your role?*</label>
+                            <select
+                                class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent appearance-none bg-no-repeat bg-right pr-10"
+                                style="background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 4 5\'><path fill=\'%23666\' d=\'M2 0L0 2h4zm0 5L0 3h4z\'/></svg>'); background-size: 12px;">
+                                <option value="" selected disabled>Please Select</option>
+                                <option value="business_owner">I am the Business Owner</option>
+                                <option value="small_business_owner">I am a Small Business Owner</option>
+                                <option value="solopreneur">I am a Solopreneur</option>
+                                <option value="digital_marketer">I am a Digital Marketer</option>
+                                <option value="content_marketer">I'm a Content Marketer or Manager</option>
+                                <option value="sales_professional">I'm a Sales Professional</option>
+                                <option value="video_production">I work in Video Production or Editing</option>
+                                <option value="creative">I'm a Designer, Developer, or Creative</option>
+                                <option value="student_professional">I'm a Student or Young Professional Searching for a
+                                    Job</option>
+                                <option value="other">Other</option>
+
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">How many employees does your
+                                company have?*</label>
+                            <select
+                                class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent appearance-none bg-no-repeat bg-right pr-10"
+                                style="background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 4 5\'><path fill=\'%23666\' d=\'M2 0L0 2h4zm0 5L0 3h4z\'/></svg>'); background-size: 12px;">
+                                <option>Please Select</option>
+                                <option>1-10</option>
+                                <option>11-50</option>
+                                <option>51-200</option>
+                                <option>201-500</option>
+                                <option>500+</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Challenge Textarea -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">What is your biggest sales and
+                            marketing challenge?*</label>
+                        <textarea rows="4"
+                            class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"></textarea>
+                    </div>
+
+                    <!-- How did you hear -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">How did you hear about us?*</label>
+                        <input type="text"
+                            class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    </div>
+
+                    <!-- Consent Checkbox -->
+                    <div class="flex items-start">
+                        <input type="checkbox"
+                            class="mt-1 mr-3 h-4 w-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
+                        <p class="text-sm text-gray-600">
+                            I agree to receive recurring automated text messages at the phone number provided. Msg &
+                            data rates may apply. Msg frequency varies. Reply HELP for help and STOP to cancel. View our
+                            <a href="#" class="text-blue-600 underline">Terms of Service</a> and
+                            <a href="#" class="text-blue-600 underline">Privacy Policy</a>.
+                        </p>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="w-full flex justify-center">
+                        <button type="submit"
+                            class="w-2xs bg-blue-600 text-white py-3 px-6 rounded-full font-medium hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors">
+                            Book a call
+                        </button>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+</section>
+
+{{ end }}
