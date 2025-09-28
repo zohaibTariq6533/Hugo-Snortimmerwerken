@@ -23,7 +23,7 @@ project_section_group:
   project_section_title: Projects title
   project_subheading: Subheading text
   project_cards:
-    - image: /uploads/Card img 1.jpg
+    - image: /uploads/pp4.png
       heading: Project hnn
       description: This is a short description about project one. It highlights what
       points:
@@ -31,7 +31,7 @@ project_section_group:
         - Optimized for SEO and performanc
         - Built using React and Node.j
         - Deployed on Vercel for scalabil
-    - image: /uploads/projects-img/card-img-3.webp
+    - image: /uploads/pp4.png
       heading: Project Two
       description: An advanced online shopping experience built with modern frameworks. and blah blah
       points:
@@ -47,7 +47,7 @@ project_section_group:
         - Offline sync support
         - Clean and intuitive UI
         - Analytics and reporting
-    - image: /uploads/projects-img/card-img-3.webp
+    - image: /uploads/pp4.png
       heading: Project Four
       description: A SaaS analytics dashboard tailored for business insights and reports.
       points:
