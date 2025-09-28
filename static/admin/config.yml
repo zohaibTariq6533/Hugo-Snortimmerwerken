@@ -68,3 +68,12 @@ collections:
             widget: "object"
             fields:
               - { name: "pricing_title", label: "Pricing Title", widget: "string" }
+              - label: "Pricing Cards"
+                name: "pricing_cards"
+                widget: "list"
+                fields:
+                  - { name: "title", label: "Card Title", widget: "string" }
+                  - { name: "price", label: "Price", widget: "string" }
+                  - { name: "duration", label: "Duration", widget: "string" }
+                  - { name: "features", label: "Features", widget: "list", field: { label: "Feature", name: "feature", widget: "string" } }
+
