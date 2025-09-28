@@ -56,6 +56,6 @@ project_section_group:
         - Fast API backend
         - Cloud-hosted and scalable
 pricing_section:
-  pricing_title: Heloo
+  pricing_title: Pricing Title here
 ---
 
