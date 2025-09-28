@@ -76,4 +76,32 @@ collections:
                   - { name: "price", label: "Price", widget: "string" }
                   - { name: "duration", label: "Duration", widget: "string" }
                   - { name: "features", label: "Features", widget: "list", field: { label: "Feature", name: "feature", widget: "string" } }
-
+              - { name: "button_title", label: "Button Title", widget: "string" }
+          - name: "introduction"
+            label: "Introduction Section"
+            widget: "object"
+            fields:
+              - { name: "intro_title", label: "Intro Title", widget: "string" }
+              - { name: "intro_paragraph", label: "Intro Paragraph", widget: "text" }
+              - { name: "intro_card_title", label: "Intro Card Title", widget: "string" }
+              - name: "intro_card_points"
+                label: "Intro Card Points"
+                widget: "object"
+                fields:
+                  - name: "points"
+                    label: "Points"
+                    widget: "list"
+                    field: { label: "Point", name: "point", widget: "string" }
+              - name: "intro_heading_two"
+                label: "Secondary Heading Section"
+                widget: "object"
+                fields:
+                  - { name: "intro_heading_two_title", label: "Heading Title", widget: "string" }
+                  - name: "points"
+                    label: "Points"
+                    widget: "list"
+                    fields:
+                      - { name: "heading", label: "Heading", widget: "string" }
+                      - { name: "subheading", label: "Subheading", widget: "text" }
+              - { name: "button_title", label: "Button Title", widget: "string" }
+              - { name: "image", label: "Image", widget: "image",choose_url: false, media_folder: "/static/uploads/projects_img", public_folder: "/uploads/projects_img" }

@@ -94,5 +94,30 @@ pricing_section:
         - Feature 3
         - Feature 4
         - Feature
+  button_title: Button title here
+introduction:
+  intro_title: This is wouter
+  intro_paragraph: This is a testing lines for this section
+  intro_card_title: this is intro card title
+  intro_card_points:
+    points:
+      - Point 1
+      - Point 2
+      - Point 3
+      - Point 4
+  intro_heading_two:
+    intro_heading_two_title: "What to expect"
+    points:
+      - heading: "First Step"
+        subheading: "This is the explanation for the first step."
+      - heading: "Second Step"
+        subheading: "This is the explanation for the second step."
+      - heading: "Third Step"
+        subheading: "This is the explanation for the third step."
+      - heading: "Fourth Step"
+        subheading: "This is the explanation for the fourth steps."
+  button_title: Button title 
+  image: /uploads/pp4.png
+
 ---
 
