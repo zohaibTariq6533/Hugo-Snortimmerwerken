@@ -58,42 +58,41 @@ project_section_group:
 pricing_section:
   pricing_title: Pricing Title here
   pricing_cards:
-    - title: "Kozijn vervangen"
-      price: "€800"
-      duration: "/vanaf"
+    - title: Card t1
+      price: €80
+      duration: /vanaf
       features:
-        - "Duurzame, energiezuinige materialen"
-        - "Afmetingen op maat, perfect passend bij uw woning"
-        - "Professionele installatie met een strakke afwerking"
-        - "Langdurige garantie inbegrepen"
-        - "Free updates: 6 months"
-    - title: "Schuifpui plaatsen"
-      price: "€2.200"
-      duration: "/vanaf"
+        - Duurzame, energiezuinige materialen
+        - Afmetingen op maat, perfect passend bij uw woning
+        - Professionele installatie met een strakke afwerking
+        - Langdurige garantie inbegrepen
+        - 'Free updates: 2 months'
+    - title: card 2
+      price: €2.20
+      duration: /vanaf
       features:
-        - "Individual configuration"
-        - "No setup, or hidden fees"
-        - "Team size: 10 developers"
-        - "Premium support: 24 months"
-        - "Free updates: 24 months"
-    - title: "Dakkapel renovatie"
-      price: "€3.500"
-      duration: "/vanaf"
+        - Individual configuration
+        - No setup, or hidden
+        - 'Team size: 10 developers'
+        - 'Premium support: 24 months'
+        - 'Free updates: 24 months'
+    - title: card 3
+      price: €3.50
+      duration: /vanaf
       features:
-        - "Individual configuration"
-        - "No setup, or hidden fees"
-        - "Team size: 100+ developers"
-        - "Premium support: 36 months"
-        - "Free updates: 36 months"
-    - title: "Extra Project"
-      price: "€1.000"
-      duration: "/vanaf"
+        - Individual configuration
+        - No setup, or hidden
+        - 'Team size: 100+ developers'
+        - 'Premium support: 36 months'
+        - 'Free updates: 36 months'
+    - title: card 4
+      price: €1.00
+      duration: /month
       features:
-        - "Feature 1"
-        - "Feature 2"
-        - "Feature 3"
-        - "Feature 4"
-        - "Feature 5"
-
+        - Feature 1
+        - Feature 2
+        - Feature 3
+        - Feature 4
+        - Feature
 ---
 
