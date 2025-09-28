@@ -96,28 +96,27 @@ pricing_section:
         - Feature
   button_title: Button title here
 introduction:
-  intro_title: This is wouter
-  intro_paragraph: This is a testing lines for this section
-  intro_card_title: this is intro card title
+  intro_title: This is Pareto Commerce
+  intro_paragraph: This is a testing lines for this section here
+  intro_card_title: this is intro of cards
   intro_card_points:
     points:
-      - Point 1
-      - Point 2
-      - Point 3
-      - Point 4
+      - Point1
+      - Point2
+      - Point3
+      - Point4
   intro_heading_two:
-    intro_heading_two_title: "What to expect"
+    intro_heading_two_title: What to expect from us
     points:
-      - heading: "First Step"
-        subheading: "This is the explanation for the first step."
-      - heading: "Second Step"
-        subheading: "This is the explanation for the second step."
-      - heading: "Third Step"
-        subheading: "This is the explanation for the third step."
-      - heading: "Fourth Step"
-        subheading: "This is the explanation for the fourth steps."
-  button_title: Button title 
-  image: /uploads/pp4.png
-
+      - heading: First Step here
+        subheading: This is the explanation for the first steps.
+      - heading: Second Step here
+        subheading: This is the explanation for the second steps.
+      - heading: Third Step
+        subheading: This is the explanation for the third step.
+      - heading: Fourth Step
+        subheading: This is the explanation for the fourth steps.
+  button_title: Button title
+  image: /uploads/pp2.png
 ---
 
