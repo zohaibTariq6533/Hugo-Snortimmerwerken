@@ -49,3 +49,18 @@ collections:
             fields:
               - { name: "project_section_title", label: "Project Heading", widget: "string" }
               - { name: "project_subheading", label: "Project Subheading", widget: "string" }
+              - label: "Project Cards"
+                name: "project_cards"
+                widget: "list"
+                min: 4
+                max: 4
+                summary: "{{fields.heading}}"
+                fields:
+                  - { name: "image", label: "Card Image", widget: "image", choose_url: false, media_folder: "/static/uploads/projects-img", public_folder: "/uploads/projects-img" }
+                  - { name: "heading", label: "Card Heading", widget: "string" }
+                  - { name: "description", label: "Card Description", widget: "text" }
+                  - label: "Points"
+                    name: "points"
+                    widget: "list"
+                    field: { name: "point", label: "Point", widget: "string" }
+

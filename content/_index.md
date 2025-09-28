@@ -23,9 +23,8 @@ project_section_group:
   project_section_title: Projects title
   project_subheading: Subheading text
   project_cards:
-    - image: "/card-img-2.jpg"
-      heading: "Project "
-      subheading: "Web Development"
+    - image: "/uploads/projects-img/card-img-3.webp"
+      heading: "Project"
       description: "This is a short description about project one. It highlights what the project is about and its core purpose."
       points:
         - "Responsive design with Tailwind CSS"
@@ -35,7 +34,6 @@ project_section_group:
 
     - image: "/card-img-2.jpg"
       heading: "Project Two"
-      subheading: "E-commerce Platform"
       description: "An advanced online shopping experience built with modern frameworks. and blah blah"
       points:
         - "WooCommerce integration"
@@ -45,7 +43,6 @@ project_section_group:
 
     - image: "/card-img-2.jpg"
       heading: "Project Three"
-      subheading: "Mobile App"
       description: "Cross-platform app that helps users track habits and improve productivity."
       points:
         - "Flutter-based development"
@@ -55,7 +52,6 @@ project_section_group:
 
     - image: "/card-img-2.jpg"
       heading: "Project Four"
-      subheading: "SaaS Dashboard"
       description: "A SaaS analytics dashboard tailored for business insights and reports."
       points:
         - "Role-based access "
