@@ -1,58 +1,64 @@
 {{ define "main" }}
 <section class="mb-8">
-    <div class=" h-[20vh] flex items-end justify-center">
-        <div class="flex items-center justify-center bg-white shadow-lg rounded-full p-4 w-full max-w-4xl mx-auto">
+    <div class="h-auto flex items-end justify-center px-2 py-4 mt-16">
+        <div
+            class="flex flex-row items-center justify-center bg-white shadow-lg rounded-full p-2 lg:p-4 w-full max-w-4xl mx-auto space-x-2 lg:space-x-4">
             <!-- Step 1 -->
             <div class="flex items-center">
                 <div
-                    class="flex items-center justify-center w-8 h-8 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 text-white font-bold shadow">
+                    class="flex items-center justify-center w-6 h-6 lg:w-8 lg:h-8 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 text-white text-xs lg:text-base font-bold shadow">
                     1
                 </div>
-                <span class="ml-2 text-blue-600 font-medium">Basic Info</span>
+                <span class="ml-1 lg:ml-2 text-blue-600 text-xs lg:text-lg font-medium">Basic Info</span>
             </div>
 
             <!-- Line -->
-            <div class="flex-1 h-1 mx-4 bg-blue-100 rounded"></div>
+            <div class="flex-1 h-0.5 lg:h-1 mx-2 lg:mx-4 bg-blue-100 rounded"></div>
 
             <!-- Step 2 -->
             <div class="flex items-center">
                 <div
-                    class="flex items-center justify-center w-8 h-8 rounded-full bg-gray-300 text-white font-bold shadow">
+                    class="flex items-center justify-center w-6 h-6 lg:w-8 lg:h-8 rounded-full bg-gray-300 text-white text-xs lg:text-base font-bold shadow">
                     2
                 </div>
-                <span class="ml-2 text-gray-400 font-medium">Reserve Meeting</span>
+                <span class="ml-1 lg:ml-2 text-gray-400 text-xs lg:text-lg font-medium">Reserve Meeting</span>
             </div>
 
             <!-- Line -->
-            <div class="flex-1 h-1 mx-4 bg-gray-200 rounded"></div>
+            <div class="flex-1 h-0.5 lg:h-1 mx-2 lg:mx-4 bg-gray-200 rounded"></div>
 
             <!-- Step 3 -->
             <div class="flex items-center">
                 <div
-                    class="flex items-center justify-center w-8 h-8 rounded-full bg-gray-300 text-white font-bold shadow">
+                    class="flex items-center justify-center w-6 h-6 lg:w-8 lg:h-8 rounded-full bg-gray-300 text-white text-xs lg:text-base font-bold shadow">
                     3
                 </div>
-                <span class="ml-2 text-gray-400 font-medium">Confirmation</span>
+                <span class="ml-1 lg:ml-2 text-gray-400 text-xs lg:text-lg font-medium">Confirmation</span>
             </div>
         </div>
-
     </div>
+
+
+
     <div class="mt-12 ">
-        <h1 class="text-center text-2xl text-[#D7223C] font-medium">Schedule a meeting </h1>
-        <p class="text-center text-4xl font-bold mt-2">Your path to building a thriving business begins here.</p>
-        <p class=" max-w-xl mx-auto  text-center text-lg mt-6 text-gray-700 font-medium">You’ve built your business week
+        <h1 class="text-center text-xl md:text-2xl text-[#D7223C] font-medium">Schedule a meeting </h1>
+        <p class="text-center text-2xl md:text-4xl font-bold mt-2">Your path to building a thriving business begins
+            here.</p>
+        <p class=" max-w-lg md:max-w-2xl mx-auto px-2 text-center text-sm md:text-lg mt-6 text-gray-500 font-medium">
+            You’ve built your business week
             by week, year by year.
             It’s time for a marketing and sales strategy that works as hard as you do.</p>
     </div>
     <section class="max-w-6xl mx-auto mt-10 grid grid-cols-1 md:grid-cols-2 gap-10">
         <!-- Left side -->
-        <div>
+        <div class="px-3">
             <!-- Video thumbnail -->
             <div class="rounded-lg overflow-hidden shadow mb-6 relative">
-                <img src="/card-img-1.jpg" alt="Video thumbnail" class="w-full h-auto">
+                <img src="/card-img-1.jpg" alt="Video thumbnail" class=" lg:px-0 w-full h-auto">
 
                 <!-- Overlay text -->
-                <p class="absolute bottom-0 left-0 w-full bg-black bg-opacity-60 text-white py-4 px-4 font-medium">
+                <p
+                    class="absolute bottom-0 left-0 w-full bg-black bg-opacity-60  md:mx-0 text-white py-4 px-4 font-medium">
                     What to expect on your call
                 </p>
 
@@ -60,9 +66,9 @@
 
 
             <!-- Key points -->
-            <h2 class="text-xl font-semibold mb-4">Here’s what to expect after you schedule your call:</h2>
+            <h2 class="text-xl font-semibold mb-4 px-3 lg:px-0">Here’s what to expect after you schedule your call:</h2>
 
-            <div class="space-y-6">
+            <div class="space-y-6 px-3 lg:px-0">
                 <!-- Step 1 -->
                 <div class="flex items-start space-x-3">
                     <div
@@ -109,12 +115,12 @@
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div>
                             <label class="block text-sm font-medium text-gray-700 mb-2">First name*</label>
-                            <input type="text"
+                            <input type="text" required
                                 class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                         </div>
                         <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-2">Last name*</label>
-                            <input type="text"
+                            <label class="block text-sm font-medium text-gray-700 mb-2" >Last name*</label>
+                            <input type="text" required
                                 class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                         </div>
                     </div>
@@ -123,12 +129,12 @@
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div>
                             <label class="block text-sm font-medium text-gray-700 mb-2">Company email address*</label>
-                            <input type="email"
+                            <input type="email" required
                                 class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                         </div>
                         <div>
                             <label class="block text-sm font-medium text-gray-700 mb-2">Company website URL*</label>
-                            <input type="url"
+                            <input type="url" required
                                 class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                         </div>
                     </div>
@@ -137,12 +143,12 @@
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div>
                             <label class="block text-sm font-medium text-gray-700 mb-2">Mobile phone number*</label>
-                            <input type="tel"
+                            <input type="tel" required
                                 class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                         </div>
                         <div>
                             <label class="block text-sm font-medium text-gray-700 mb-2">Industry*</label>
-                            <select
+                            <select required
                                 class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent appearance-none bg-no-repeat bg-right pr-10"
                                 style="background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 4 5\'><path fill=\'%23666\' d=\'M2 0L0 2h4zm0 5L0 3h4z\'/></svg>'); background-size: 12px;">
                                 <option value="" disabled selected>Select industry*</option>
@@ -191,7 +197,7 @@
                         <div>
                             <label class="block text-sm font-medium text-gray-700 mb-2">Which of these best describes
                                 your role?*</label>
-                            <select
+                            <select required
                                 class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent appearance-none bg-no-repeat bg-right pr-10"
                                 style="background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 4 5\'><path fill=\'%23666\' d=\'M2 0L0 2h4zm0 5L0 3h4z\'/></svg>'); background-size: 12px;">
                                 <option value="" selected disabled>Please Select</option>
@@ -212,7 +218,7 @@
                         <div>
                             <label class="block text-sm font-medium text-gray-700 mb-2">How many employees does your
                                 company have?*</label>
-                            <select
+                            <select required
                                 class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent appearance-none bg-no-repeat bg-right pr-10"
                                 style="background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 4 5\'><path fill=\'%23666\' d=\'M2 0L0 2h4zm0 5L0 3h4z\'/></svg>'); background-size: 12px;">
                                 <option>Please Select</option>
@@ -231,22 +237,22 @@
                     <div>
                         <label class="block text-sm font-medium text-gray-700 mb-2">What is your biggest sales and
                             marketing challenge?*</label>
-                        <textarea rows="4"
+                        <textarea rows="4" required
                             class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"></textarea>
                     </div>
 
                     <!-- How did you hear -->
                     <div>
                         <label class="block text-sm font-medium text-gray-700 mb-2">How did you hear about us?*</label>
-                        <input type="text"
+                        <input type="text" required
                             class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                     </div>
 
                     <!-- Consent Checkbox -->
                     <div class="flex items-start">
-                        <input type="checkbox"
+                        <input type="checkbox" required name="checkbox-consent" id="checkbox-consent"
                             class="mt-1 mr-3 h-4 w-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
-                        <p class="text-sm text-gray-600">
+                        <p class="text-sm text-gray-600" for="checkbox-consent">
                             I agree to receive recurring automated text messages at the phone number provided. Msg &
                             data rates may apply. Msg frequency varies. Reply HELP for help and STOP to cancel. View our
                             <a href="#" class="text-blue-600 underline">Terms of Service</a> and

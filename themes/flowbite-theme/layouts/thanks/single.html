@@ -1,46 +1,51 @@
 {{ define "main" }}
-<div class="h-[20vh] flex items-end justify-center">
-  <div class="flex items-center justify-center bg-white shadow-lg rounded-full p-4 w-full max-w-4xl mx-auto">
-  <!-- Step 1 -->
-  <div class="flex items-center">
-    <div class="flex items-center justify-center w-8 h-8 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 text-white font-bold shadow">
-      1
+<div class="h-auto flex items-end justify-center px-2 py-4 mt-16">
+  <div
+    class="flex flex-row items-center justify-center shadow-lg rounded-full p-2 lg:p-4 w-full max-w-4xl mx-auto space-x-2 lg:space-x-4">
+    <!-- Step 1 -->
+    <div class="flex items-center">
+      <div
+        class="flex items-center justify-center w-6 h-6 lg:w-8 lg:h-8 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 text-white text-xs lg:text-base font-bold shadow">
+        1
+      </div>
+      <span class="ml-1 lg:ml-2 text-blue-600 text-xs lg:text-lg font-medium">Basic Info</span>
     </div>
-    <span class="ml-2 text-blue-600 font-medium">Basic Info</span>
-  </div>
 
-  <!-- Line -->
-  <div class="flex-1 h-1 mx-4 bg-blue-100 rounded"></div>
+    <!-- Line -->
+    <div class="flex-1 h-0.5 lg:h-1 mx-2 lg:mx-4 bg-blue-200 rounded"></div>
 
-  <!-- Step 2 -->
-  <div class="flex items-center">
-    <div class="flex items-center justify-center w-8 h-8 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 text-white font-bold shadow">
-      2
+    <!-- Step 2 -->
+    <div class="flex items-center">
+      <div
+        class="flex items-center justify-center w-6 h-6 lg:w-8 lg:h-8 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 text-white text-xs lg:text-base font-bold shadow">
+        2
+      </div>
+      <span class="ml-1 lg:ml-2 text-blue-600 text-xs lg:text-lg font-medium">Reserve Meeting</span>
     </div>
-    <span class="ml-2 text-gray-400 font-medium">Reserve Meeting</span>
-  </div>
 
-  <!-- Line -->
-  <div class="flex-1 h-1 mx-4 bg-gray-200 rounded"></div>
+    <!-- Line -->
+    <div class="flex-1 h-0.5 lg:h-1 mx-2 lg:mx-4 bg-blue-200 rounded"></div>
 
-  <!-- Step 3 -->
-  <div class="flex items-center">
-    <div class="flex items-center justify-center w-8 h-8 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 text-white font-bold shadow">
-      3
+    <!-- Step 3 -->
+    <div class="flex items-center">
+      <div
+        class="flex items-center justify-center w-6 h-6 lg:w-8 lg:h-8 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 text-white text-xs lg:text-base font-bold shadow">
+        3
+      </div>
+      <span class="ml-1 lg:ml-2 text-blue-600 text-xs lg:text-lg font-medium">Confirmation</span>
     </div>
-    <span class="ml-2 text-gray-400 font-medium">Confirmation</span>
   </div>
 </div>
 
 </div>
-<div class="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-200 px-4">
+<div class="min-h-120 flex items-center justify-center  px-4">
   <div class="bg-white rounded-3xl shadow-2xl p-10 max-w-lg w-full text-center border border-gray-100">
-    
+
     <!-- Success Icon -->
     <div class="flex justify-center mb-6">
       <div class="h-20 w-20 flex items-center justify-center rounded-full bg-green-100">
         <svg class="h-10 w-10 text-green-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+          <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
         </svg>
       </div>
     </div>
@@ -48,9 +53,9 @@
     <!-- Heading -->
     <h1 class="text-4xl font-extrabold text-gray-900">Meeting Scheduled</h1>
     <p class="mt-4 text-gray-600 text-lg leading-relaxed">
-      Thank you <span id="attendee" class="font-semibold text-gray-900"></span>!  
-      Your <span id="meeting-type" class="font-semibold text-indigo-600"></span>  
-      is scheduled for  
+      Thank you <span id="attendee" class="font-semibold text-gray-900"></span>!
+      Your <span id="meeting-type" class="font-semibold text-indigo-600"></span>
+      is scheduled for
       <span id="start-time" class="font-semibold text-gray-900"></span>.
     </p>
 
@@ -62,8 +67,8 @@
       <a href="/" class="flex-1 px-6 py-3 text-white bg-[#D7223C] text-black rounded-xl shadow  transition">
         Go Back Home
       </a>
-      <a href="https://calendar.google.com/" target="_blank" 
-         class="flex-1 px-6 py-3 bg-gray-100 text-gray-700 rounded-xl shadow hover:bg-gray-200 transition">
+      <a href="https://calendar.google.com/" target="_blank"
+        class="flex-1 px-6 py-3 bg-gray-100 text-gray-700 rounded-xl shadow hover:bg-gray-200 transition">
         Add to Calendar
       </a>
     </div>
@@ -77,13 +82,13 @@
   // Extract values
   const attendee = params.get("attendeeName") || "Guest";
   const meetingType = params.get("type") || "Meeting";
-  const startTime = params.get("startTime") 
+  const startTime = params.get("startTime")
     ? new Date(params.get("startTime")).toLocaleString()
     : "unspecified time";
 
   // Inject into HTML
   document.getElementById("attendee").textContent = attendee;
-  document.getElementById("meeting-type").textContent = 
+  document.getElementById("meeting-type").textContent =
     meetingType.replace("30min", "30 Minute Meeting"); // example formatting
   document.getElementById("start-time").textContent = startTime;
 </script>
