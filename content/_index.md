@@ -118,6 +118,18 @@ introduction:
         subheading: "This is the explanation for the fourth steps."
   button_title: Button title 
   image: /uploads/pp4.png
+how_it_works:
+  title: Title here
+  cards:
+    - number: 1
+      heading: Heading here
+      subheading: small paragraph here
+    - number: 2
+      heading: Heading here
+      subheading: small paragraph here
+    - number: 3
+      heading: Heading here
+      subheading: small paragraph here
 
 ---
 

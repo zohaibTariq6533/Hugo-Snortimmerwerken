@@ -105,3 +105,15 @@ collections:
                       - { name: "subheading", label: "Subheading", widget: "text" }
               - { name: "button_title", label: "Button Title", widget: "string" }
               - { name: "image", label: "Image", widget: "image",choose_url: false, media_folder: "/static/uploads/projects_img", public_folder: "/uploads/projects_img" }
+          - name: "how_it_works"
+            label: "How It Works Section"
+            widget: "object"
+            fields:
+              - { name: "title", label: "Title", widget: "string" }
+              - name: "cards"
+                label: "Cards"
+                widget: "list"
+                fields:
+                  - { name: "number", label: "Number", widget: "number" }
+                  - { name: "heading", label: "Heading", widget: "string" }
+                  - { name: "subheading", label: "Subheading", widget: "text" }
