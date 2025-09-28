@@ -55,5 +55,7 @@ project_section_group:
         - Data visualization with charts
         - Fast API backend
         - Cloud-hosted and scalable
+pricing_section:
+  pricing_title: Heloo
 ---
 

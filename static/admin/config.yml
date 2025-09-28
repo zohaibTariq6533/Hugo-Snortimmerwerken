@@ -63,4 +63,8 @@ collections:
                     name: "points"
                     widget: "list"
                     field: { name: "point", label: "Point", widget: "string" }
-
+          - label: "Pricing Section"
+            name: "pricing_section"
+            widget: "object"
+            fields:
+              - { name: "pricing_title", label: "Pricing Title", widget: "string" }
