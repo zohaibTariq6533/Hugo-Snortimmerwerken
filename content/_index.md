@@ -31,7 +31,7 @@ project_section_group:
         - Optimized for SEO and performanc
         - Built using React and Node.j
         - Deployed on Vercel for scalabil
-    - image: /card-img-2.jpg
+    - image: "/uploads/projects-img/card-img-3.webp"
       heading: Project Two
       description: An advanced online shopping experience built with modern frameworks. and blah blah
       points:
@@ -39,7 +39,7 @@ project_section_group:
         - Custom checkout flow
         - Payment gateway support
         - User-friendly admin dashboard
-    - image: /card-img-2.jpg
+    - image: "/uploads/projects-img/card-img-3.webp"
       heading: Project Three
       description: Cross-platform app that helps users track habits and improve productivity.
       points:
@@ -47,7 +47,7 @@ project_section_group:
         - Offline sync support
         - Clean and intuitive UI
         - Analytics and reporting
-    - image: /card-img-2.jpg
+    - image: "/uploads/projects-img/card-img-3.webp"
       heading: Project Four
       description: A SaaS analytics dashboard tailored for business insights and reports.
       points:
