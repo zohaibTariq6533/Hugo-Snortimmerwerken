@@ -12,8 +12,8 @@ hero_section_group:
   hero_button1_number: 900
   hero_button2: View Projects
   no_of_reviews: 56
-  review: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio repellendus non est odit, possimus fuga?
-  reviewed_by: zohaib
+  review: Enter Your Review Here
+  reviewed_by: Feedback By
   info_heading1: heading 1
   info_text1: text here
   info_heading2: heading 2
@@ -21,6 +21,6 @@ hero_section_group:
   hero_image: /uploads/Blokhut A7_Portretten_Green_Screen-2.png
 project_section_group:
   project_section_title: Projects title
-  project_subheading: Subheading text here
+  project_subheading: Subheading text
 ---
 
