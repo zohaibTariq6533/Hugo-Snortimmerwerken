@@ -106,30 +106,29 @@ introduction:
       - Point 3
       - Point 4
   intro_heading_two:
-    intro_heading_two_title: "What to expect"
+    intro_heading_two_title: What to expect
     points:
-      - heading: "First Step"
-        subheading: "This is the explanation for the first step."
-      - heading: "Second Step"
-        subheading: "This is the explanation for the second step."
-      - heading: "Third Step"
-        subheading: "This is the explanation for the third steps."
-      - heading: "Fourth Step"
-        subheading: "This is the explanation for the fourth steps."
-  button_title: Button title 
+      - heading: First Step
+        subheading: This is the explanation for the first step.
+      - heading: Second Step
+        subheading: This is the explanation for the second step.
+      - heading: Third Step
+        subheading: This is the explanation for the third steps.
+      - heading: Fourth Step
+        subheading: This is the explanation for the fourth steps.
+  button_title: Button title
   image: /uploads/pp4.png
 how_it_works:
   title: Title here
   cards:
     - number: 1
-      heading: Heading here
-      subheading: small paragraph here
+      heading: Heading
+      subheading: small paragraph
     - number: 2
-      heading: Heading here
-      subheading: small paragraph here
+      heading: Heading
+      subheading: small paragraph
     - number: 3
-      heading: Heading here2
-      subheading: small paragraph here
-
+      heading: Heading
+      subheading: small paragraph
 ---
 
