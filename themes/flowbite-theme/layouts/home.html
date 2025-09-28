@@ -173,12 +173,12 @@
             {{.Params.pricing_section.pricing_title}}</h2>
         </div>
         <div class="lg:grid lg:grid-cols-4 lg:space-y-0 gap-6">
-          {{ range .Params.pricing_cards }}
+          {{ range .Params.pricing_section.pricing_cards }}
           <div
             class="flex mb-4 md:mb-0 flex-col p-6 mx-auto w-72 text-center text-gray-900 bg-white rounded-xl xl:p-8 shadow-lg hover:shadow-2xl transition">
             <h3 class="mb-4 text-2xl font-semibold">{{ .title }}</h3>
             <div class="flex justify-center items-baseline my-8">
-              <span class="mr-2 text-5xl font-extrabold text-orange-500">{{ .price }}</span>
+              <span class="mr-2 text-5xl font-extrabold text-[#D7223C]">{{ .price }}</span>
               <span class="text-gray-500 dark:text-gray-400">{{ .duration }}</span>
             </div>
             <ul role="list" class="mb-8 space-y-4 text-left break-words whitespace-normal">
