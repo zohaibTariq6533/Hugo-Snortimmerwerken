@@ -23,41 +23,37 @@ project_section_group:
   project_section_title: Projects title
   project_subheading: Subheading text
   project_cards:
-    - image: "/uploads/projects-img/card-img-3.webp"
-      heading: "Project j"
-      description: "This is a short description about project one. It highlights what the project is about and its core purpose."
+    - image: /uploads/projects-img/card-img-3.webp
+      heading: Project
+      description: This is a short description about project one. It highlights what the project is about and its core purpose.
       points:
-        - "Responsive design with Tailwind CSS"
-        - "Built using React and Node.js"
-        - "Optimized for SEO and performance"
-        - "Deployed on Vercel for scalability"
-
-    - image: "/card-img-2.jpg"
-      heading: "Project Two"
-      description: "An advanced online shopping experience built with modern frameworks. and blah blah"
+        - Responsive design with Tailwind CSS
+        - Built using React and Node.js
+        - Optimized for SEO and performance
+        - Deployed on Vercel for scalability
+    - image: /card-img-2.jpg
+      heading: Project Two
+      description: An advanced online shopping experience built with modern frameworks. and blah blah
       points:
-        - "WooCommerce integration"
-        - "Custom checkout flow"
-        - "Payment gateway support"
-        - "User-friendly admin dashboard"
-
-    - image: "/card-img-2.jpg"
-      heading: "Project Three"
-      description: "Cross-platform app that helps users track habits and improve productivity."
+        - WooCommerce integration
+        - Custom checkout flow
+        - Payment gateway support
+        - User-friendly admin dashboard
+    - image: /card-img-2.jpg
+      heading: Project Three
+      description: Cross-platform app that helps users track habits and improve productivity.
       points:
-        - "Flutter-based development"
-        - "Offline sync support"
-        - "Clean and intuitive UI"
-        - "Analytics and reporting"
-
-    - image: "/card-img-2.jpg"
-      heading: "Project Four"
-      description: "A SaaS analytics dashboard tailored for business insights and reports."
+        - Flutter-based development
+        - Offline sync support
+        - Clean and intuitive UI
+        - Analytics and reporting
+    - image: /card-img-2.jpg
+      heading: Project Four
+      description: A SaaS analytics dashboard tailored for business insights and reports.
       points:
-        - "Role-based access "
-        - "Data visualization with charts"
-        - "Fast API backend"
-        - "Cloud-hosted and scalable"
-
+        - Role-based access
+        - Data visualization with charts
+        - Fast API backend
+        - Cloud-hosted and scalable
 ---
 
