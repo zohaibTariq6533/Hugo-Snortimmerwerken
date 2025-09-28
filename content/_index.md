@@ -24,7 +24,7 @@ project_section_group:
   project_subheading: Subheading text
   project_cards:
     - image: "/uploads/projects-img/card-img-3.webp"
-      heading: "Project"
+      heading: "Project j"
       description: "This is a short description about project one. It highlights what the project is about and its core purpose."
       points:
         - "Responsive design with Tailwind CSS"
