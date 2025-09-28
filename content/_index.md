@@ -24,13 +24,13 @@ project_section_group:
   project_subheading: Subheading text
   project_cards:
     - image: /uploads/projects-img/card-img-3.webp
-      heading: Project
-      description: This is a short description about project one. It highlights what the project is about and its core purpose.
+      heading: Project hnn
+      description: This is a short description about project one. It highlights what
       points:
-        - Responsive design with Tailwind CSS
-        - Built using React and Node.js
-        - Optimized for SEO and performance
-        - Deployed on Vercel for scalability
+        - Responsive design with Tailwind CS
+        - Optimized for SEO and performanc
+        - Built using React and Node.j
+        - Deployed on Vercel for scalabil
     - image: /card-img-2.jpg
       heading: Project Two
       description: An advanced online shopping experience built with modern frameworks. and blah blah
