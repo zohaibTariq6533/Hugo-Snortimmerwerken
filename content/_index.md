@@ -23,7 +23,7 @@ project_section_group:
   project_section_title: Projects title
   project_subheading: Subheading text
   project_cards:
-    - image: /uploads/projects-img/card-img-3.webp
+    - image: /uploads/Card img 1.jpg
       heading: Project hnn
       description: This is a short description about project one. It highlights what
       points:
