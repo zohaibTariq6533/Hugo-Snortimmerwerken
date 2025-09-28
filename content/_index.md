@@ -22,5 +22,46 @@ hero_section_group:
 project_section_group:
   project_section_title: Projects title
   project_subheading: Subheading text here
+  project_cards:
+    - image: "/card-img-2.jpg"
+      heading: "Project "
+      subheading: "Web Development"
+      description: "This is a short description about project one. It highlights what the project is about and its core purpose."
+      points:
+        - "Responsive design with Tailwind CSS"
+        - "Built using React and Node.js"
+        - "Optimized for SEO and performance"
+        - "Deployed on Vercel for scalability"
+
+    - image: "/card-img-2.jpg"
+      heading: "Project Two"
+      subheading: "E-commerce Platform"
+      description: "An advanced online shopping experience built with modern frameworks. and blah blah"
+      points:
+        - "WooCommerce integration"
+        - "Custom checkout flow"
+        - "Payment gateway support"
+        - "User-friendly admin dashboard"
+
+    - image: "/card-img-2.jpg"
+      heading: "Project Three"
+      subheading: "Mobile App"
+      description: "Cross-platform app that helps users track habits and improve productivity."
+      points:
+        - "Flutter-based development"
+        - "Offline sync support"
+        - "Clean and intuitive UI"
+        - "Analytics and reporting"
+
+    - image: "/card-img-2.jpg"
+      heading: "Project Four"
+      subheading: "SaaS Dashboard"
+      description: "A SaaS analytics dashboard tailored for business insights and reports."
+      points:
+        - "Role-based access "
+        - "Data visualization with charts"
+        - "Fast API backend"
+        - "Cloud-hosted and scalable"
+
 ---
 

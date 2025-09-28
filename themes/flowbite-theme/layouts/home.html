@@ -114,39 +114,39 @@
       </div>
 
       <!-- Cards Section -->
-      <div class="flex justify-center w-full  py-8 px-6">
-        <div class="flex flex-col lg:flex-row w-full gap-8 justify-center items-center">
-          <div class="space-y-8">
+      <div class="flex justify-center w-full py-8 px-6">
+        <div class="flex flex-col lg:flex-row w-full gap-8 justify-center items-start">
+
+          <!-- Loop over cards -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {{ range .Params.project_section_group.project_cards }}
             <div
-              class="w-full max-w-md mx-auto bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden group">
-              <a href="#" class="">
+              class="w-full max-w-md  mx-auto bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden group">
+              <a href="{{ .link }}">
                 <img
                   class="rounded-t-lg w-full h-56 object-cover transition-transform duration-300 group-hover:scale-105"
-                  alt="" src="card-img-2.jpg" />
+                  alt="{{ .heading }}" src="{{ .image }}" />
               </a>
-              <div class="p-5">
+              <div class="p-5 flex flex-col h-[calc(100%-14rem)]">
                 <div class="flex items-center gap-3 mb-3">
                   <span
-                    class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-orange-100 text-orange-600">
-                    <i class="fa-solid fa-house"></i>
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-red-100 text-orange-600">
+                    <img src="/logo mark.png" class="w-6 h-8" alt="">
                   </span>
-                  <h5 class="text-xl font-semibold text-slate-800">Kozijnen vervangen</h5>
+                  <h5 class="text-xl font-semibold text-slate-800">{{ .heading }}</h5>
                 </div>
-                <p class="text-gray-600 text-base leading-relaxed mb-4">
-                  Van oude houten kozijnen naar moderne kunststof. Beter geïsoleerd, geen onderhoud meer nodig.
+                <p class="text-gray-600 text-base leading-relaxed mb-4 flex-grow">
+                  {{ .description }}
                 </p>
                 <ul class="space-y-2 mb-6">
-                  <li class="flex items-center text-gray-700"><span
-                      class="h-2 w-2 rounded-full bg-orange-500 mr-3"></span>Houten kozijnen eruit</li>
-                  <li class="flex items-center text-gray-700"><span
-                      class="h-2 w-2 rounded-full bg-orange-500 mr-3"></span>Kunststof kozijnen erin</li>
-                  <li class="flex items-center text-gray-700"><span
-                      class="h-2 w-2 rounded-full bg-orange-500 mr-3"></span>Direct warmer huis</li>
-                  <li class="flex items-center text-gray-700"><span
-                      class="h-2 w-2 rounded-full bg-orange-500 mr-3"></span>Geen verfwerk meer</li>
+                  {{ range .points }}
+                  <li class="flex items-center text-gray-700">
+                    <span class="h-2 w-2 rounded-full bg-[#D7223C] mr-3"></span>{{ . }}
+                  </li>
+                  {{ end }}
                 </ul>
-                <a href="#"
-                  class="w-full inline-flex items-center justify-center px-6 py-3 text-base font-medium rounded-xl border border-gray-300 text-slate-700 hover:bg-orange-700 hover:text-white group-hover:bg-orange-600 group-hover:text-white transition">
+                <a href="{{ .link }}"
+                  class="w-full mt-auto inline-flex items-center justify-center px-6 py-3 text-base font-medium rounded-xl border border-gray-300 text-slate-700 hover:bg-white hover:border hover:border-[#D7223C] hover:text-[#D7223C] group-hover:bg-[#D7223C] group-hover:text-white transition">
                   Meer weten
                   <svg class="w-4 h-4 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                     viewBox="0 0 14 10">
@@ -156,129 +156,13 @@
                 </a>
               </div>
             </div>
-            <div
-              class="w-full max-w-md mx-auto bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden group">
-              <a href="#" class="">
-                <img
-                  class="rounded-t-lg w-full h-56 object-cover transition-transform duration-300 group-hover:scale-105"
-                  alt="" src="card-img-3.webp" />
-              </a>
-              <div class="p-5">
-                <div class="flex items-center gap-3 mb-3">
-                  <span
-                    class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-orange-100 text-orange-600">
-                    <i class="fa-solid fa-house"></i>
-                  </span>
-                  <h5 class="text-xl font-semibold text-slate-800">Kozijnen vervangen</h5>
-                </div>
-                <p class="text-gray-600 text-base leading-relaxed mb-4">
-                  Van oude houten kozijnen naar moderne kunststof. Beter geïsoleerd, geen onderhoud meer nodig.
-                </p>
-                <ul class="space-y-2 mb-6">
-                  <li class="flex items-center text-gray-700"><span
-                      class="h-2 w-2 rounded-full bg-orange-500 mr-3"></span>Houten kozijnen eruit</li>
-                  <li class="flex items-center text-gray-700"><span
-                      class="h-2 w-2 rounded-full bg-orange-500 mr-3"></span>Kunststof kozijnen erin</li>
-                  <li class="flex items-center text-gray-700"><span
-                      class="h-2 w-2 rounded-full bg-orange-500 mr-3"></span>Direct warmer huis</li>
-                  <li class="flex items-center text-gray-700"><span
-                      class="h-2 w-2 rounded-full bg-orange-500 mr-3"></span>Geen verfwerk meer</li>
-                </ul>
-                <a href="#"
-                  class="w-full inline-flex items-center justify-center px-6 py-3 text-base font-medium rounded-xl border border-gray-300 text-slate-700 hover:bg-orange-700 hover:text-white group-hover:bg-orange-600 group-hover:text-white transition">
-                  Meer weten
-                  <svg class="w-4 h-4 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                    viewBox="0 0 14 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M1 5h12m0 0L9 1m4 4L9 9" />
-                  </svg>
-                </a>
-              </div>
-            </div>
+            {{ end }}
           </div>
 
-          <div class="space-y-8">
-            <div
-              class="w-full max-w-md mx-auto bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden group">
-              <a href="#" class="">
-                <img
-                  class="rounded-t-lg w-full h-56 object-cover transition-transform duration-300 group-hover:scale-105"
-                  alt="" src="card-img-1.jpg" />
-              </a>
-              <div class="p-5">
-                <div class="flex items-center gap-3 mb-3">
-                  <span
-                    class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-orange-100 text-orange-600">
-                    <i class="fa-solid fa-house"></i>
-                  </span>
-                  <h5 class="text-xl font-semibold text-slate-800">Kozijnen vervangen</h5>
-                </div>
-                <p class="text-gray-600 text-base leading-relaxed mb-4">
-                  Van oude houten kozijnen naar moderne kunststof. Beter geïsoleerd, geen onderhoud meer nodig.
-                </p>
-                <ul class="space-y-2 mb-6">
-                  <li class="flex items-center text-gray-700"><span
-                      class="h-2 w-2 rounded-full bg-orange-500 mr-3"></span>Houten kozijnen eruit</li>
-                  <li class="flex items-center text-gray-700"><span
-                      class="h-2 w-2 rounded-full bg-orange-500 mr-3"></span>Kunststof kozijnen erin</li>
-                  <li class="flex items-center text-gray-700"><span
-                      class="h-2 w-2 rounded-full bg-orange-500 mr-3"></span>Direct warmer huis</li>
-                  <li class="flex items-center text-gray-700"><span
-                      class="h-2 w-2 rounded-full bg-orange-500 mr-3"></span>Geen verfwerk meer</li>
-                </ul>
-                <a href="#"
-                  class="w-full inline-flex items-center justify-center px-6 py-3 text-base font-medium rounded-xl border border-gray-300 text-slate-700 hover:bg-orange-700 hover:text-white group-hover:bg-orange-600 group-hover:text-white transition">
-                  Meer weten
-                  <svg class="w-4 h-4 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                    viewBox="0 0 14 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M1 5h12m0 0L9 1m4 4L9 9" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <div
-              class="w-full max-w-md mx-auto bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden group">
-              <a href="#" class="">
-                <img
-                  class="rounded-t-lg w-full h-56 object-cover transition-transform duration-300 group-hover:scale-105"
-                  alt="" src="card-img-2.jpg" />
-              </a>
-              <div class="p-5">
-                <div class="flex items-center gap-3 mb-3">
-                  <span
-                    class="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-orange-100 text-orange-600">
-                    <i class="fa-solid fa-house"></i>
-                  </span>
-                  <h5 class="text-xl font-semibold text-slate-800">Kozijnen vervangen</h5>
-                </div>
-                <p class="text-gray-600 text-base leading-relaxed mb-4">
-                  Van oude houten kozijnen naar moderne kunststof. Beter geïsoleerd, geen onderhoud meer nodig.
-                </p>
-                <ul class="space-y-2 mb-6">
-                  <li class="flex items-center text-gray-700"><span
-                      class="h-2 w-2 rounded-full bg-orange-500 mr-3"></span>Houten kozijnen eruit</li>
-                  <li class="flex items-center text-gray-700"><span
-                      class="h-2 w-2 rounded-full bg-orange-500 mr-3"></span>Kunststof kozijnen erin</li>
-                  <li class="flex items-center text-gray-700"><span
-                      class="h-2 w-2 rounded-full bg-orange-500 mr-3"></span>Direct warmer huis</li>
-                  <li class="flex items-center text-gray-700"><span
-                      class="h-2 w-2 rounded-full bg-orange-500 mr-3"></span>Geen verfwerk meer</li>
-                </ul>
-                <a href="#"
-                  class="w-full inline-flex items-center justify-center px-6 py-3 text-base font-medium rounded-xl border border-gray-300 text-slate-700 hover:bg-orange-700 hover:text-white group-hover:bg-orange-600 group-hover:text-white transition">
-                  Meer weten
-                  <svg class="w-4 h-4 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                    viewBox="0 0 14 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M1 5h12m0 0L9 1m4 4L9 9" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
+
         </div>
       </div>
+
     </div>
   </div>
 
@@ -782,7 +666,7 @@
       </div>
       <div class="grid grid-cols-1 lg:gap-8 lg:grid-cols-3">
         <div class="col-span-2 mb-8 lg:mb-0 bg-white p-4 rounded-xl">
-          
+
           <form action="https://api.web3forms.com/submit" method="POST"
             class="flex flex-col gap-4 mx-auto max-w-screen-md">
             <input type="hidden" name="access_key" value="598a24b8-e901-4789-a950-d06bb15d30ed">

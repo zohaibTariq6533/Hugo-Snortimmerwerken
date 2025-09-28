@@ -394,6 +394,9 @@
   .mt-16 {
     margin-top: calc(var(--spacing) * 16);
   }
+  .mt-auto {
+    margin-top: auto;
+  }
   .mr-2 {
     margin-right: calc(var(--spacing) * 2);
   }
@@ -543,6 +546,12 @@
   }
   .h-\[100vh\] {
     height: 100vh;
+  }
+  .h-\[520px\] {
+    height: 520px;
+  }
+  .h-\[calc\(100\%-14rem\)\] {
+    height: calc(100% - 14rem);
   }
   .h-auto {
     height: auto;
@@ -1376,6 +1385,13 @@
       }
     }
   }
+  .group-hover\:bg-\[\#D7223C\] {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        background-color: #D7223C;
+      }
+    }
+  }
   .group-hover\:bg-orange-600 {
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
@@ -1397,6 +1413,21 @@
         --tw-scale-y: 110%;
         --tw-scale-z: 110%;
         scale: var(--tw-scale-x) var(--tw-scale-y);
+      }
+    }
+  }
+  .hover\:border {
+    &:hover {
+      @media (hover: hover) {
+        border-style: var(--tw-border-style);
+        border-width: 1px;
+      }
+    }
+  }
+  .hover\:border-\[\#D7223C\] {
+    &:hover {
+      @media (hover: hover) {
+        border-color: #D7223C;
       }
     }
   }
@@ -2019,6 +2050,11 @@
   .lg\:grid-cols-1 {
     @media (width >= 64rem) {
       grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+  }
+  .lg\:grid-cols-2 {
+    @media (width >= 64rem) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
   .lg\:grid-cols-3 {
