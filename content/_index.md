@@ -113,7 +113,7 @@ introduction:
       - heading: "Second Step"
         subheading: "This is the explanation for the second step."
       - heading: "Third Step"
-        subheading: "This is the explanation for the third step."
+        subheading: "This is the explanation for the third steps."
       - heading: "Fourth Step"
         subheading: "This is the explanation for the fourth steps."
   button_title: Button title 
@@ -128,7 +128,7 @@ how_it_works:
       heading: Heading here
       subheading: small paragraph here
     - number: 3
-      heading: Heading here
+      heading: Heading here2
       subheading: small paragraph here
 
 ---
