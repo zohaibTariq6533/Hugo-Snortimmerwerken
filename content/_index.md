@@ -131,11 +131,11 @@ how_it_works:
       heading: Heading
       subheading: small paragraph
 contact_us:
-  heading: Heading here
-  subheading: subheading here
+  heading: Heading Here
+  subheading: Subheading Here
   cards:
-    heading_call: heading here
-    number: number_here
     subheading_call: other detail here
+    number: number_here
+    heading_call: heading here
 ---
 
