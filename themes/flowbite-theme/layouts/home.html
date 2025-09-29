@@ -200,7 +200,8 @@
 
         <div class="my-10 flex justify-center">
           <a href="/schedule-form"
-            class="py-3 px-8 me-2 mb-2 text-lg font-medium text-[#D7223C] focus:outline-none bg-transparent rounded-full border border-[#D7223C] hover:bg-[#D7223C] hover:text-white focus:z-10 focus:ring-4 focus:ring-[#D7223C]  transition">{{.Params.pricing_section.button_title }}</a>
+            class="py-3 px-8 me-2 mb-2 text-lg font-medium text-[#D7223C] focus:outline-none bg-transparent rounded-full border border-[#D7223C] hover:bg-[#D7223C] hover:text-white focus:z-10 focus:ring-4 focus:ring-[#D7223C]  transition">{{.Params.pricing_section.button_title
+            }}</a>
         </div>
       </div>
 
@@ -214,7 +215,8 @@
         <h1 class="max-w-2xl mb-4 text-2xl md:text-5xl xl:text-4xl font-extrabold leading-none text-[#D7223C]">
           {{.Params.introduction.intro_title}}
         </h1>
-        <p class="max-w-xl mb-6 font-light text-gray-600 lg:mb-8 text-md md:text-lg lg:text-xl "> {{.Params.introduction.intro_paragraph}}</p>
+        <p class="max-w-xl mb-6 font-light text-gray-600 lg:mb-8 text-md md:text-lg lg:text-xl ">
+          {{.Params.introduction.intro_paragraph}}</p>
 
 
         <div class="max-w-xl rounded-lg p-6 mt-4 border border-gray-300 shadow-md bg-gray-50">
@@ -236,7 +238,8 @@
 
         <!-- Wat je kunt verwachten Section -->
         <div class="mt-8 mb-12">
-          <h2 class="text-3xl font-bold text-gray-800 mb-6">{{ .Params.introduction.intro_heading_two.intro_heading_two_title }}</h2>
+          <h2 class="text-3xl font-bold text-gray-800 mb-6">{{
+            .Params.introduction.intro_heading_two.intro_heading_two_title }}</h2>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             {{ range .Params.introduction.intro_heading_two.points }}
             <div class="flex items-start space-x-4">
@@ -251,7 +254,7 @@
               </div>
             </div>
             {{ end }}
-            
+
           </div>
 
           <div class="mt-8 text-center">
@@ -334,7 +337,7 @@
               </div>
               <div class="w-full md:w-1/2">
                 <label for="phone" class="block mb-2 text-sm font-medium text-gray-900 ">Telefoonnummer</label>
-                <input type="text" id="phone" name="telefoonnummer" 
+                <input type="text" id="phone" name="telefoonnummer"
                   class="block p-3 w-full text-sm text-gray-900 bg-gray-100 rounded-lg border border-gray-300 shadow-sm focus:ring-orange-500 focus:border-orange-500  "
                   placeholder="06 - 12 34 56 78" required>
               </div>
@@ -618,113 +621,25 @@
         </div>
 
         <div class="grid grid-cols-1 col-span-1 gap-12 text-center sm:grid-cols-2 lg:grid-cols-1">
+          {{ range .Params.contact_us.cards }}
           <div class="bg-white rounded-xl">
-            <div class="flex items-center space-x-3  p-3 rounded-lg">
+            <div class="flex items-center space-x-3 p-3 rounded-lg">
               <!-- Icon -->
               <div class="flex justify-center items-center w-10 h-10 bg-red-100 rounded-lg lg:w-16 lg:h-16">
-                <svg class="w-5 h-5 text-[#D7223C] lg:w-8 lg:h-8" fill="currentColor" viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
-                  </path>
-                </svg>
+                <svg class="w-5 h-5 text-[#D7223C] lg:w-8 lg:h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="{{.icon}}" clip-rule="evenodd"> </path> </svg>
               </div>
 
               <!-- Text -->
-              <div class=" w-full">
-                <p class="font-bold text-lg text-gray-800">{{.Params.contact_us.cards.heading_call}}</p>
-                <p class="text-sm">{{.Params.contact_us.cards.number}}</p>
-                <p class="text-sm">{{.Params.contact_us.cards.subheading_call}}</p>
-
-
-              </div>
-            </div>
-
-
-
-          </div>
-
-          <div class="bg-white rounded-xl">
-            <div class="flex items-center space-x-3  p-3 rounded-lg">
-              <!-- Icon -->
-              <div class="flex justify-center items-center w-10 h-10 bg-red-100 rounded-lg lg:w-16 lg:h-16">
-                <svg class="w-5 h-5 text-[#D7223C] lg:w-8 lg:h-8" fill="currentColor" viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd"
-                    d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                    clip-rule="evenodd"></path>
-                </svg>
-              </div>
-
-              <!-- Text -->
-              <div class=" w-full">
-                <p class="font-bold text-lg text-gray-800">Werkgebied</p>
-                <p class="text-sm">Groningen en omgeving</p>
-                <p class="text-sm">Tot 50 km van Groningen</p>
-
-
-              </div>
-            </div>
-
-          </div>
-
-          <div class="bg-white rounded-xl">
-            <div class="flex items-center space-x-3  p-3 rounded-lg">
-              <!-- Icon -->
-              <div class="flex justify-center items-center w-10 h-10 bg-red-100 rounded-lg lg:w-16 lg:h-16">
-                <svg class="w-5 h-5 text-[#D7223C] lg:w-8 lg:h-8" fill="currentColor" viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
-                    clip-rule="evenodd"></path>
-                </svg>
-              </div>
-
-              <!-- Text -->
-              <div class=" w-full">
-                <p class="font-bold text-lg text-gray-800">Planning</p>
-                <p class="text-sm">Deze week: 2 plekken vri</p>
-                <p class="text-sm">Volgende week: volgeboekt</p>
-                <p class="text-sm">Winter prep: nu plannen!</p>
-
-
-
-
-
-
-              </div>
-            </div>
-
-
-
-          </div>
-
-
-          <div class="bg-white rounded-xl">
-            <div class="flex items-center space-x-3  p-3 rounded-lg">
-              <!-- Icon -->
-              <div class="flex justify-center items-center w-10 h-10 bg-red-100 rounded-lg lg:w-16 lg:h-16">
-                <svg class="w-5 h-5 text-[#D7223C] lg:w-8 lg:h-8" fill="currentColor" viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd"
-                    d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z"
-                    clip-rule="evenodd"></path>
-                </svg>
-              </div>
-
-              <!-- Text -->
-              <div class=" w-full">
-                <p class="font-bold text-lg text-gray-800">Bedrijfsinformatie:</p>
-                <p class="text-sm">KvK: 85429876</p>
-                <p class="text-sm">Volledig verzekerd</p>
-                <p class="text-sm">Actief sinds 2019</p>
-
-
+              <div class="w-full text-left">
+                <p class="font-bold text-lg text-gray-800 text-center">{{ .heading }}</p>
+                <p class="text-sm text-center">{{ .subheading }}</p>
+                <p class="text-sm text-center">{{ .subheading2 }}</p>
               </div>
             </div>
           </div>
-
+          {{ end }}
         </div>
+
       </div>
     </div>
   </section>
