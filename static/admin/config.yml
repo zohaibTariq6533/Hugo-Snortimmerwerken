@@ -130,4 +130,23 @@ collections:
                   - { name: "heading", label: "Heading", widget: "string" }
                   - { name: "subheading", label: " Subheading", widget: "string" }
                   - { name: "subheading2", label: "Other Detail", widget: "text" }
-
+  - name: "project"
+    label: "Project Page"
+    files:
+      - file: "content/project.md"
+        label: "Project Page"
+        name: "projectpage_content"
+        fields:
+          - { name: "title", label: "Title", widget: "string" }
+          - { name: "date", label: "Date", widget: "datetime" }
+          - { name: "draft", label: "Draft", widget: "boolean", default: false }
+          - label: "Hero Section"
+            name: "hero_section_group"
+            widget: "object"
+            fields:
+              - { name: "home_button", label: "Home Button Text", widget: "string" }
+              - { name: "heading", label: "Heading", widget: "string" }
+              - { name: "subheading", label: "Sub Heading", widget: "string" }
+              - { name: "schedule_meeting", label: "Primary Button text", widget: "string" }
+              - { name: "call_button", label: "Secondary Button text", widget: "string" }
+              - { name: "call_number", label: "Number to call", widget: "number" }
