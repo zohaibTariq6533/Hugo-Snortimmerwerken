@@ -134,8 +134,8 @@ contact_us:
   heading: Heading Here
   subheading: Subheading Here
   cards:
-    subheading_call: other detail here
-    number: number_here
-    heading_call: heading here
+    - subheading_call: other detail here
+      number: number_here
+      heading_call: heading here
 ---
 
