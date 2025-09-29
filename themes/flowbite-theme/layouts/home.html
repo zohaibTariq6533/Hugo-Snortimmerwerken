@@ -314,9 +314,8 @@
         }
       </style>
       <div class="px-4 mx-auto max-w-screen-sm text-center lg:px-6 mb-8 lg:mb-16">
-        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 ">Bel Linda of vul het formulier in</h2>
-        <p class="font-light text-gray-600  sm:text-xl">WLinda geeft je direct een prijsindicatie op basis van je vraag.
-          Jurjen komt dan langs voor een definitieve (vrijblijvende) offerte.</p>
+        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 ">{{.Params.contact_us.heading}}</h2>
+        <p class="font-light text-gray-600  sm:text-xl">{{.Params.contact_us.subheading}}</p>
       </div>
       <div class="grid grid-cols-1 lg:gap-8 lg:grid-cols-3">
         <div class="col-span-2 mb-8 lg:mb-0 bg-white p-4 rounded-xl">
@@ -335,7 +334,7 @@
               </div>
               <div class="w-full md:w-1/2">
                 <label for="phone" class="block mb-2 text-sm font-medium text-gray-900 ">Telefoonnummer</label>
-                <input type="text" id="phone" name="telefoonnummer"
+                <input type="text" id="phone" name="telefoonnummer" 
                   class="block p-3 w-full text-sm text-gray-900 bg-gray-100 rounded-lg border border-gray-300 shadow-sm focus:ring-orange-500 focus:border-orange-500  "
                   placeholder="06 - 12 34 56 78" required>
               </div>
@@ -633,11 +632,9 @@
 
               <!-- Text -->
               <div class=" w-full">
-                <p class="font-bold text-lg text-gray-800">Bel Linda</p>
-                <p class="text-sm">06 - 12 34 56 78</p>
-                <p class="text-sm">Ma-Vr 8:00-17:00
-
-                  Spoedgevallen: altijd bereikbaar</p>
+                <p class="font-bold text-lg text-gray-800">{{.Params.contact_us.cards.heading_call}}</p>
+                <p class="text-sm">{{.Params.contact_us.cards.number}}</p>
+                <p class="text-sm">{{.Params.contact_us.cards.subheading_call}}</p>
 
 
               </div>

@@ -117,3 +117,16 @@ collections:
                   - { name: "number", label: "Number", widget: "number" }
                   - { name: "heading", label: "Heading", widget: "string" }
                   - { name: "subheading", label: "Subheading", widget: "text" }
+          - name: "contact_us"
+            label: "Contact Us Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading", widget: "string" }
+              - { name: "subheading", label: "Subheading", widget: "text" }
+              - name: "cards"
+                label: "Cards"
+                widget: "list"
+                fields:
+                  - { name: "heading_call", label: "Heading (Call)", widget: "string" }
+                  - { name: "number", label: "Phone Number", widget: "string" }
+                  - { name: "subheading_call", label: "Subheading (Details)", widget: "text" }
