@@ -29,7 +29,7 @@ Project_cards:
     inner_card_description: Short description here
     review: Review here
   - img_heading: Image heading here
-    image: /uploads/Card img 1.jpg
+    image: /uploads/pp2.png
     heading: Heading here
     location: loc here
     date: Date here
