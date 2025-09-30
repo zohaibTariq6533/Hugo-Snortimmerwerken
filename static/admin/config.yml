@@ -163,4 +163,17 @@ collections:
               - { name: "inner_card_heading", label: "Inner Card Heading", widget: "string" }
               - { name: "inner_card_description", label: "Inner Card Description", widget: "text" }
               - { name: "review", label: "Review", widget: "text" }
+          - name: "Result_section"
+            label: "Result Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Main Heading", widget: "string" }
+              - { name: "total_projects", label: "Total Projects", widget: "string" }
+              - { name: "prj_heading", label: "Projects Heading", widget: "string" }
+              - { name: "rating", label: "Rating", widget: "number", step: 0.1 }
+              - { name: "rating_heading", label: "Rating Heading", widget: "string" }
+              - { name: "recommendation", label: "Recommendation %", widget: "number" }
+              - { name: "rec_rate", label: "Recommendation Heading", widget: "string" }
+              - { name: "experience", label: "Experience", widget: "string" }
+              - { name: "exp_heading", label: "Experience Heading", widget: "string" }
 

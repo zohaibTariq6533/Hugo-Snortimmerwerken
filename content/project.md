@@ -2,6 +2,7 @@
 title: Project
 date: 2025-09-20T15:42:00
 draft: false
+type: project-page
 hero_section_group:
   home_button: Back
   heading: Main heading here
@@ -64,6 +65,16 @@ Project_cards:
     inner_card_heading: inner heading
     inner_card_description: Short description here
     review: Review here
-type: project-page
+Result_section:
+  heading: Heading
+  total_projects: 100+
+  prj_heading: Heading
+  rating: 4.9
+  rating_heading: heading 2
+  recommendation: 100
+  rec_rate: Heading 3
+  experience: 5j
+  exp_heading: Heading 4
+
 ---
 
