@@ -1,5 +1,5 @@
 ---
-title: Projects
+title: Project
 date: 2025-09-20T15:42:00
 draft: false
 hero_section_group:
