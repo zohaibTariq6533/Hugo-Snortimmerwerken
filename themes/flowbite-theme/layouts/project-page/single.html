@@ -53,36 +53,37 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Project Card 1 -->
+             {{ range .Params.Project_cards }}
             <div class=" bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 ">
                 <div class="relative">
-                    <img src="/card-img-1.jpg" alt="Complete kozijnvervanging" class="w-full h-48 object-cover hover:scale-110 transition-transform duration-300 ease-in-out">
+                    <img src="{{ .image }}" alt="{{ .heading }}" class="w-full h-48 object-cover hover:scale-110 transition-transform duration-300 ease-in-out">
                     <div class="absolute top-4 left-4">
                         <span class="bg-blue-200 text-blue-600 px-3 py-1 rounded-full text-sm font-medium">
-                            Kozijnen
+                            {{ .img_heading }}
                         </span>
                     </div>
                 </div>
                 <div class="p-6">
-                    <h3 class="text-xl font-bold text-gray-900 mb-3">Complete kozijnvervanging</h3>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">{{ .heading }}</h3>
                     
                     <div class="flex items-center text-gray-600 mb-3">
                         <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
                             <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
                         </svg>
-                        <span class="text-sm">Haarlem</span>
+                        <span class="text-sm">{{ .location }}</span>
                         <svg class="w-4 h-4 ml-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
                             <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path>
                         </svg>
-                        <span class="text-sm">November 2024</span>
+                        <span class="text-sm">{{ .date }}</span>
                     </div>
                     
                     <p class="text-gray-600 mb-4 text-sm">
-                        13 kozijnen vervangen in jaren '30 woning. Van oude houten naar moderne kunststof kozijnen.
+                        {{ .description }}
                     </p>
                     
                     <div class="bg-orange-100 p-3 rounded-lg mb-4">
-                        <h4 class="font-semibold text-gray-900 text-sm mb-1">Resultaat:</h4>
-                        <p class="text-gray-700 text-sm">40% minder energieverlies, geen onderhoud meer nodig</p>
+                        <h4 class="font-semibold text-gray-900 text-sm mb-1">{{ .inner_card_heading }}</h4>
+                        <p class="text-gray-700 text-sm">{{ .inner_card_description }}</p>
                     </div>
                     
                     <div class="border-t pt-4">
@@ -107,13 +108,13 @@
                             <span class="text-sm text-gray-600 ml-2">Klantbeoordeling</span>
                         </div>
                         <p class="text-gray-700 text-sm italic">
-                            "Jurjen heeft ons perfect geholpen. Alles volgens planning en zeer netjes afgewerkt!"
+                            {{ .review }}
                         </p>
                     </div>
                 </div>
             </div>
-
-            <div class=" bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 ">
+            {{ end }}
+            <!-- <div class=" bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 ">
                 <div class="relative">
                     <img src="/card-img-1.jpg" alt="Complete kozijnvervanging" class="w-full h-48 object-cover hover:scale-110 transition-transform duration-300 ease-in-out">
                     <div class="absolute top-4 left-4">
@@ -411,7 +412,7 @@
                         </p>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </section>
