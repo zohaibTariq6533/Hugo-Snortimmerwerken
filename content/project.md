@@ -2,7 +2,6 @@
 title: Project
 date: 2025-09-20T15:42:00
 draft: false
-type: project-page
 hero_section_group:
   home_button: Back
   heading: Main heading here
@@ -69,7 +68,7 @@ Result_section:
   heading: Heading
   total_projects: 100+
   prj_heading: Heading
-  rating: 4.9
+  rating: 4
   rating_heading: heading 2
   recommendation: 100
   rec_rate: Heading 3
@@ -78,11 +77,12 @@ Result_section:
 Review_section:
   main_heading: Heading here
   reviews:
-    - review: Review here
-      reviewed_by: Reviewed by
-    - review: Review here
-      reviewed_by: Reviewed by
-    - review: Review here
-      reviewed_by: Reviewed by
+    - review: Review lines here
+      reviewed_by: Reviewed by 1
+    - review: Review lines here
+      reviewed_by: Reviewed by 2
+    - review: Review lines here
+      reviewed_by: Reviewed by 3
+type: project-page
 ---
 
