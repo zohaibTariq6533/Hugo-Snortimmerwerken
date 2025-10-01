@@ -221,5 +221,32 @@ collections:
               - { name: "schedule_meeting", label: "Schedule Meeting Button Text", widget: "string" }
               - { name: "call_button", label: "Call Button Text", widget: "string" }
               - { name: "call_number", label: "Call Number", widget: "string" }
+          - name: "stats_section"
+            label: "Stats Section"
+            widget: "object"
+            fields:
+              - { name: "section1_value", label: "Section 1 Value", widget: "string" }
+              - { name: "section1_heading", label: "Section 1 Heading", widget: "string" }
+              - { name: "section2_value", label: "Section 2 Value", widget: "string" }
+              - { name: "section2_heading", label: "Section 2 Heading", widget: "string" }
+              - { name: "rating_section", label: "Rating Value", widget: "string" }
+              - { name: "rating_heading", label: "Rating Heading", widget: "string" }
+              - { name: "section4_value", label: "Section 4 Value", widget: "string" }
+              - { name: "section4_heading", label: "Section 4 Heading", widget: "string" }
+          - name: "how_it_works"
+            label: "How It Works"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading", widget: "string" }
+              - name: "text_section"
+                label: "Text Section"
+                widget: "list"
+                fields:
+                  - { name: "paragraph_heading", label: "Paragraph Heading", widget: "string" }
+                  - { name: "paragraph", label: "Paragraph", widget: "text" }
+              - { name: "message", label: "Message", widget: "text" }
+              - { name: "message_by", label: "Message By", widget: "string" }
+
+
 
 

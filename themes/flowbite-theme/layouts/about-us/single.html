@@ -19,7 +19,8 @@
             <!-- 2. Image Banner -->
             <div class="mb-8 w-full max-w-md">
                 <div class="w-full h-64 md:h-80 bg-gray-100 rounded-lg overflow-hidden">
-                    <img src="{{.Params.hero_section_group.hero_banner}}" alt="Jurjen Snor working" class="w-full h-full object-cover">
+                    <img src="{{.Params.hero_section_group.hero_banner}}" alt="Jurjen Snor working"
+                        class="w-full h-full object-cover">
                 </div>
             </div>
 
@@ -35,7 +36,8 @@
                 <!-- Owner Info -->
                 <div class="flex items-center justify-center mb-6">
                     <div class=" h-12  overflow-hidden mr-3">
-                        <img src="{{.Params.hero_section_group.logo}}" alt="Jurjen Snor" class="w-full h-full object-cover">
+                        <img src="{{.Params.hero_section_group.logo}}" alt="Jurjen Snor"
+                            class="w-full h-full object-cover">
                     </div>
                     <div class="text-left">
                         <h3 class="text-lg font-bold text-gray-800">{{.Params.hero_section_group.logo_heading}}</h3>
@@ -44,13 +46,13 @@
                 </div>
 
                 <div class="flex sm:flex-row gap-3 justify-center">
-                    <a href="#" class=" w-[60%] items-center text-white bg-[#D7223C] hover:text-[#D7223C] hover:bg-white border hover:border-[#D7223C]
+                    <a href="/meeting" class=" w-[60%] items-center text-white bg-[#D7223C] hover:text-[#D7223C] hover:bg-white border hover:border-[#D7223C]
        font-medium rounded-lg text-sm px-4 py-3 transition">
-                        
+
                         {{.Params.hero_section_group.schedule_meeting}}
                     </a>
 
-                    <a href="tel:+{{.Params.hero_section_group.call_number}}"  class="relative inline-flex items-center justify-center px-6 py-3 
+                    <a href="tel:+{{.Params.hero_section_group.call_number}}" class="relative inline-flex items-center justify-center px-6 py-3 
       text-sm font-medium rounded-lg border border-[#D7223C] text-[#D7223C]
       transition-all duration-300 ease-in-out
       hover:bg-[#D7223C] hover:text-white focus:ring-2 focus:outline-none focus:ring-[#D7223C]">
@@ -87,13 +89,14 @@
                 </h1>
                 <p class="max-w-xl mb-8 font-regular text-gray-600 text-lg lg:text-xl">
                     {{.Params.hero_section_group.subheading}}
-                    
+
                 </p>
 
                 <!-- Owner Info -->
                 <div class="flex items-center mb-8">
                     <div class=" h-16  overflow-hidden mr-4">
-                        <img src="{{.Params.hero_section_group.logo}}" alt="Jurjen Snor" class="w-full h-full object-cover">
+                        <img src="{{.Params.hero_section_group.logo}}" alt="Jurjen Snor"
+                            class="w-full h-full object-cover">
                     </div>
                     <div>
                         <h3 class="text-2xl font-bold text-gray-800">{{.Params.hero_section_group.logo_heading}}</h3>
@@ -102,9 +105,9 @@
                 </div>
 
                 <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="#" class="inline-flex items-center text-white bg-[#D7223C] hover:text-[#D7223C] hover:bg-white border hover:border-[#D7223C]
+                    <a href="/meeting" class="inline-flex items-center text-white bg-[#D7223C] hover:text-[#D7223C] hover:bg-white border hover:border-[#D7223C]
        font-medium rounded-lg text-sm px-4 py-3 transition">
-                        
+
                         {{.Params.hero_section_group.schedule_meeting}}
                     </a>
 
@@ -118,13 +121,14 @@
                                 d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
                             </path>
                         </svg>
-                       {{.Params.hero_section_group.call_button}}
+                        {{.Params.hero_section_group.call_button}}
                     </a>
                 </div>
             </div>
 
             <div class="lg:col-span-6 bg-gray-100 h-96 rounded-lg overflow-hidden">
-                <img src="{{.Params.hero_section_group.hero_banner}}" alt="Jurjen Snor working on window frame" class="w-full h-full object-cover">
+                <img src="{{.Params.hero_section_group.hero_banner}}" alt="Jurjen Snor working on window frame"
+                    class="w-full h-full object-cover">
             </div>
         </div>
     </div>
@@ -138,28 +142,28 @@
         <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 w-full md:w-[80%] ">
             <!-- Projects Completed -->
             <div class="text-center">
-                <div class="text-3xl md:text-5xl font-bold text-[#ed5821] mb-2">
-                    2019
+                <div class="text-3xl md:text-5xl font-bold text-[#D7223C] mb-2">
+                    {{.Params.stats_section.section1_value}}
                 </div>
                 <div class="text-gray-500 text-md ">
-                    Opgericht
+                    {{.Params.stats_section.section1_heading}}
                 </div>
             </div>
 
             <!-- Regional Experience -->
             <div class="text-center">
-                <div class="text-3xl md:text-5xl font-bold text-[#ed5821] mb-2">
-                    150+
+                <div class="text-3xl md:text-5xl font-bold text-[#D7223C] mb-2">
+                    {{.Params.stats_section.section2_value}}
                 </div>
                 <div class="text-gray-500 text-md">
-                    Tevreden klanten
+                    {{.Params.stats_section.section1_heading}}
                 </div>
             </div>
 
             <!-- Average Rating -->
             <div class="text-center">
-                <div class="flex items-center justify-center text-3xl md:text-5xl font-bold text-[#ed5821] mb-2">
-                    5.0
+                <div class="flex items-center justify-center text-3xl md:text-5xl font-bold text-[#D7223C] mb-2">
+                    {{.Params.stats_section.rating_section}}
                     <svg class="w-8 h-8 md:w-12 md:h-12 " fill="currentColor" viewBox="0 0 20 20">
                         <path
                             d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
@@ -167,17 +171,17 @@
                     </svg>
                 </div>
                 <div class="text-gray-500 text-md ">
-                    Gemiddelde beoordeling
+                    {{.Params.stats_section.rating_heading}}
                 </div>
             </div>
 
             <!-- Customer Recommendation -->
             <div class="text-center">
-                <div class="text-3xl md:text-5xl font-bold text-[#ed5821] mb-2">
-                    100%
+                <div class="text-3xl md:text-5xl font-bold text-[#D7223C] mb-2">
+                    {{.Params.stats_section.section4_value}}
                 </div>
                 <div class="text-gray-500 text-md">
-                    Aanbevelingen
+                    {{.Params.stats_section.section4_heading}}
                 </div>
             </div>
 
@@ -191,43 +195,28 @@
     <div class="max-w-4xl mx-auto px-6 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
             <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
-                Hoe ik werk
+                {{.Params.How_it_works.heading}}
             </h2>
         </div>
 
         <div class="space-y-8">
-            <!-- Paragraph 1 -->
+            {{ range .Params.How_it_works.text_section }}
             <div class="max-w-4xl mx-auto">
                 <p class="text-lg text-gray-500 leading-relaxed text-justify">
-                    <span class="font-bold text-gray-500">Begonnen in 2019</span> na jaren bij andere timmerbedrijven.
-                    Ik zag dat klanten vaak werden verrast door onverwachte kosten of slordig werk.
+                    <span class="font-bold text-gray-500">{{ .paragraph_heading }}</span> {{ .paragraph }}
                 </p>
             </div>
-
-            <!-- Paragraph 2 -->
-            <div class="max-w-4xl mx-auto">
-                <p class="text-lg text-gray-500 leading-relaxed text-justify">
-                    <span class="font-bold text-gray-500">Mijn aanpak is eenvoudig:</span> Eerst kom ik kijken en geef
-                    een duidelijke prijs. Geen verrassingen achteraf. Werk wordt opgeleverd zoals afgesproken.
-                </p>
-            </div>
-
-            <!-- Paragraph 3 -->
-            <div class="max-w-4xl mx-auto">
-                <p class="text-lg text-gray-500 leading-relaxed text-justify">
-                    <span class="font-bold text-gray-500">Vooral lokaal bezig</span> - vanuit Paerswolde door heel
-                    Noord-Nederland. Veel klanten kennen me inmiddels via familie of buren.
-                </p>
-            </div>
+            {{ end }}
         </div>
+
 
         <!-- Testimonial Box -->
         <div class="mt-8 max-w-5xl mx-auto">
             <div class="bg-[#F6E8E2] rounded-lg p-6 ">
                 <blockquote class="text-sm md:text-lg text-gray-700 italic">
-                    "De meeste klussen zijn niet ingewikkeld - gewoon goed uitvoeren en netjes achterlaten."
+                    "{{.Params.How_it_works.message }}" 
                 </blockquote>
-                <cite class="text-xs md:text-sm text-gray-500">- Jurjen Snor</cite>
+                <cite class="text-xs md:text-sm text-gray-500">- {{.Params.How_it_works.message_by }}</cite>
             </div>
         </div>
     </div>
@@ -322,7 +311,11 @@
 <section class="py-16 px-4 max-w-6xl mx-auto">
     <!-- Location Icon -->
     <div class="flex justify-center mb-6">
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24" viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#ed580d" d="M176 252.6C176 175.7 239.7 112 320 112C400.3 112 464 175.7 464 252.6C464 298.2 440.2 354.1 405.1 409.7C376.8 454.5 344.1 494.5 320 521.8C295.9 494.5 263.3 454.6 234.9 409.7C199.8 354.2 176 298.2 176 252.6zM320 64C214 64 128 148.4 128 252.6C128 371.9 248.2 514.9 298.4 569.4C310.2 582.2 329.8 582.2 341.6 569.4C391.8 514.9 512 371.9 512 252.6C512 148.4 426 64 320 64zM288 256C288 238.3 302.3 224 320 224C337.7 224 352 238.3 352 256C352 273.7 337.7 288 320 288C302.3 288 288 273.7 288 256zM400 256C400 211.8 364.2 176 320 176C275.8 176 240 211.8 240 256C240 300.2 275.8 336 320 336C364.2 336 400 300.2 400 256z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-24 h-24"
+            viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+            <path fill="#ed580d"
+                d="M176 252.6C176 175.7 239.7 112 320 112C400.3 112 464 175.7 464 252.6C464 298.2 440.2 354.1 405.1 409.7C376.8 454.5 344.1 494.5 320 521.8C295.9 494.5 263.3 454.6 234.9 409.7C199.8 354.2 176 298.2 176 252.6zM320 64C214 64 128 148.4 128 252.6C128 371.9 248.2 514.9 298.4 569.4C310.2 582.2 329.8 582.2 341.6 569.4C391.8 514.9 512 371.9 512 252.6C512 148.4 426 64 320 64zM288 256C288 238.3 302.3 224 320 224C337.7 224 352 238.3 352 256C352 273.7 337.7 288 320 288C302.3 288 288 273.7 288 256zM400 256C400 211.8 364.2 176 320 176C275.8 176 240 211.8 240 256C240 300.2 275.8 336 320 336C364.2 336 400 300.2 400 256z" />
+        </svg>
     </div>
 
     <!-- Title -->
@@ -418,7 +411,8 @@
     <h3 class="max-w-2xl text-center mb-4  text-4xl md:text-5xl xl:text-4xl font-bold leading-none text-slate-700">
         Heeft u een timmerklus?
     </h3>
-    <p class="max-w-xl mb-6 font-regular text-center text-gray-400 lg:mb-8 text-md md:text-lg lg:text-xl ">Bel of mail voor een vrijblijvend gesprek. Ik kijk graag mee naar de mogelijkheden.
+    <p class="max-w-xl mb-6 font-regular text-center text-gray-400 lg:mb-8 text-md md:text-lg lg:text-xl ">Bel of mail
+        voor een vrijblijvend gesprek. Ik kijk graag mee naar de mogelijkheden.
     </p>
 
 
