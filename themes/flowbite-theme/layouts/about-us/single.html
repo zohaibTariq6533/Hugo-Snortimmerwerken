@@ -12,60 +12,55 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
                     </svg>
-                    Terug naar home
+                    {{.Params.hero_section_group.home_button}}
                 </a>
             </div>
 
             <!-- 2. Image Banner -->
             <div class="mb-8 w-full max-w-md">
                 <div class="w-full h-64 md:h-80 bg-gray-100 rounded-lg overflow-hidden">
-                    <img src="/card-img-1.jpg" alt="Jurjen Snor working" class="w-full h-full object-cover">
+                    <img src="{{.Params.hero_section_group.hero_banner}}" alt="Jurjen Snor working" class="w-full h-full object-cover">
                 </div>
             </div>
 
             <!-- 3. Text and Buttons -->
             <div class="text-center px-2 max-w-2xl">
                 <h1 class="mb-4 text-3xl md:text-4xl font-extrabold leading-none text-slate-700">
-                    Over Snor Timmerwerken
+                    {{.Params.hero_section_group.heading}}
                 </h1>
                 <p class="mb-6 font-regular text-gray-600 text-sm md:text-base">
-                    Jurjen Snor doet al jaren timmerwerk in Noord-Nederland. Van klein onderhoud tot grote verbouwingen
-                    - betrouwbaar werk, zonder poespas.
+                    {{.Params.hero_section_group.subheading}}
                 </p>
 
                 <!-- Owner Info -->
                 <div class="flex items-center justify-center mb-6">
-                    <div class="w-12 h-12 rounded-full overflow-hidden mr-3">
-                        <img src="/Logo.png" alt="Jurjen Snor" class="w-full h-full object-cover">
+                    <div class=" h-12  overflow-hidden mr-3">
+                        <img src="/logo mark.png" alt="Jurjen Snor" class="w-full h-full object-cover">
                     </div>
                     <div class="text-left">
-                        <h3 class="text-lg font-bold text-gray-800">Jurjen Snor</h3>
-                        <p class="text-sm text-gray-600">Eigenaar & Vakman</p>
+                        <h3 class="text-lg font-bold text-gray-800">{{.Params.hero_section_group.logo_heading}}</h3>
+                        <p class="text-sm text-gray-600">{{.Params.hero_section_group.logo_subheading}}</p>
                     </div>
                 </div>
 
-                <div class="flex flex-col sm:flex-row gap-3 justify-center">
-                    <a href="#" class="inline-flex items-center justify-center text-white bg-[#ed5821] hover:bg-orange-700
-               font-medium rounded-lg text-sm px-4 py-3 transition">
+                <div class="flex sm:flex-row gap-3 justify-center">
+                    <a href="#" class=" w-[60%] items-center text-white bg-[#D7223C] hover:text-[#D7223C] hover:bg-white border hover:border-[#D7223C]
+       font-medium rounded-lg text-sm px-4 py-3 transition">
+                        
+                        {{.Params.hero_section_group.schedule_meeting}}
+                    </a>
+
+                    <a href="#"  class="relative inline-flex items-center justify-center px-6 py-3 
+      text-sm font-medium rounded-lg border border-[#D7223C] text-[#D7223C]
+      transition-all duration-300 ease-in-out
+      hover:bg-[#D7223C] hover:text-white focus:ring-2 focus:outline-none focus:ring-[#D7223C]">
                         <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
                             </path>
                         </svg>
-                        Bel Jurjen: 06 12 34 56 78
-                    </a>
-
-                    <a href="#" class="inline-flex items-center justify-center px-6 py-3 
-              text-sm font-medium rounded-lg border border-gray-300 text-gray-700 
-              transition-all duration-300 ease-in-out
-              hover:bg-gray-50 focus:ring-2 focus:outline-none focus:ring-gray-300">
-                        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
-                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
-                        </svg>
-                        Mail voor afspraak
+                        {{.Params.hero_section_group.call_button}}
                     </a>
                 </div>
             </div>
@@ -83,57 +78,53 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
                         </svg>
-                        Terug naar home
+                        {{.Params.hero_section_group.home_button}}
                     </a>
                 </div>
 
                 <h1 class="max-w-2xl mb-4 text-4xl xl:text-4xl font-extrabold leading-none text-slate-700">
-                    Over Snor Timmerwerken
+                    {{.Params.hero_section_group.heading}}
                 </h1>
                 <p class="max-w-xl mb-8 font-regular text-gray-600 text-lg lg:text-xl">
-                    Jurjen Snor doet al jaren timmerwerk in Noord-Nederland. Van klein onderhoud tot grote verbouwingen
-                    - betrouwbaar werk, zonder poespas.
+                    {{.Params.hero_section_group.subheading}}
+                    
                 </p>
 
                 <!-- Owner Info -->
                 <div class="flex items-center mb-8">
-                    <div class="w-16 h-16 rounded-full overflow-hidden mr-4">
-                        <img src="/Logo.png" alt="Jurjen Snor" class="w-full h-full object-cover">
+                    <div class=" h-16  overflow-hidden mr-4">
+                        <img src="/logo mark.png" alt="Jurjen Snor" class="w-full h-full object-cover">
                     </div>
                     <div>
-                        <h3 class="text-2xl font-bold text-gray-800">Jurjen Snor</h3>
-                        <p class="text-lg text-gray-500">Eigenaar & Vakman</p>
+                        <h3 class="text-2xl font-bold text-gray-800">{{.Params.hero_section_group.logo_heading}}</h3>
+                        <p class="text-lg text-gray-500">{{.Params.hero_section_group.logo_subheading}}</p>
                     </div>
                 </div>
 
                 <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="#" class="inline-flex items-center text-white bg-[#ed5821] hover:bg-orange-700
-               font-medium rounded-lg text-sm px-6 py-3 transition">
+                    <a href="#" class="inline-flex items-center text-white bg-[#D7223C] hover:text-[#D7223C] hover:bg-white border hover:border-[#D7223C]
+       font-medium rounded-lg text-sm px-4 py-3 transition">
+                        
+                        {{.Params.hero_section_group.schedule_meeting}}
+                    </a>
+
+                    <a href="#"  class="relative inline-flex items-center justify-center px-6 py-3 
+      text-sm font-medium rounded-lg border border-[#D7223C] text-[#D7223C]
+      transition-all duration-300 ease-in-out
+      hover:bg-[#D7223C] hover:text-white focus:ring-2 focus:outline-none focus:ring-[#D7223C]">
                         <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
                             </path>
                         </svg>
-                        Bel Jurjen: 06 12 34 56 78
-                    </a>
-
-                    <a href="#" class="inline-flex items-center justify-center px-6 py-3 
-              text-sm font-medium rounded-lg border border-gray-300 text-gray-700 
-              transition-all duration-300 ease-in-out
-              hover:bg-gray-50 focus:ring-2 focus:outline-none focus:ring-gray-300">
-                        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
-                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
-                        </svg>
-                        Mail voor afspraak
+                       {{.Params.hero_section_group.call_button}}
                     </a>
                 </div>
             </div>
 
             <div class="lg:col-span-6 bg-gray-100 h-96 rounded-lg overflow-hidden">
-                <img src="/card-img-1.jpg" alt="Jurjen Snor working on window frame" class="w-full h-full object-cover">
+                <img src="{{.Params.hero_section_group.hero_banner}}" alt="Jurjen Snor working on window frame" class="w-full h-full object-cover">
             </div>
         </div>
     </div>
@@ -245,7 +236,7 @@
 <div class="mb-25 px-6 bg-white">
     <div class="max-w-6xl mx-auto">
         <div class="text-center ">
-            <h2 class="text-center text-2xl font-extrabold">Waar we voor staan</h2>
+            <h2 class="text-4xl font-bold text-center mb-8 text-gray-800">Waar we voor staan</h2>
             <div class="w-24 h-1 bg-[#ed5821] mx-auto rounded-full mt-4 mb-2"></div>
         </div>
 

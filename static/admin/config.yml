@@ -196,6 +196,27 @@ collections:
               - { name: "schedule_meeting", label: "Schedule Meeting Button Text", widget: "string" }
               - { name: "call_button", label: "Call Button Text", widget: "string" }
               - { name: "call_number", label: "Call Number", widget: "string" }
-
+  - name: "about-us"
+    label: "About Us Page"
+    file: "content/about-us.md"
+    fields:
+      - { name: "title", label: "Title", widget: "string" }
+      - { name: "date", label: "Date", widget: "datetime" }
+      - { name: "draft", label: "Draft", widget: "boolean", default: false }
+      - { name: "type", label: "Type", widget: "string", default: "about-us" }
+      - name: "hero_section_group"
+        label: "Hero Section"
+        widget: "object"
+        fields:
+          - { name: "home_button", label: "Home Button Text", widget: "string" }
+          - { name: "hero_banner", label: "Hero Banner", widget: "image" ,choose_url: false, media_folder: "/static/uploads/about-us-img", public_folder: "/uploads/about-us-img" }
+          - { name: "heading", label: "Heading", widget: "string" }
+          - { name: "subheading", label: "Subheading", widget: "text" }
+          - { name: "logo", label: "Logo", widget: "image" }
+          - { name: "logo_heading", label: "Logo Heading", widget: "string" }
+          - { name: "logo_subheading", label: "Logo Subheading", widget: "string" }
+          - { name: "schedule_meeting", label: "Schedule Meeting Button Text", widget: "string" }
+          - { name: "call_button", label: "Call Button Text", widget: "string" }
+          - { name: "call_number", label: "Call Number", widget: "string" }
 
 
