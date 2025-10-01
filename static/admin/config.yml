@@ -176,4 +176,16 @@ collections:
               - { name: "rec_rate", label: "Recommendation Heading", widget: "string" }
               - { name: "experience", label: "Experience", widget: "string" }
               - { name: "exp_heading", label: "Experience Heading", widget: "string" }
+          - name: "Review_section"
+            label: "Review Section"
+            widget: "object"
+            fields:
+              - { name: "main_heading", label: "Main Heading", widget: "string" }
+              - name: "reviews"
+                label: "Reviews"
+                widget: "list"
+                fields:
+                  - { name: "review", label: "Review Text", widget: "text" }
+                  - { name: "reviewed_by", label: "Reviewed By", widget: "string" }
+
 

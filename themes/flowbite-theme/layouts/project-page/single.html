@@ -200,6 +200,7 @@
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             <!-- Testimonial Card 1 -->
+              {{ range .Params.Review_section.reviews }}
             <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
                 <div class="flex justify-center mb-4">
                     <div class="flex text-yellow-400">
@@ -231,16 +232,16 @@
                     </div>
                 </div>
                 <p class="text-gray-500 italic text-center mb-4">
-                    "Jurjen denkt mee en geeft eerlijk advies. Het werk is perfect uitgevoerd en alles werd keurig
-                    opgeruimd."
+                    "{{ .review }}"
                 </p>
                 <p class="text-gray-900 font-medium text-center">
-                    - Familie Jansen, Haarlem
+                    - {{ .reviewed_by }}
                 </p>
             </div>
+            {{ end }}
 
             <!-- Testimonial Card 2 -->
-            <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+            <!-- <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
                 <div class="flex justify-center mb-4">
                     <div class="flex text-yellow-400">
                         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
@@ -276,10 +277,10 @@
                 <p class="text-gray-900 font-medium text-center">
                     - M. de Vries, Amsterdam
                 </p>
-            </div>
+            </div> -->
 
             <!-- Testimonial Card 3 -->
-            <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+            <!-- <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
                 <div class="flex justify-center mb-4">
                     <div class="flex text-yellow-400">
                         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
@@ -315,7 +316,7 @@
                 <p class="text-gray-900 font-medium text-center">
                     - J. Bakker, Alkmaar
                 </p>
-            </div>
+            </div> -->
         </div>
     </div>
 </section>

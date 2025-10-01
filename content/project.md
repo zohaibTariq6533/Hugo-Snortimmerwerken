@@ -75,6 +75,14 @@ Result_section:
   rec_rate: Heading 3
   experience: 5j
   exp_heading: Heading 4
-
+Review_section:
+  main_heading: Heading here
+  reviews:
+    - review: Review here
+      reviewed_by: Reviewed by
+    - review: Review here
+      reviewed_by: Reviewed by
+    - review: Review here
+      reviewed_by: Reviewed by
 ---
 
