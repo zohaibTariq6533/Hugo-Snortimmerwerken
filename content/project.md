@@ -75,7 +75,7 @@ Result_section:
   experience: 5j
   exp_heading: Heading 4
 Review_section:
-  main_heading: Heading here
+  heading: Heading here
   reviews:
     - review: Review lines here
       reviewed_by: Reviewed by 1
@@ -84,5 +84,11 @@ Review_section:
     - review: Review lines here
       reviewed_by: Reviewed by 3
 type: project-page
+Final_cta:
+  heading: Heading
+  description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, omnis
+  schedule_meeting: Schedule a meeting
+  call_button: Call Now
+  call_number: 12345
 ---
 
