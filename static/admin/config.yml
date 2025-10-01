@@ -130,6 +130,72 @@ collections:
                   - { name: "heading", label: "Heading", widget: "string" }
                   - { name: "subheading", label: " Subheading", widget: "string" }
                   - { name: "subheading2", label: "Other Detail", widget: "text" }
+  - name: "project"
+    label: "Project Page"
+    files:
+      - file: "content/project.md"
+        label: "Project Page"
+        name: "projectpage_content"
+        fields:
+          - { name: "title", label: "Title", widget: "string" }
+          - { name: "date", label: "Date", widget: "datetime" }
+          - { name: "draft", label: "Draft", widget: "boolean", default: false }
+          - label: "Hero Section"
+            name: "hero_section_group"
+            widget: "object"
+            fields:
+              - { name: "home_button", label: "Home Button Text", widget: "string" }
+              - { name: "heading", label: "Heading", widget: "string" }
+              - { name: "subheading", label: "Sub Heading", widget: "string" }
+              - { name: "schedule_meeting", label: "Primary Button text", widget: "string" }
+              - { name: "call_button", label: "Secondary Button text", widget: "string" }
+              - { name: "call_number", label: "Number to call", widget: "number" }
+          - name: "Project_cards"
+            label: "Project Cards"
+            widget: "list"
+            fields:
+              - { name: "img_heading", label: "Image Heading", widget: "string" }
+              - { name: "image", label: "Image", widget: "image", choose_url: false, media_folder: "/static/uploads/projects_img", public_folder: "/uploads/projects_img" }
+              - { name: "heading", label: "Heading", widget: "string" }
+              - { name: "location", label: "Location", widget: "string" }
+              - { name: "date", label: "Date", widget: "string" }
+              - { name: "description", label: "Description", widget: "text" }
+              - { name: "inner_card_heading", label: "Inner Card Heading", widget: "string" }
+              - { name: "inner_card_description", label: "Inner Card Description", widget: "text" }
+              - { name: "review", label: "Review", widget: "text" }
+          - name: "Result_section"
+            label: "Result Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Main Heading", widget: "string" }
+              - { name: "total_projects", label: "Total Projects", widget: "string" }
+              - { name: "prj_heading", label: "Projects Heading", widget: "string" }
+              - { name: "rating", label: "Rating", widget: "number", step: 0.1 }
+              - { name: "rating_heading", label: "Rating Heading", widget: "string" }
+              - { name: "recommendation", label: "Recommendation %", widget: "number" }
+              - { name: "rec_rate", label: "Recommendation Heading", widget: "string" }
+              - { name: "experience", label: "Experience", widget: "string" }
+              - { name: "exp_heading", label: "Experience Heading", widget: "string" }
+          - name: "Review_section"
+            label: "Review Section"
+            widget: "object"
+            fields:
+              - { name: "main_heading", label: "Main Heading", widget: "string" }
+              - name: "reviews"
+                label: "Reviews"
+                widget: "list"
+                fields:
+                  - { name: "review", label: "Review Text", widget: "text" }
+                  - { name: "reviewed_by", label: "Reviewed By", widget: "string" }
+          - name: "Final_cta"
+            label: "Final Call To Action"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading", widget: "string" }
+              - { name: "description", label: "Description", widget: "text" }
+              - { name: "schedule_meeting", label: "Schedule Meeting Button Text", widget: "string" }
+              - { name: "call_button", label: "Call Button Text", widget: "string" }
+              - { name: "call_number", label: "Call Number", widget: "string" }
   - name: "about-us"
     label: "About Us Page"
     files:
@@ -146,7 +212,7 @@ collections:
             widget: "object"
             fields:
               - { name: "home_button", label: "Home Button Text", widget: "string" }
-              - { name: "hero_banner", label: "Hero Banner", widget: "image", choose_url: false, media_folder: "/static/uploads/about-us-img", public_folder: "/static/uploads/about-us-img" }
+              - { name: "hero_banner", label: "Hero Banner", widget: "image",choose_url: false, media_folder: "/static/uploads/about-us-img", public_folder: "/uploads/about-us-img" }
               - { name: "heading", label: "Heading", widget: "string" }
               - { name: "subheading", label: "Subheading", widget: "text" }
               - { name: "logo", label: "Logo", widget: "image" }
@@ -155,3 +221,5 @@ collections:
               - { name: "schedule_meeting", label: "Schedule Meeting Button Text", widget: "string" }
               - { name: "call_button", label: "Call Button Text", widget: "string" }
               - { name: "call_number", label: "Call Number", widget: "string" }
+
+
