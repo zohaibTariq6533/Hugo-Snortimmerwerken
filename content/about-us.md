@@ -34,6 +34,14 @@ How_it_works:
       paragraph: Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, deleniti.
   message: De meeste klussen zijn niet ingewikkeld - gewoon goed uitvoeren en netjes achterlaten.
   message_by: Name here
+Stand_for:
+  heading: How i stands
+  card1_heading: Card 1
+  card1_text: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, ipsum!
+  card2_heading: Card 2
+  card2_text: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, ipsum2
+  card3_heading: Card 3
+  card3_text: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, ipsum3
 
 ---
 

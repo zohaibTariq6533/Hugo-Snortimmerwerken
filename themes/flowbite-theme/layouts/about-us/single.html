@@ -225,7 +225,7 @@
 <div class="mb-25 px-6 bg-white">
     <div class="max-w-6xl mx-auto">
         <div class="text-center ">
-            <h2 class="text-4xl font-bold text-center mb-8 text-gray-800">Waar we voor staan</h2>
+            <h2 class="text-4xl font-bold text-center mb-8 text-gray-800">{{.Params.Stand_for.heading}}</h2>
             <div class="w-24 h-1 bg-[#ed5821] mx-auto rounded-full mt-4 mb-2"></div>
         </div>
 
@@ -248,12 +248,12 @@
 
                 <!-- Title -->
                 <h3 class="text-lg sm:text-xl font-bold text-gray-800 ">
-                    Eerlijk werk
+                    {{.Params.Stand_for.card1_heading}}
                 </h3>
 
                 <!-- Description -->
                 <p class="text-gray-500 text-sm leading-relaxed h-16 overflow-hidden">
-                    15 jaar ervaring. Werk wordt gedaan zoals afgesproken, voor de afgesproken prijs.
+                    {{.Params.Stand_for.card1_text}} 
                 </p>
             </div>
 
@@ -272,12 +272,12 @@
 
                 <!-- Title -->
                 <h3 class="text-lg sm:text-xl font-bold text-gray-800 ">
-                    Direct contact
+                    {{.Params.Stand_for.card2_heading}}
                 </h3>
 
                 <!-- Description -->
                 <p class="text-gray-600 text-sm leading-relaxed h-16 overflow-hidden">
-                    Altijd Jurjen aan de lijn. Geen callcenter, geen tussenpersonen.
+                    {{.Params.Stand_for.card2_text}} 
                 </p>
             </div>
 
@@ -296,12 +296,12 @@
 
                 <!-- Title -->
                 <h3 class="text-lg sm:text-xl font-bold text-gray-800 ">
-                    Op tijd klaar
+                    {{.Params.Stand_for.card3_heading}}
                 </h3>
 
                 <!-- Description -->
                 <p class="text-gray-600 text-sm leading-relaxed h-16 overflow-hidden">
-                    Planning wordt opgegeven en nagekomen. Opruimen hoort erbij.
+                    {{.Params.Stand_for.card3_text}}
                 </p>
             </div>
         </div>

@@ -246,6 +246,18 @@ collections:
                   - { name: "paragraph", label: "Paragraph", widget: "text" }
               - { name: "message", label: "Message", widget: "text" }
               - { name: "message_by", label: "Message By", widget: "string" }
+          - name: "stand_for"
+            label: "Stand For Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading", widget: "string" }
+              - { name: "card1_heading", label: "Card 1 Heading", widget: "string" }
+              - { name: "card1_text", label: "Card 1 Text", widget: "text" }
+              - { name: "card2_heading", label: "Card 2 Heading", widget: "string" }
+              - { name: "card2_text", label: "Card 2 Text", widget: "text" }
+              - { name: "card3_heading", label: "Card 3 Heading", widget: "string" }
+              - { name: "card3_text", label: "Card 3 Text", widget: "text" }
+
 
 
 
