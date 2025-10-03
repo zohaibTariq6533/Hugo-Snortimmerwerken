@@ -42,6 +42,34 @@ Stand_for:
   card2_text: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, ipsum2
   card3_heading: Card 3
   card3_text: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, ipsum3
-
+Our_working_area:
+  heading: Heading
+  description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita deserunt incidunt minus!
+  cards:
+    - card_heading: Card heading
+      points:
+        - Hellooo 1
+        - Hellooo 2
+        - Hellooo 3
+        - Hellooo 4
+    - card_heading: Card heading2
+      points:
+        - Hellooo 1
+        - Hellooo 2
+        - Hellooo 3
+        - Hellooo 4
+    - card_heading: Card heading2
+      points:
+        - Hellooo 1
+        - Hellooo 2
+        - Hellooo 3
+        - Hellooo 4
+  call_to_action: Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, saepe.
+Final_cta:
+  heading: Heading
+  description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, omnis
+  schedule_meeting: Schedule a meeting
+  call_button: Call Now
+  call_number: 12345
 ---
 
