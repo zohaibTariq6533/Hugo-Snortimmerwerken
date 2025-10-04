@@ -19,7 +19,8 @@
       <!-- 2. Image Banner -->
       <div class="mb-8 w-full max-w-md">
         <div class="w-full h-64 md:h-80 bg-gray-100 rounded-lg overflow-hidden">
-          <img src="{{.Params.hero_section_group.hero_banner}}" alt="construction man" class="w-full h-full object-cover">
+          <img src="{{.Params.hero_section_group.hero_banner}}" alt="construction man"
+            class="w-full h-full object-cover">
         </div>
       </div>
 
@@ -36,7 +37,7 @@
         <div class="flex flex-col sm:flex-row gap-3 justify-center">
           <a href="/schedule-form" class="inline-flex items-center justify-center text-white bg-[#D7223C] hover:bg-red-700
              font-medium rounded-lg text-sm px-4 py-3 transition">
-            
+
             {{.Params.hero_section_group.schedule_meeting}}
           </a>
 
@@ -82,7 +83,7 @@
         <div class="space-x-3">
           <a href="/schedule-form" class="inline-flex items-center text-white bg-[#D7223C] hover:bg-red-700
              font-medium rounded-lg text-sm px-4 py-3 transition">
-            
+
             {{.Params.hero_section_group.schedule_meeting}}
           </a>
 
@@ -114,20 +115,20 @@
       <h2 class="text-3xl tracking-tight font-extrabold text-gray-700 text-center">{{.Params.benefits.heading}} </h2>
     </div>
     <div class="space-y-8 w-[80%] md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
-  {{ range .Params.benefits.points }}
-  <div class="flex gap-5">
-    <div class="flex justify-center items-center w-5 h-5 rounded-full bg-primary-100 lg:h-12 lg:w-12">
-      <svg class="w-6 h-6 bg-orange-100 text-orange-500 rounded-full lg:w-6 lg:h-6" fill="currentColor"
-        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd"
-          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-          clip-rule="evenodd"></path>
-      </svg>
+      {{ range .Params.benefits.points }}
+      <div class="flex gap-5">
+        <div class="flex justify-center items-center w-5 h-5 rounded-full bg-primary-100 lg:h-12 lg:w-12">
+          <svg class="w-6 h-6 bg-orange-100 text-orange-500 rounded-full lg:w-6 lg:h-6" fill="currentColor"
+            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </div>
+        <p class="text-gray-600">{{ . }}</p>
+      </div>
+      {{ end }}
     </div>
-    <p class="text-gray-600">{{ . }}</p>
-  </div>
-  {{ end }}
-</div>
 
   </div>
 </section>
@@ -139,90 +140,28 @@
     </div>
     <!-- Responsive Grid Layout -->
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-7xl mx-auto px-4">
-      <!-- Card 1 -->
+      {{ range .Params.how_we_work.cards }}
       <div class="bg-white rounded-2xl shadow-lg px-6 py-8 text-center hover:shadow-xl transition-shadow duration-300">
         <!-- Orange Circle with Number -->
         <div class="flex justify-center mb-6">
           <div class="w-[50px] h-[50px] bg-[#ed5821] rounded-full flex items-center justify-center">
-            <span class="text-white text-2xl font-bold">1</span>
+            <span class="text-white text-2xl font-bold">{{ .number }}</span>
           </div>
         </div>
 
         <!-- Title -->
         <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-4">
-          Vrijblijvende afspraak
+          {{ .card_heading }}
         </h3>
 
         <!-- Description -->
         <p class="text-gray-600 text-sm leading-relaxed">
-          Jurjen komt langs voor<br>
-          meting en advies
+          {{ .subheading }}
         </p>
       </div>
-
-      <!-- Card 2 -->
-      <div class="bg-white rounded-2xl shadow-lg px-6 py-8 text-center hover:shadow-xl transition-shadow duration-300">
-        <!-- Orange Circle with Number -->
-        <div class="flex justify-center mb-6">
-          <div class="w-[50px] h-[50px] bg-[#ed5821] rounded-full flex items-center justify-center">
-            <span class="text-white text-2xl font-bold">2</span>
-          </div>
-        </div>
-
-        <!-- Title -->
-        <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-4">
-          Offerte op maat
-        </h3>
-
-        <!-- Description -->
-        <p class="text-gray-600 text-sm leading-relaxed">
-          Binnen 2 dagen ontvang je<br>
-          een gedetailleerde offerte
-        </p>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="bg-white rounded-2xl shadow-lg px-6 py-8 text-center hover:shadow-xl transition-shadow duration-300">
-        <!-- Orange Circle with Number -->
-        <div class="flex justify-center mb-6">
-          <div class="w-[50px] h-[50px] bg-[#ed5821] rounded-full flex items-center justify-center">
-            <span class="text-white text-2xl font-bold">3</span>
-          </div>
-        </div>
-
-        <!-- Title -->
-        <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-4">
-          Vervanging
-        </h3>
-
-        <!-- Description -->
-        <p class="text-gray-600 text-sm leading-relaxed">
-          Oude kozijn eruit, nieuwe<br>
-          kozijn erin, netjes afgewerkt
-        </p>
-      </div>
-
-      <!-- Card 4 -->
-      <div class="bg-white rounded-2xl shadow-lg px-6 py-8 text-center hover:shadow-xl transition-shadow duration-300">
-        <!-- Orange Circle with Number -->
-        <div class="flex justify-center mb-6">
-          <div class="w-[50px] h-[50px] bg-[#ed5821] rounded-full flex items-center justify-center">
-            <span class="text-white text-2xl font-bold">4</span>
-          </div>
-        </div>
-
-        <!-- Title -->
-        <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-4">
-          Klaar!
-        </h3>
-
-        <!-- Description -->
-        <p class="text-gray-600 text-sm leading-relaxed">
-          Geniet van je nieuwe<br>
-          energiezuinige kozijnen
-        </p>
-      </div>
+      {{ end }}
     </div>
+
   </div>
 </section>
 

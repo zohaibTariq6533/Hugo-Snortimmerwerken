@@ -12,6 +12,7 @@ hero_section_group:
   call_button: Call Now
   call_number: '845745'
 benefits:
+  heading: Heading here
   points:
     - Lorem ipsum dolor sit amet consectetur adipisicing elit.
     - Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -19,7 +20,22 @@ benefits:
     - Lorem ipsum dolor sit amet consectetur adipisicing elit.
     - Lorem ipsum dolor sit amet consectetur adipisicing elit.
     - Lorem ipsum dolor sit amet consectetur adipisicing elit.
-  heading: Heading here
 type: service1
+how_we_work:
+  heading: How we work
+  cards:
+    - number: 1
+      card_heading: Card 1 heading
+      subheading: Subheading lines here for card 1
+    - number: 2
+      card_heading: Card 2 heading
+      subheading: Subheading lines here for card 2
+    - number: 3
+      card_heading: Card 3 heading
+      subheading: Subheading lines here for card 3
+    - number: 4
+      card_heading: Card 4 heading
+      subheading: Subheading lines here for card 4
+
 ---
 

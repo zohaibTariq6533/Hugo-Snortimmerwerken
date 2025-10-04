@@ -305,6 +305,29 @@ collections:
               - { name: "schedule_meeting", label: "Schedule Meeting Button", widget: "string" }
               - { name: "call_button", label: "Call Button Text", widget: "string" }
               - { name: "call_number", label: "Call Number", widget: "string" }
+          - name: "benefits"
+            label: "Benefits Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading", widget: "string" }
+              - name: "points"
+                label: "Points"
+                widget: "list"
+                field: { label: "Point", name: "point", widget: "string" }
+          - label: "How We Work"
+            name: "how_we_work"
+            widget: "object"
+            fields:
+              - { label: "Heading", name: "heading", widget: "string" }
+              - label: "Cards"
+                name: "cards"
+                widget: "list"
+                fields:
+                  - { label: "Number", name: "number", widget: "number" }
+                  - { label: "Card Heading", name: "card_heading", widget: "string" }
+                  - { label: "Subheading", name: "subheading", widget: "text" }
+
+
 
 
 
