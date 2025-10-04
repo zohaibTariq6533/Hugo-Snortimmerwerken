@@ -21,7 +21,7 @@ stats_section:
   section2_heading: heading here
   rating_section: 4.9
   rating_heading: heading here
-  section4_value: 4.9
+  section4_value: 4.9%
   section4_heading: heading here
 How_it_works:
   heading: Heading here
