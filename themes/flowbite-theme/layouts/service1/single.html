@@ -5,53 +5,51 @@
     <div class="flex flex-col lg:hidden items-center justify-center">
       <!-- 1. Back to Home Button (above image) -->
       <div class="mb-4">
-        <a href="/" class="inline-flex items-center text-gray-600 hover:text-[#ed5821] transition-colors duration-200 px-3 py-2 rounded-lg">
-          <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+        <a href="/"
+          class="inline-flex items-center text-gray-600 hover:text-[#D7223C] transition-colors duration-200 px-3 py-2 rounded-lg">
+          <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18">
+            </path>
           </svg>
-          Terug naar home
+          {{.Params.hero_section_group.home_button}}
         </a>
       </div>
-      
+
       <!-- 2. Image Banner -->
       <div class="mb-8 w-full max-w-md">
         <div class="w-full h-64 md:h-80 bg-gray-100 rounded-lg overflow-hidden">
-          <img src="/card-img-1.jpg" alt="construction man" class="w-full h-full object-cover">
+          <img src="{{.Params.hero_section_group.hero_banner}}" alt="construction man" class="w-full h-full object-cover">
         </div>
       </div>
-      
+
       <!-- 3. Text and Buttons -->
       <div class="text-center px-2 max-w-2xl">
         <h1 class="mb-4 text-3xl md:text-4xl font-extrabold leading-none text-slate-700">
-          Kozijnen
-          <span class="text-[#ed5821]">vervangen</span>
+          {{.Params.hero_section_group.heading}}
+          <span class="text-[#D7223C]">{{.Params.hero_section_group.heading_colored}}</span>
         </h1>
-        <p class="mb-6 font-regular text-gray-400 text-sm md:text-base">Al jaren doe ik
-          timmerklussen in Noord-Nederland. Van een kozijn vervangen tot een dakkapel erbij - werk dat lang meegaat,
-          voor
-          een eerlijke prijsa.
+        <p class="mb-6 font-regular text-gray-400 text-sm md:text-base">
+          {{.Params.hero_section_group.subheading}}
         </p>
 
         <div class="flex flex-col sm:flex-row gap-3 justify-center">
-          <a href="#" class="inline-flex items-center justify-center text-white bg-[#ed5821] hover:bg-orange-700
+          <a href="/schedule-form" class="inline-flex items-center justify-center text-white bg-[#D7223C] hover:bg-red-700
              font-medium rounded-lg text-sm px-4 py-3 transition">
+            
+            {{.Params.hero_section_group.schedule_meeting}}
+          </a>
+
+          <a href="tel:+{{.Params.hero_section_group.call_number}}" class="inline-flex items-center justify-center px-6 py-3 
+            text-sm font-medium rounded-lg border border-[#D7223C] text-[#D7223C] 
+            transition-all duration-300 ease-in-out
+            hover:bg-[#D7223C] hover:text-white focus:ring-2 focus:outline-none focus:ring-[#D7223C]">
             <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
               </path>
             </svg>
-            Bel direct: 06 12 34 56 78
-          </a>
-
-          <a href="#" class="inline-flex items-center justify-center px-6 py-3 
-            text-sm font-medium rounded-lg border border-[#ed5821] text-[#ed5821] 
-            transition-all duration-300 ease-in-out
-            hover:bg-[#ed5821] hover:text-white focus:ring-2 focus:outline-none focus:ring-[#ed5821]">
-            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-              <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
-              <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
-            </svg>
-            Offerte aanvragen
+            {{.Params.hero_section_group.call_button}}
           </a>
         </div>
       </div>
@@ -59,53 +57,51 @@
 
     <!-- Desktop Layout: Side by side -->
     <div class="hidden lg:grid lg:grid-cols-12 lg:gap-8 lg:items-center">
-      <div class="lg:col-span-7 px-5"> 
+      <div class="lg:col-span-6 px-5">
         <!-- Back to Home Button -->
         <div class="mb-6">
-          <a href="/" class="inline-flex items-center text-gray-600 hover:text-[#ed5821] transition-colors duration-200">
-            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+          <a href="/"
+            class="inline-flex items-center text-gray-600 hover:text-[#D7223C] transition-colors duration-200">
+            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18">
+              </path>
             </svg>
-            Terug naar home
+            {{.Params.hero_section_group.home_button}}
           </a>
         </div>
-        
+
         <h1 class="max-w-2xl mb-4 text-4xl xl:text-4xl font-extrabold leading-none text-slate-700">
-          Kozijnen
-          <span class="text-[#ed5821]">vervangen</span>
+          {{.Params.hero_section_group.heading}}
+          <span class="text-[#D7223C]">{{.Params.hero_section_group.heading_colored}}</span>
         </h1>
         <p class="max-w-xl mb-6 font-regular text-gray-400 text-md lg:text-xl">Al jaren doe ik
-          timmerklussen in Noord-Nederland. Van een kozijn vervangen tot een dakkapel erbij - werk dat lang meegaat,
-          voor
-          een eerlijke prijsa.
+          {{.Params.hero_section_group.subheading}}
         </p>
 
         <div class="space-x-3">
-          <a href="#" class="inline-flex items-center text-white bg-[#ed5821] hover:bg-orange-700
+          <a href="/schedule-form" class="inline-flex items-center text-white bg-[#D7223C] hover:bg-red-700
              font-medium rounded-lg text-sm px-4 py-3 transition">
+            
+            {{.Params.hero_section_group.schedule_meeting}}
+          </a>
+
+          <a href="tel:+{{.Params.hero_section_group.call_number}}" class="mt-4 md:mt-0 relative inline-flex items-center justify-center px-6 py-3 
+            text-sm font-medium rounded-lg border border-[#D7223C] text-[#D7223C] 
+            transition-all duration-300 ease-in-out
+            hover:bg-[#D7223C] hover:text-white focus:ring-2 focus:outline-none focus:ring-[#D7223C]">
             <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
               </path>
             </svg>
-            Bel direct: 06 12 34 56 78
-          </a>
-
-          <a href="#" class="mt-4 md:mt-0 relative inline-flex items-center justify-center px-6 py-3 
-            text-sm font-medium rounded-lg border border-[#ed5821] text-[#ed5821] 
-            transition-all duration-300 ease-in-out
-            hover:bg-[#ed5821] hover:text-white focus:ring-2 focus:outline-none focus:ring-[#ed5821]">
-            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-              <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
-              <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
-            </svg>
-            Offerte aanvragen
+            {{.Params.hero_section_group.call_button}}
           </a>
         </div>
       </div>
-      
-      <div class="lg:col-span-5 bg-gray-100 h-100 rounded-lg overflow-hidden">
-        <img src="/card-img-1.jpg" alt="construction man" class="w-full h-full object-cover">
+
+      <div class="lg:col-span-6 bg-gray-100 h-100 rounded-lg overflow-hidden">
+        <img src="{{.Params.hero_section_group.hero_banner}}" alt="construction man" class="w-full h-full object-cover">
       </div>
     </div>
   </div>
@@ -115,78 +111,24 @@
 <section class="bg-white ">
   <div class="py-8 px-4 mx-auto flex flex-col justify-center items-center max-w-screen-xl sm:py-16 lg:px-6">
     <div class="w-full mb-8 lg:mb-16">
-      <h2 class="text-3xl tracking-tight font-extrabold text-gray-700 text-center">Wat levert het op? </h2>
+      <h2 class="text-3xl tracking-tight font-extrabold text-gray-700 text-center">{{.Params.benefits.heading}} </h2>
     </div>
-    <div class="space-y-8  w-[80%] md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
-
-      <div class="flex  gap-5 ">
-        <div class="flex justify-center items-center  w-5 h-5 rounded-full bg-primary-100 lg:h-12 lg:w-12 ">
-          <svg class="w-6 h-6 bg-orange-100 text-orange-500  rounded-full lg:w-6 lg:h-6 " fill="currentColor"
-            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd"
-              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-              clip-rule="evenodd"></path>
-          </svg>
-        </div>
-        <p class="text-gray-600 ">Veel beter geïsoleerd dan oude houten kozijnen</p>
-      </div>
-      <div class="flex  gap-5 ">
-        <div class="flex justify-center items-center  w-5 h-5 rounded-full bg-primary-100 lg:h-12 lg:w-12 ">
-          <svg class="w-6 h-6 bg-orange-100 text-orange-500  rounded-full lg:w-6 lg:h-6 " fill="currentColor"
-            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd"
-              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-              clip-rule="evenodd"></path>
-          </svg>
-        </div>
-        <p class="text-gray-600 ">Geen onderhoud meer - nooit meer schilderen</p>
-      </div>
-
-      <div class="flex  gap-5 ">
-        <div class="flex justify-center items-center  w-5 h-5 rounded-full bg-primary-100 lg:h-12 lg:w-12 ">
-          <svg class="w-6 h-6 bg-orange-100 text-orange-500  rounded-full lg:w-6 lg:h-6 " fill="currentColor"
-            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd"
-              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-              clip-rule="evenodd"></path>
-          </svg>
-        </div>
-        <p class="text-gray-600 ">Direct merkbaar warmer huis in de winter</p>
-      </div>
-      <div class="flex  gap-5 ">
-        <div class="flex justify-center items-center  w-5 h-5 rounded-full bg-primary-100 lg:h-12 lg:w-12 ">
-          <svg class="w-6 h-6 bg-orange-100 text-orange-500  rounded-full lg:w-6 lg:h-6 " fill="currentColor"
-            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd"
-              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-              clip-rule="evenodd"></path>
-          </svg>
-        </div>
-        <p class="text-gray-600 ">Lagere energierekening door betere isolatie</p>
-      </div>
-      <div class="flex  gap-5 ">
-        <div class="flex justify-center items-center  w-5 h-5 rounded-full bg-primary-100 lg:h-12 lg:w-12 ">
-          <svg class="w-6 h-6 bg-orange-100 text-orange-500  rounded-full lg:w-6 lg:h-6 " fill="currentColor"
-            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd"
-              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-              clip-rule="evenodd"></path>
-          </svg>
-        </div>
-        <p class="text-gray-600 ">Modern uiterlijk dat bij elke woning past</p>
-      </div>
-      <div class="flex  gap-5 ">
-        <div class="flex justify-center items-center  w-5 h-5 rounded-full bg-primary-100 lg:h-12 lg:w-12 ">
-          <svg class="w-6 h-6 bg-orange-100 text-orange-500  rounded-full lg:w-6 lg:h-6 " fill="currentColor"
-            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd"
-              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-              clip-rule="evenodd"></path>
-          </svg>
-        </div>
-        <p class="text-gray-600 ">10 jaar garantie op materiaal en montage</p>
-      </div>
+    <div class="space-y-8 w-[80%] md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
+  {{ range .Params.benefits.points }}
+  <div class="flex gap-5">
+    <div class="flex justify-center items-center w-5 h-5 rounded-full bg-primary-100 lg:h-12 lg:w-12">
+      <svg class="w-6 h-6 bg-orange-100 text-orange-500 rounded-full lg:w-6 lg:h-6" fill="currentColor"
+        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd"
+          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+          clip-rule="evenodd"></path>
+      </svg>
     </div>
+    <p class="text-gray-600">{{ . }}</p>
+  </div>
+  {{ end }}
+</div>
+
   </div>
 </section>
 
@@ -205,12 +147,12 @@
             <span class="text-white text-2xl font-bold">1</span>
           </div>
         </div>
-        
+
         <!-- Title -->
         <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-4">
           Vrijblijvende afspraak
         </h3>
-        
+
         <!-- Description -->
         <p class="text-gray-600 text-sm leading-relaxed">
           Jurjen komt langs voor<br>
@@ -226,12 +168,12 @@
             <span class="text-white text-2xl font-bold">2</span>
           </div>
         </div>
-        
+
         <!-- Title -->
         <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-4">
           Offerte op maat
         </h3>
-        
+
         <!-- Description -->
         <p class="text-gray-600 text-sm leading-relaxed">
           Binnen 2 dagen ontvang je<br>
@@ -247,12 +189,12 @@
             <span class="text-white text-2xl font-bold">3</span>
           </div>
         </div>
-        
+
         <!-- Title -->
         <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-4">
           Vervanging
         </h3>
-        
+
         <!-- Description -->
         <p class="text-gray-600 text-sm leading-relaxed">
           Oude kozijn eruit, nieuwe<br>
@@ -268,12 +210,12 @@
             <span class="text-white text-2xl font-bold">4</span>
           </div>
         </div>
-        
+
         <!-- Title -->
         <h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-4">
           Klaar!
         </h3>
-        
+
         <!-- Description -->
         <p class="text-gray-600 text-sm leading-relaxed">
           Geniet van je nieuwe<br>
@@ -296,17 +238,18 @@
         <h3 class="text-3xl font-bold text-[#ed5821] mb-4 text-center">
           Vanaf €800 per kozijn
         </h3>
-        
+
         <!-- Service Description -->
         <div class="mb-6 text-center ">
           <p class="text-gray-500 text-xs md:text-base leading-relaxed mb-2 text-wrap">
-            Oude kozijn weggehaald, nieuwe geplaatst, alles netjes afgewerkt. Prijs hangt af van grootte en wat je precies wilt.
+            Oude kozijn weggehaald, nieuwe geplaatst, alles netjes afgewerkt. Prijs hangt af van grootte en wat je
+            precies wilt.
           </p>
           <p class="text-gray-700 text-sm leading-relaxed">
-            
+
           </p>
         </div>
-        
+
         <!-- Pricing Breakdown -->
         <div class="space-y-3 mb-6">
           <div class="flex justify-between items-center">
@@ -322,7 +265,7 @@
             <span class="text-gray-800 text-sm font-semibold">€50 - €200</span>
           </div>
         </div>
-        
+
         <!-- Disclaimer -->
         <p class="text-gray-500 text-xs italic text-center">
           *Richtprijzen - exacte offerte altijd vrijblijvend
@@ -337,31 +280,29 @@
   <h3 class="max-w-2xl text-center mb-4  text-4xl md:text-5xl xl:text-4xl font-extrabold leading-none text-slate-700">
     Kozijnen laten vervangen?
   </h3>
-  <p class="max-w-xl mb-6 font-regular text-center text-gray-400 lg:mb-8 text-md md:text-lg lg:text-xl ">Jurjen komt eerst even kijken. Binnen een paar dagen weet je precies wat het gaat kosten.
+  <p class="max-w-xl mb-6 font-regular text-center text-gray-400 lg:mb-8 text-md md:text-lg lg:text-xl ">Jurjen komt
+    eerst even kijken. Binnen een paar dagen weet je precies wat het gaat kosten.
   </p>
 
 
   <div class="flex flex-col md:block">
     <a href="#" class="inline-flex items-center text-white bg-[#ed5821] hover:bg-orange-700
        font-medium rounded-lg text-sm px-4 py-3 transition">
-      <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
-        </path>
-      </svg>
-      Bel nu: 06 12 34 56 78
+
+      {{.Params.hero_section_group.schedule_meeting}}
     </a>
 
     <a href="#" class="mt-4 md:mt-0 relative inline-flex items-center justify-center px-6 py-3 
             text-sm font-medium rounded-lg border border-[#ed5821] text-[#ed5821] 
             transition-all duration-300 ease-in-out
             hover:bg-[#ed5821] hover:text-white focus:ring-2 focus:outline-none focus:ring-[#ed5821]">
-            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-              <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
-              <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
-            </svg>
-            Offerte aanvragen
-          </a>
+      <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
+        </path>
+      </svg>
+      Offerte aanvragen
+    </a>
   </div>
 </div>
 {{ end }}
