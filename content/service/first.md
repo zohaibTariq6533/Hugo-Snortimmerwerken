@@ -36,6 +36,19 @@ how_we_work:
     - number: 4
       card_heading: Card 4 heading
       subheading: Subheading lines here for card 4
+pricing_card:
+  heading: Section Heading
+  card:
+    card_heading: Pricing card heading here
+    card_description: Pricing card description here
+    product_pricing:
+      - product_name: Name here 1
+        pricing: $300 
+      - product_name: Name here  2
+        pricing: $1300 
+      - product_name: Name here  3
+        pricing: $800 
+  card_footer: Here the footer of card
 
 ---
 

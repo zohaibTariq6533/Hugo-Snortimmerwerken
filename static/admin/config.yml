@@ -326,6 +326,25 @@ collections:
                   - { label: "Number", name: "number", widget: "number" }
                   - { label: "Card Heading", name: "card_heading", widget: "string" }
                   - { label: "Subheading", name: "subheading", widget: "text" }
+          - name: pricing_card
+            label: "Pricing Card Section"
+            widget: object
+            fields:
+              - { name: heading, label: "Section Heading", widget: string }
+              - name: card
+                label: "Pricing Card"
+                widget: object
+                fields:
+                  - { name: card_heading, label: "Card Heading", widget: string }
+                  - { name: card_description, label: "Card Description", widget: text }
+                  - name: product_pricing
+                    label: "Product Pricing"
+                    widget: list
+                    fields:
+                      - { name: product_name, label: "Product Name", widget: string }
+                      - { name: pricing, label: "Pricing", widget: string }
+              - { name: card_footer, label: "Card Footer", widget: text }
+
 
 
 
