@@ -49,6 +49,12 @@ pricing_card:
       - product_name: Name here  3
         pricing: $800 
   card_footer: Here the footer of card
+final_cta:
+  heading: Heading
+  description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, omnis
+  schedule_meeting: Schedule a meeting
+  call_button: Call Now
+  call_number: '123456'
 
 ---
 

@@ -118,7 +118,7 @@
       {{ range .Params.benefits.points }}
       <div class="flex gap-5">
         <div class="flex justify-center items-center w-5 h-5 rounded-full bg-primary-100 lg:h-12 lg:w-12">
-          <svg class="w-6 h-6 bg-orange-100 text-orange-500 rounded-full lg:w-6 lg:h-6" fill="currentColor"
+          <svg class="w-6 h-6 bg-red-100 text-orange-500 rounded-full lg:w-6 lg:h-6" fill="currentColor"
             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd"
               d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
@@ -144,7 +144,7 @@
       <div class="bg-white rounded-2xl shadow-lg px-6 py-8 text-center hover:shadow-xl transition-shadow duration-300">
         <!-- Orange Circle with Number -->
         <div class="flex justify-center mb-6">
-          <div class="w-[50px] h-[50px] bg-[#ed5821] rounded-full flex items-center justify-center">
+          <div class="w-[50px] h-[50px] bg-[#D7223C] rounded-full flex items-center justify-center">
             <span class="text-white text-2xl font-bold">{{ .number }}</span>
           </div>
         </div>
@@ -174,7 +174,7 @@
       <!-- Pricing Card -->
       <div class="bg-white rounded-2xl shadow-lg px-8 py-10 w-[90%] md:w-[60%] mx-auto">
         <!-- Main Price Title -->
-        <h3 class="text-3xl font-bold text-[#ed5821] mb-4 text-center">
+        <h3 class="text-3xl font-bold text-[#D7223C] mb-4 text-center">
           {{.Params.pricing_card.card.card_heading}}
         </h3>
 
@@ -211,30 +211,29 @@
 
 <div class="w-full flex flex-col justify-center items-center lg:col-span-7  px-5 py-16 bg-[#f9f1ef]">
   <h3 class="max-w-2xl text-center mb-4  text-4xl md:text-5xl xl:text-4xl font-extrabold leading-none text-slate-700">
-    Kozijnen laten vervangen?
+    {{.Params.final_cta.heading}}
   </h3>
-  <p class="max-w-xl mb-6 font-regular text-center text-gray-400 lg:mb-8 text-md md:text-lg lg:text-xl ">Jurjen komt
-    eerst even kijken. Binnen een paar dagen weet je precies wat het gaat kosten.
+  <p class="max-w-xl mb-6 font-regular text-center text-gray-400 lg:mb-8 text-md md:text-lg lg:text-xl ">{{.Params.final_cta.description}}
   </p>
 
 
   <div class="flex flex-col md:block">
-    <a href="#" class="inline-flex items-center text-white bg-[#ed5821] hover:bg-orange-700
+    <a href="/schedule-form" class="inline-flex items-center text-white bg-[#D7223C] hover:bg-red-700
        font-medium rounded-lg text-sm px-4 py-3 transition">
 
-      {{.Params.hero_section_group.schedule_meeting}}
+      {{.Params.final_cta.schedule_meeting}}
     </a>
 
-    <a href="#" class="mt-4 md:mt-0 relative inline-flex items-center justify-center px-6 py-3 
-            text-sm font-medium rounded-lg border border-[#ed5821] text-[#ed5821] 
+    <a href="tel:+{{.Params.final_cta.call_number}}" class="mt-4 md:mt-0 relative inline-flex items-center justify-center px-6 py-3 
+            text-sm font-medium rounded-lg border border-[#D7223C] text-[#D7223C] 
             transition-all duration-300 ease-in-out
-            hover:bg-[#ed5821] hover:text-white focus:ring-2 focus:outline-none focus:ring-[#ed5821]">
+            hover:bg-[#D7223C] hover:text-white focus:ring-2 focus:outline-none focus:ring-[#D7223C]">
       <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
         </path>
       </svg>
-      Offerte aanvragen
+     {{.Params.final_cta.call_button}}
     </a>
   </div>
 </div>
