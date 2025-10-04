@@ -15,14 +15,14 @@ hero_section_group:
   call_button: Call Now
   call_number: '5454'
 stats_section:
-  section1_value: 2000
-  section1_heading: heading here
-  section2_value: 140
-  section2_heading: heading here
-  rating_section: 4.9
-  rating_heading: heading here
-  section4_value: 4.9%
-  section4_heading: heading here
+  section1_value: '2020'
+  section1_heading: From
+  section2_value: 140+
+  section2_heading: Satisfied Customers
+  rating_section: '5.0'
+  rating_heading: Rating Here
+  section4_value: 100%
+  section4_heading: Client Satisfaction
 how_it_works:
   heading: Heading here
   text_section:
@@ -70,6 +70,6 @@ final_cta:
   description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, omnis
   schedule_meeting: Schedule a meeting
   call_button: Call Now
-  call_number: 12345
+  call_number: '123456'
 ---
 
