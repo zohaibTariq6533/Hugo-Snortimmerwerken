@@ -40,6 +40,11 @@ see_the_difference:
   text_before: Before
   image_after: /uploads/Card img 1.jpg
   text_after: After
-
+final_cta:
+  heading: Heading
+  description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, omnis
+  schedule_meeting: Schedule a meeting
+  call_button: Call Now
+  call_number: '123456'
 ---
 
