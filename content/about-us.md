@@ -23,7 +23,7 @@ stats_section:
   rating_heading: heading here
   section4_value: 4.9%
   section4_heading: heading here
-How_it_works:
+how_it_works:
   heading: Heading here
   text_section:
     - paragraph_heading: Paragraph heading here
@@ -34,7 +34,7 @@ How_it_works:
       paragraph: Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, deleniti.
   message: De meeste klussen zijn niet ingewikkeld - gewoon goed uitvoeren en netjes achterlaten.
   message_by: Name here
-Stand_for:
+stand_for:
   heading: How i stands
   card1_heading: Card 1
   card1_text: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, ipsum!
@@ -42,7 +42,7 @@ Stand_for:
   card2_text: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, ipsum2
   card3_heading: Card 3
   card3_text: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, ipsum3
-Our_working_area:
+our_working_area:
   heading: Heading
   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita deserunt incidunt minus!
   cards:
@@ -65,7 +65,7 @@ Our_working_area:
         - Hellooo 3
         - Hellooo 4
   call_to_action: Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, saepe.
-Final_cta:
+final_cta:
   heading: Heading
   description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, omnis
   schedule_meeting: Schedule a meeting
