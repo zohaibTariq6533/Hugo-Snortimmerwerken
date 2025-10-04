@@ -258,7 +258,7 @@ collections:
               - { name: "card3_heading", label: "Card 3 Heading", widget: "string" }
               - { name: "card3_text", label: "Card 3 Text", widget: "text" }
           - name: "our_working_area"
-            label: "Our Working Area"
+            label: "Our Working Area Section"
             widget: "object"
             fields:
               - { name: "heading", label: "Heading", widget: "string" }
@@ -271,9 +271,9 @@ collections:
                   - name: "points"
                     label: "Points"
                     widget: "list"
-                    fields:
-                      - { name: "points", label: "Point", widget: "string" }
+                    field: { name: "point", label: "Point", widget: "string" }
               - { name: "call_to_action", label: "Call To Action", widget: "text" }
+
           - name: "final_cta"
             label: "Final CTA Section"
             widget: "object"
