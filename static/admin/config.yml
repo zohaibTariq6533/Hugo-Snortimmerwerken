@@ -271,8 +271,7 @@ collections:
                   - name: "points"
                     label: "Points"
                     widget: "list"
-                    fields:
-                      - { name: "point", label: "Point", widget: "string" }
+                    field: { name: "point", label: "Point", widget: "string" }
               - { name: "call_to_action", label: "Call To Action", widget: "text" }
           - name: "final_cta"
             label: "Final CTA Section"
