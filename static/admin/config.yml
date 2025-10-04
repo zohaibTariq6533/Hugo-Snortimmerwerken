@@ -298,7 +298,7 @@ collections:
             widget: "object"
             fields:
               - { name: "home_button", label: "Home Button Text", widget: "string" }
-              - { name: "hero_banner", label: "Hero Banner Image", widget: "image" }
+              - { name: "hero_banner", label: "Hero Banner Image", widget: "image", choose_url: false, media_folder: "/static/uploads/services-img", public_folder: "/uploads/services-img" }
               - { name: "heading", label: "Heading", widget: "string" }
               - { name: "heading_colored", label: "Colored Heading Text", widget: "string" }
               - { name: "subheading", label: "Subheading", widget: "text" }
@@ -365,7 +365,7 @@ collections:
             widget: "object"
             fields:
               - { name: "home_button", label: "Home Button Text", widget: "string" }
-              - { name: "hero_banner", label: "Hero Banner Image", widget: "image" }
+              - { name: "hero_banner", label: "Hero Banner Image", widget: "image" , choose_url: false, media_folder: "/static/uploads/services-img", public_folder: "/uploads/services-img" }
               - { name: "heading", label: "Heading", widget: "string" }
               - { name: "subheading", label: "Subheading", widget: "text" }
               - { name: "schedule_meeting", label: "Schedule Meeting Button", widget: "string" }
@@ -400,6 +400,16 @@ collections:
                 label: "Points"
                 widget: "list"
                 field: { label: "Point", name: "point", widget: "string" }
+          - name: see_the_difference
+            label: "See The Difference Section"
+            widget: object
+            fields:
+              - { name: heading, label: "Section Heading", widget: string }
+              - { name: image_before, label: "Before Image", widget: image, choose_url: false, media_folder: "/static/uploads/services-img", public_folder: "/uploads/services-img" }
+              - { name: text_before, label: "Before Text", widget: string }
+              - { name: image_after, label: "After Image", widget: image, choose_url: false, media_folder: "/static/uploads/services-img", public_folder: "/uploads/services-img" }
+              - { name: text_after, label: "After Text", widget: string }
+
 
 
 

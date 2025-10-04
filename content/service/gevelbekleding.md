@@ -34,5 +34,12 @@ whats_the_point:
     - Lorem ipsum dolor sit amet consectetur adipisicing eit.
     - Lorem ipsum dolor sit amet consectetur adipisicing lit.
     - Lorem ipsum dolor sit amet consectetur adipisicing et.
+see_the_difference:
+  heading: HEading here
+  image_before: /uploads/Card img 1.jpg
+  text_before: Before
+  image_after: /uploads/Card img 1.jpg
+  text_after: After
+
 ---
 
