@@ -288,7 +288,7 @@ collections:
     files:
       - file: "content/service/first.md"
         label: "First Page"
-        name: "First Service Page"
+        name: "service1_content"
         fields:
           - { name: "title", label: "Title", widget: "string" }
           - { name: "date", label: "Date", widget: "datetime" }
@@ -298,10 +298,11 @@ collections:
             widget: "object"
             fields:
               - { name: "home_button", label: "Home Button Text", widget: "string" }
-              - { name: "hero_banner", label: "Hero Banner", widget: "image", choose_url: false, media_folder: "/static/uploads/service-img", public_folder: "/uploads/service-img" }
+              - { name: "hero_banner", label: "Hero Banner Image", widget: "image" }
               - { name: "heading", label: "Heading", widget: "string" }
+              - { name: "heading_colored", label: "Colored Heading Text", widget: "string" }
               - { name: "subheading", label: "Subheading", widget: "text" }
-              - { name: "schedule_meeting", label: "Schedule Meeting Button Text", widget: "string" }
+              - { name: "schedule_meeting", label: "Schedule Meeting Button", widget: "string" }
               - { name: "call_button", label: "Call Button Text", widget: "string" }
               - { name: "call_number", label: "Call Number", widget: "string" }
 

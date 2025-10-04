@@ -3,7 +3,6 @@ date: '2025-09-13T16:33:27+05:00'
 draft: false
 title: first
 type: service1
-Heading: Waoooo
 hero_section_group:
   home_button: Back
   hero_banner: /uploads/pp2.png
