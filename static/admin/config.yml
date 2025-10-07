@@ -482,7 +482,25 @@ collections:
               - { name: "schedule_meeting", label: "Schedule Meeting Button Text", widget: "string" }
               - { name: "call_button", label: "Call Button Text", widget: "string" }
               - { name: "call_number", label: "Call Number", widget: "string" }
-
+      - file: "content/service/schuipuien.md"
+        label: "Fourth Page"
+        name: "service4_content"
+        fields:
+          - { name: "title", label: "Title", widget: "string" }
+          - { name: "date", label: "Date", widget: "datetime" }
+          - { name: "draft", label: "Draft", widget: "boolean", default: false }
+          - label: "Hero Section"
+            name: "hero_section_group"
+            widget: "object"
+            fields:
+              - { name: "home_button", label: "Home Button Text", widget: "string" }
+              - { name: "hero_banner", label: "Hero Banner Image", widget: "image" , choose_url: false, media_folder: "/static/uploads/services-img", public_folder: "/uploads/services-img" }
+              - { name: "heading", label: "Heading", widget: "string" }
+              - { name: "subheading", label: "Subheading", widget: "text" }
+              - { name: "banner_line", label: "banner Text", widget: "text" }
+              - { name: "schedule_meeting", label: "Schedule Meeting Button", widget: "string" }
+              - { name: "call_button", label: "Call Button Text", widget: "string" }
+              - { name: "call_number", label: "Call Number", widget: "string" }
 
 
 
