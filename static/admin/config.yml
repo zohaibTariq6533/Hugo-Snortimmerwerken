@@ -534,19 +534,20 @@ collections:
             label: "Technical Specifications"
             widget: "object"
             fields:
-              - { name: "heading", label: "Heading", widget: "string" }
-              - name: "cards"
-                label: "Cards"
+              - { name: "heading", label: "Section Heading", widget: "string" }
+              - name: "card"
+                label: "Card"
                 widget: "object"
                 fields:
                   - { name: "card_heading", label: "Card Heading", widget: "string" }
                   - { name: "description", label: "Description", widget: "text" }
                   - name: "pricing"
-                    label: "Pricing"
+                    label: "Pricing List"
                     widget: "list"
                     fields:
                       - { name: "title", label: "Title", widget: "string" }
                       - { name: "price", label: "Price", widget: "string" }
+
           - name: "how_we_approach"
             label: "How We Approach"
             widget: "object"
