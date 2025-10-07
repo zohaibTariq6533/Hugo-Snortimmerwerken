@@ -482,7 +482,7 @@ collections:
               - { name: "schedule_meeting", label: "Schedule Meeting Button Text", widget: "string" }
               - { name: "call_button", label: "Call Button Text", widget: "string" }
               - { name: "call_number", label: "Call Number", widget: "string" }
-      - file: "content/service/schuipuien.md"
+      - file: "content/service/schuifpuien.md"
         label: "Fourth Page"
         name: "service4_content"
         fields:
