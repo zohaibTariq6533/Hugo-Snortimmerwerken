@@ -280,120 +280,46 @@
 <section class="bg-white mt-8">
     <div class="py-8 px-4 mx-auto flex flex-col justify-center items-center max-w-screen-xl sm:py-16 lg:px-6">
         <div class="w-full mb-8 lg:mb-16">
-            <h2 class="text-3xl tracking-tight font-extrabold text-gray-700 text-center">Waarom een dakkapel?</h2>
+            <h2 class="text-3xl tracking-tight font-extrabold text-gray-700 text-center">{{.Params.whats_the_point.heading}}</h2>
         </div>
         <div class="space-y-2 w-[100%] md:w-[80%]  md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-4 md:space-y-0">
 
-            <div class="flex  items-center">
-                <div class="flex items-center  w-8 h-8 rounded-full bg-primary-100 lg:h-12 lg:w-12 ">
-                    <svg class="w-6 h-6 bg-red-100 text-red-500  rounded-full lg:w-6 lg:h-6 " fill="currentColor"
+{{ range .Params.whats_the_point.points }}
+            <div class="flex gap-5">
+                <div class="flex justify-center items-center w-5 h-5 rounded-full bg-primary-100 lg:h-12 lg:w-12">
+                    <svg class="w-6 h-6 bg-red-100 text-red-500 rounded-full lg:w-6 lg:h-6" fill="currentColor"
                         viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd"
                             d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                             clip-rule="evenodd"></path>
                     </svg>
                 </div>
-                <p class="text-gray-600 p-0 m-0">Meer bruikbare ruimte op zolde</p>
+                <p class="text-gray-600">{{ . }}</p>
             </div>
-            <div class="flex  items-center">
-                <div class="flex items-center  w-8 h-8  rounded-full bg-primary-100 lg:h-12 lg:w-12 ">
-                    <svg class="w-6 h-6 bg-red-100 text-red-500  rounded-full lg:w-6 lg:h-6 " fill="currentColor"
-                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                </div>
-                <p class="text-gray-600 ">Extra daglicht in huis</p>
-            </div>
-
-            <div class="flex  items-center">
-                <div class="flex items-center w-8 h-8  rounded-full bg-primary-100 lg:h-12 lg:w-12 ">
-                    <svg class="w-6 h-6 bg-red-100 text-red-500  rounded-full lg:w-6 lg:h-6 " fill="currentColor"
-                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                </div>
-                <p class="text-gray-600 ">Betere ventilatie van de zolder</p>
-            </div>
-            <div class="flex   items-center">
-                <div class="flex items-center w-8 h-8  rounded-full bg-primary-100 lg:h-12 lg:w-12 ">
-                    <svg class="w-6 h-6 bg-red-100 text-red-500  rounded-full lg:w-6 lg:h-6 " fill="currentColor"
-                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                </div>
-                <p class="text-gray-600 ">Hogere woningwaarde (€15.000-25.000)</p>
-            </div>
-            <div class="flex items-center">
-                <div class="flex items-center w-8 h-8  rounded-full bg-primary-100 lg:h-12 lg:w-12 ">
-                    <svg class="w-6 h-6 bg-red-100 text-red-500  rounded-full lg:w-6 lg:h-6 " fill="currentColor"
-                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                </div>
-                <p class="text-gray-600 ">Moderne isolatie, dus energiezuiniger</p>
-            </div>
-            <div class="flex items-center">
-                <div class="flex items-center w-8 h-8  rounded-full bg-primary-100 lg:h-12 lg:w-12 ">
-                    <svg class="w-6 h-6 bg-red-100 text-red-500  rounded-full lg:w-6 lg:h-6 " fill="currentColor"
-                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                </div>
-                <p class="text-gray-600 ">Moderne isolatie, dus energiezuiniger</p>
-            </div>
-        </div>
+            {{ end }}
     </div>
 </section>
 
 <section class="bg-gray-50">
     <div class="py-8 px-4 mx-auto flex flex-col justify-center items-center max-w-screen-xl sm:py-16 lg:px-6">
         <div class="w-full mb-4 lg:mb-8">
-            <h2 class="text-3xl tracking-tight font-bold text-gray-700 text-center">Technische specificaties</h2>
+            <h2 class="text-3xl tracking-tight font-bold text-gray-700 text-center">{{.Params.technical_specifications.heading}}</h2>
         </div>
         <div class="flex justify-center items-center w-full ">
             <!-- Specifications Card -->
             <div class="bg-white rounded-2xl shadow-lg px-8 py-10 w-[90%] md:w-[70%] mx-auto">
                 <!-- Card Header -->
-                <h3 class="text-2xl font-semibold text-gray-700 text-center mb-1">Kwaliteit waar u op kunt rekenen</h3>
-                <p class="text-gray-500 text-center text-xs md:text-sm mb-8">Alle schuifpuien voldoen aan de hoogste Nederlandse
-                    normen</p>
+                <h3 class="text-2xl font-semibold text-gray-700 text-center mb-1">{{.Params.technical_specifications.card.card_heading}}</h3>
+                <p class="text-gray-500 text-center text-xs md:text-sm mb-8">{{.Params.technical_specifications.card.description}}</p>
 
                 <!-- Specifications Table - Two Column Layout -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    {{range .Params.technical_specifications.card.pricing}}
                     <div class="flex justify-between items-center py-2">
-                        <span class="text-gray-500 text-sm md:text-base ">Isolatiewaarde:</span>
-                        <span class="text-gray-800 text-sm md:text-base font-semibold">Rc 1.2 tot 1.6</span>
+                        <span class="text-gray-500 text-sm md:text-base ">{{.title}}</span>
+                        <span class="text-gray-800 text-sm md:text-base font-semibold">{{.price}}</span>
                     </div>
-                    <div class="flex justify-between items-center py-2">
-                        <span class="text-gray-500 text-sm md:text-base">Beglazing:</span>
-                        <span class="text-gray-800 text-sm md:text-base font-semibold">Triple glas standaard</span>
-                    </div>
-                    <div class="flex justify-between items-center py-2">
-                        <span class="text-gray-500 text-sm md:text-base">Kleuren:</span>
-                        <span class="text-gray-800 text-sm md:text-base font-semibold">RAL kleuren mogelijk</span>
-                    </div>
-                    <div class="flex justify-between items-center py-2">
-                        <span class="text-gray-500 text-base ">Garantie:</span>
-                        <span class="text-gray-800 text-sm md:text-base font-semibold">10 jaar vol</span>
-                    </div>
-                    <div class="flex justify-between items-center py-2">
-                        <span class="text-gray-500 text-sm md:text-base ">Onderhoud:</span>
-                        <span class="text-gray-800 text-sm md:text-base font-semibold">Minimaal</span>
-                    </div>
-                    <div class="flex justify-between items-center py-2">
-                        <span class="text-gray-500 text-sm md:text-base">Plaatsing:</span>
-                        <span class="text-gray-800 text-sm md:text-base font-semibold">Meestal 1 dag</span>
-                    </div>
+                    {{end}}
                 </div>
             </div>
         </div>
@@ -403,76 +329,29 @@
 <section class=" py-16">
     <div class="max-w-3xl mx-auto px-4 flex flex-col items-center">
         <div class="text-center mb-8">
-            <h2 class="text-3xl md:text-3xl font-bold text-gray-800 mb-4">Hoe pakken wij het aan?</h2>
+            <h2 class="text-3xl md:text-3xl font-bold text-gray-800 mb-4">{{.Params.how_we_approach.heading}}</h2>
 
         </div>
 
         <div class="py-2 w-[90%] md:w-full">
             <div class="space-y-6">
                 <!-- Step 1 -->
+                 {{range .Params.how_we_approach.points}}
                 <div class="flex  space-x-4">
                     <div class="flex py-2 justify-center">
                         <div
                             class="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center text-white font-bold text-base">
-                            1
+                            {{.number}}
                         </div>
                     </div>
                     <div class="flex flex-col justify-center  md:gap-2">
-                        <h4 class="font-medium">Inmeten en advies</h4>
-                        <h4 class="text-sm md:text-base text-gray-500">Jurjen komt langs voor precieze meting en advies over het
-                            beste systeem voor uw situatie.
-
-                        </h4>
+                        <h4 class="font-medium">{{.text}}</h4>
+                        <h4 class="text-sm md:text-base text-gray-500">{{.detail}}</h4>
                     </div>
                 </div>
+                {{end}}
 
-                <!-- Step 2 -->
-                <div class="flex  space-x-4">
-                    <div class="flex py-2 justify-center">
-                        <div
-                            class="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center text-white font-bold text-base">
-                            2
-                        </div>
-                    </div>
-                    <div class="flex flex-col justify-center md:gap-2 ">
-                        <h4 class="font-medium">Offerte en planning</h4>
-                        <h4 class="text-sm md:text-base text-gray-500">Binnen 3 dagen een duidelijke offerte. Na akkoord plannen we
-                            de werkzaamheden.</h4>
-                    </div>
-                </div>
-
-                <!-- Step 3 -->
-                <div class="flex  space-x-4">
-                    <div class="flex py-2 justify-center">
-                        <div
-                            class="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center text-white font-bold text-base">
-                            3
-                        </div>
-                    </div>
-                    <div class="flex flex-col justify-center md:gap-2 ">
-                        <h4 class="font-medium">Uitsparing maken</h4>
-                        <h4 class="text-sm md:text-base  text-gray-500">De opening wordt vakkundig gemaakt, inclusief juiste
-                            ondersteuning van de constructie.</h4>
-                    </div>
-                </div>
-
-                <!-- Step 4 -->
-                <div class="flex  space-x-4">
-                    <div class="flex py-2 justify-center">
-                        <div
-                            class="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center text-white font-bold text-base">
-                            4
-                        </div>
-                    </div>
-                    <div class="flex flex-col justify-center md:gap-2 ">
-                        <h4 class="font-medium">
-                            Plaatsing en afwerking
-                        </h4>
-                        <h4 class="text-sm md:text-base  text-gray-500">Schuifpui wordt geplaatst, uitgelijnd en afgewerkt. Meestal
-                            binnen 1 dag gereed.</h4>
-                    </div>
-                </div>
-
+                
             </div>
         </div>
     </div>
@@ -480,33 +359,29 @@
 
 <div class="w-full flex flex-col justify-center items-center lg:col-span-7  px-5 py-16 bg-[#f9f1ef]">
     <h3 class="max-w-2xl text-center mb-4  text-4xl md:text-5xl xl:text-4xl font-extrabold leading-none text-slate-700">
-        Schuifpui laten plaatsen?
+        {{.Params.final_cta.heading}}
     </h3>
-    <p class="max-w-4xl mb-6 font-regular text-center text-gray-400 lg:mb-8 text-md md:text-lg lg:text-xl ">Jurjen komt
-        eerst meten en kijken hoe het het beste kan. Samen zoeken we de beste plek en het juiste formaat.
+    <p class="max-w-4xl mb-6 font-regular text-center text-gray-400 lg:mb-8 text-md md:text-lg lg:text-xl ">{{.Params.final_cta.description}}
     </p>
 
 
     <div class="flex flex-col md:block">
-        <a href="#" class="inline-flex items-center text-white bg-[#D7223C] hover:bg-red-700
+        <a href="/schedule-form" class="inline-flex items-center text-white bg-[#D7223C] hover:bg-red-700
          font-medium rounded-lg text-sm px-4 py-3 transition">
+            
+            {{.Params.final_cta.schedule_meeting}}
+        </a>
+
+        <a href="tel:+{{.Params.final_cta.call_number}}" class="mt-4 md:mt-0 relative inline-flex items-center justify-center px-6 py-3 
+              text-sm font-medium rounded-lg border border-[#D7223C] text-[#D7223C] 
+              transition-all duration-300 ease-in-out
+              hover:bg-[#D7223C] hover:text-white focus:ring-2 focus:outline-none focus:ring-[#D7223C]">
             <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z">
                 </path>
             </svg>
-            Bel nu: 06 12 34 56 78
-        </a>
-
-        <a href="#" class="mt-4 md:mt-0 relative inline-flex items-center justify-center px-6 py-3 
-              text-sm font-medium rounded-lg border border-[#D7223C] text-[#D7223C] 
-              transition-all duration-300 ease-in-out
-              hover:bg-[#D7223C] hover:text-white focus:ring-2 focus:outline-none focus:ring-[#D7223C]">
-            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
-                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
-            </svg>
-            Gratis adviesgesprek
+            {{.Params.final_cta.call_button}}
         </a>
     </div>
 </div>

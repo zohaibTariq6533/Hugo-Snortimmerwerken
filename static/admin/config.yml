@@ -521,6 +521,55 @@ collections:
               - { name: card3_text, label: "Card 3 Text", widget: text }
               - { name: pricing3, label: "Card 3 Pricing", widget: string }
               - { name: button3_text, label: "Card 3 Button Text", widget: string }
+          - name: "whats_the_point"
+            label: "Points Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading", widget: "string" }
+              - name: "points"
+                label: "Points"
+                widget: "list"
+                field: { label: "Point", name: "point", widget: "string" }
+          - name: "technical_specifications"
+            label: "Technical Specifications"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading", widget: "string" }
+              - name: "cards"
+                label: "Cards"
+                widget: "list"
+                fields:
+                  - { name: "card_heading", label: "Card Heading", widget: "string" }
+                  - { name: "description", label: "Description", widget: "text" }
+                  - name: "pricing"
+                    label: "Pricing"
+                    widget: "list"
+                    fields:
+                      - { name: "title", label: "Title", widget: "string" }
+                      - { name: "price", label: "Price", widget: "string" }
+          - name: "how_we_approach"
+            label: "How We Approach"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading", widget: "string" }
+              - name: "points"
+                label: "Points"
+                widget: "list"
+                fields:
+                  - { name: "number", label: "Step Number", widget: "number" }
+                  - { name: "text", label: "Main Text", widget: "string" }
+                  - { name: "detail", label: "Detail Description", widget: "text" }
+          - name: "final_cta"
+            label: "Final CTA Section"
+            widget: "object"
+            fields:
+              - { name: "heading", label: "Heading", widget: "string" }
+              - { name: "description", label: "Description", widget: "text" }
+              - { name: "schedule_meeting", label: "Schedule Meeting Button Text", widget: "string" }
+              - { name: "call_button", label: "Call Button Text", widget: "string" }
+              - { name: "call_number", label: "Call Number", widget: "string" }
+
+
 
 
 
