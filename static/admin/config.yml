@@ -537,7 +537,7 @@ collections:
               - { name: "heading", label: "Heading", widget: "string" }
               - name: "cards"
                 label: "Cards"
-                widget: "list"
+                widget: "object"
                 fields:
                   - { name: "card_heading", label: "Card Heading", widget: "string" }
                   - { name: "description", label: "Description", widget: "text" }
