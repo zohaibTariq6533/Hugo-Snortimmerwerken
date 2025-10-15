@@ -3,7 +3,8 @@ backend:
   repo: zohaibTariq6533/Hugo-Snortimmerwerken
   branch: main  
   auth_type: pkce
-  app_id: Ov23liCCPh5APDx73cOR # adjust if your repo uses "master"
+  app_id: Iv23liBNR1BJitaYbj9i # adjust if your repo uses "master"
+  base_id: https://api.sveltiacms.com
 
 media_folder: "static/uploads"   # actual folder in repo
 public_folder: "/uploads"        # how Hugo serves them
