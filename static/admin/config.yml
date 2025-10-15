@@ -4,7 +4,7 @@ backend:
   branch: main  
   auth_type: pkce
   app_id: Iv23liBNR1BJitaYbj9i # adjust if your repo uses "master"
-  base_id: https://wouter-portfolio.vercel.app/admin/
+  base_url: https://api.sveltiacms.com
 
 media_folder: "static/uploads"   # actual folder in repo
 public_folder: "/uploads"        # how Hugo serves them
